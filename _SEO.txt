@@ -1,0 +1,4 @@
+Link best practices for Google
+
+https://developers.google.com/search/docs/crawling-indexing/links-crawlable?visit_id=638738470576458648-3303563313&rd=1
+
