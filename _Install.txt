@@ -36,7 +36,8 @@ Cypress:
 
 - Nodejs (https://nodejs.org/en/download)
 [Nodejs' bin directory might need to be added the PATH]
-“npm install” at the root of the frontend directory 
+
+“npm install” at the root of the testing directory 
 
 npx cypress open
 
