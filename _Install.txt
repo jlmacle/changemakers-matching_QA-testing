@@ -32,7 +32,7 @@ Frontend:
 - Web server: VSCode LivePreview (https://code.visualstudio.com/download)
 
 -------------
-Cypress:
+Testing:
 
 - Nodejs (https://nodejs.org/en/download)
 [Nodejs' bin directory might need to be added the PATH]
@@ -40,6 +40,15 @@ Cypress:
 “npm install” at the root of the testing directory 
 
 npx cypress open
+
+npx cypress run
+npx allure generate --clean
+npx allure serve -h 127.0.0.1
+
+
+
+
+
 
 
 

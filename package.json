@@ -1,0 +1,18 @@
+{
+  "name": "changemakers-matching_testing",
+  "version": "1.0.0",
+  "description": "End to end testing for the changemakers matching project.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "allure-commandline": "^2.32.0",
+    "allure-cypress": "^3.1.0",
+    "allure-js-commons": "^3.1.0",
+    "allure-mocha": "^3.1.0",
+    "cypress": "^14.0.1"
+  }
+}
