@@ -4,47 +4,44 @@ Given('I am on the home page', () => {
   cy.visit('/www/index.html');
 });
 
-//Focus on the "new account or login" button
-Given('I focus on the element with id {string}', (elementId: string) => {
-  cy.get(elementId).focus();
-});
-
-//1. Tabbing toward title
-When('I press the Tab key to navigate to the next focusable element', () => {
+//1. Tabbing toward "new account or login" button
+When('a. I press the Tab key twice', () => {
+  cy.tab();
   cy.tab();
 });
-
-// Checking the title
-Then('I should find that the focused element has the id {string}', (expectedId: string) => {
-  cy.focused().should('have.attr', 'id', expectedId);
+Then('I should arrive at the "new account or login" button', () => {
+  cy.focused().should('have.attr', 'id', "newAccountOrLogin-button");
 });
 
-//2. Tabbing toward testimonies
-When('I press the Tab key a 2nd time', () => {
+//2. Tabbing toward title
+When('b. I press the Tab key to navigate to the next focusable element', () => {
   cy.tab();
 });
-
-// Checking the testimonies id
-Then('I should arrive at a first element with the id {string}', (expectedId: string) => {
-  cy.focused().should('have.attr', 'id', expectedId);
+Then('I should arrive at the page title', () => {
+  cy.focused().should('have.attr', 'id', "homePageTitle-link");
 });
 
-//3. Tabbing toward about link
-When('I press the Tab key a 3rd time', () => {
+//3. Tabbing toward testimonies
+When('c. I press the Tab key to navigate to the next focusable element', () => {
   cy.tab();
 });
-
-// Checking the about link id
-Then('I should arrive at a second element with the id {string}', (expectedId: string) => {
-  cy.focused().should('have.attr', 'id', expectedId);
+Then('I should arrive at the testimonies', () => {
+  cy.focused().should('have.attr', 'id', "testimonies");
 });
 
-//4. Tabbing toward about privacy link
-When('I press the Tab key a 4th time', () => {
+//4. Tabbing toward about link
+When('d. I press the Tab key to navigate to the next focusable element', () => {
   cy.tab();
 });
-
-// Checking the about privacy link id
-Then('I should arrive at a third element with the id {string}', (expectedId: string) => {
-  cy.focused().should('have.attr', 'id', expectedId);
+Then('I should arrive at the "About" link', () => {
+  cy.focused().should('have.attr', 'id', "about-link");
 });
+
+//5. Tabbing toward about privacy link
+When('e. I press the Tab key to navigate to the next focusable element', () => {
+  cy.tab();
+});
+Then('I should arrive at the "Privacy" link', () => {
+  cy.focused().should('have.attr', 'id', "privacy-link");
+});
+

@@ -6,16 +6,17 @@ Feature: Tab Navigation on the Home Page
 
   Scenario: User tabs through elements on the home page
     Given I am on the home page
-    And I focus on the element with id "#newAccountOrLogin-button"
+    When a. I press the Tab key twice
+    Then I should arrive at the "new account or login" button
     
-    When I press the Tab key to navigate to the next focusable element
-    Then I should find that the focused element has the id "homePageTitle-link"
+    When b. I press the Tab key to navigate to the next focusable element
+    Then I should arrive at the page title
 
-    When I press the Tab key a 2nd time
-    Then I should arrive at a first element with the id "testimonies"
+    When c. I press the Tab key to navigate to the next focusable element
+    Then I should arrive at the testimonies
 
-    When I press the Tab key a 3rd time
-    Then I should arrive at a second element with the id "about-link"
+    When d. I press the Tab key to navigate to the next focusable element
+    Then I should arrive at the "About" link
 
-    When I press the Tab key a 4th time
-    Then I should arrive at a third element with the id "privacy-link"
+    When e. I press the Tab key to navigate to the next focusable element
+    Then I should arrive at the "Privacy" link

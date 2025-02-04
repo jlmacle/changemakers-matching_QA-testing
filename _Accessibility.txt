@@ -43,6 +43,7 @@ in the website?
 
 --------------------------------------------------------------------------------
 Todo:
+The focus is not seen at the first tab on the home page.(2 tabs needed)
 
 https://www.linkedin.com/feed/update/urn:li:activity:7282670115664396288?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7282670115664396288%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29
 "Support spaces and copy/paste when typing into form fields."
