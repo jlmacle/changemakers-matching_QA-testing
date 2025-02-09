@@ -6,8 +6,10 @@ import { allureCypress } from "allure-cypress/reporter";
 
 
 export default defineConfig({
+  projectId: '79ph2x',
   e2e: {
     baseUrl: 'http://127.0.0.1:3000',
+    experimentalStudio: true,
     specPattern: "**/*.feature",
     async setupNodeEvents(on, config) {      
       on("file:preprocessor", createBundler({ plugins: [createEsbuildPlugin(config)] }));
@@ -18,9 +20,7 @@ export default defineConfig({
     env: {
       omitFiltered: true,
       filterSpecs: true,
-      //allureReuseAfterSpec: false,
       allure: true,
-      //allureLogCypress: true
     },
     fixturesFolder: false,
   }
