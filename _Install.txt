@@ -1,37 +1,3 @@
-Backend:
-
-- PostgreSQL (https://www.postgresql.org/download/)
-[PostgreSQL’s bin directory might need to be added the PATH]
-CREATE USER user-name WITH ENCRYPTED PASSWORD 'user-password';
-CREATE DATABASE database-name OWNER user-name;
-To test the success of the previous commands:
-“\c database_name”, then “\l” 
-
-[Ubuntu:“sudo -u postgres psql” to access the psql console.]
-
-- Environment variables
-DB_NAME:  the name for the database
-DB_USERNAME: the name for the user owning the database
-DB_PASSWORD: the password for the user
-DB_POSTGRES_PORT: the port for the PostgreSQL database
-
-[Ubuntu: in .profile,  port="the port for the PostgreSQL database"]
-
-
-- Java (https://www.oracle.com/java/technologies/downloads/#java17)
-[Java’s bin directory might need to be added the PATH]
-
-- Maven (https://maven.apache.org/download.cgi)
-[Maven’s bin directory might need to be added the PATH]
-
-[mv spring-boot:run]
-
--------------
-Frontend:
-
-- Web server: VSCode LivePreview (https://code.visualstudio.com/download)
-
--------------
 Testing:
 
 - Nodejs (https://nodejs.org/en/download)
@@ -41,10 +7,15 @@ Testing:
 
 npx cypress open
 
-npx cypress run
-npx allure generate --clean
-npx allure serve -h 127.0.0.1
+-------------
+Reporting with Allure:
+https://allurereport.org/docs/install-for-nodejs/ 
 
+
+-------------
+Automation server:
+https://www.jenkins.io/download/
+https://www.jenkins.io/doc/book/installing/war-file/ 
 
 
 
