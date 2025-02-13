@@ -5,20 +5,20 @@ Given('I am on the new account project representative page', () => {
 });
 
 // Username with .
-When('the user enters "Invalid_user_name..123" in the username field', () => {
-  cy.get('#username').type('invaliduser.123');
+When('the user enters {string} in the username field', (username) => {
+  cy.get('#username').type(`${username}`);
 });
 
-Then('the username validation message should display "⚠️ Invalid character present."', () => {
-  cy.get('#newAccount-projRep-errorInUsername').should('contain', '⚠️ Invalid character present.');
+Then('the username validation message should display {string}', (errorMessage) => {
+  cy.get('#newAccount-projRep-errorInUsername').should('contain', `${errorMessage}`);
 });
 
 // Too long user name
-When('the user enters "Too_long_user_name_123456789" in the username field', () => {
-  cy.get('#username').type('Too_long_user_name_123456789');
+When('the user enters {string}" in the username field', (username) => {
+  cy.get('#username').type(`${username}`);
 });
 
-Then('the username validation message should display "⚠️ The username is too long."', () => {
-  cy.get('#newAccount-projRep-errorInUsername').should('contain', '⚠️ The username is too long.');
+Then('the username validation message should {string}', (errorMessage) => {
+  cy.get('#newAccount-projRep-errorInUsername').should('contain', `${errorMessage}`);
 });
 
