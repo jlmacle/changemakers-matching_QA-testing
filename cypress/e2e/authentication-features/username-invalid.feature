@@ -1,4 +1,4 @@
-Feature: Invalid username validation
+Feature: Invalid username validation (in progress)
     
   Scenario: User enters a invalid username
 
