@@ -1,5 +1,5 @@
 Reporting with Allure:
 
-npx cypress run
+npx cypress run / cypress run --spec **/*.features
 npx allure generate --clean
 npx allure serve -h 127.0.0.1
