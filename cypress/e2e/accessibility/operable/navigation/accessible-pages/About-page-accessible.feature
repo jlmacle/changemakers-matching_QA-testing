@@ -1,5 +1,3 @@
-Feature: Validation of absence of dead links (in progress)
-
   Scenario: From the home page, the user clicks on the "About" link, and goes to the "About" page.
 
     Given I am on the home page
