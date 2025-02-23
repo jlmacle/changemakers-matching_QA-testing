@@ -1,5 +1,8 @@
 import { Given, When, Then } from '@badeball/cypress-cucumber-preprocessor';
 
+
+// Scenario: Tab Navigation on the Home Page
+
 Given('I am on the home page', () => {
   cy.visit('/www/index.html');
 });
@@ -44,4 +47,3 @@ When('e. I press the Tab key to navigate to the next focusable element', () => {
 Then('I should arrive at the "Privacy" link', () => {
   cy.focused().should('have.attr', 'id', "privacy-link");
 });
-
