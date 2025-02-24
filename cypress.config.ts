@@ -10,6 +10,8 @@ export default defineConfig({
   e2e: {
     baseUrl: 'http://127.0.0.1:3000',
     experimentalStudio: true,
+    video: true, // Enable or disable video recording
+    videoCompression: 32, // Compression level (higher number = more compression)
     specPattern: "**/*.feature",
     async setupNodeEvents(on, config) {      
       on("file:preprocessor", createBundler({ plugins: [createEsbuildPlugin(config)] }));
@@ -20,7 +22,7 @@ export default defineConfig({
     env: {
       omitFiltered: true,
       filterSpecs: true,
-      allure: true,
+      allure: true      
     },
     fixturesFolder: false,
   }
