@@ -6,6 +6,9 @@ cypress/e2e/.DS_Store
 cypress/e2e/accessibility/.DS_Store
 cypress/e2e/accessibility/operable/.DS_Store
 
+cypress/screenshots/
+cypress/videos/
+
 allure-report/
 allure-results/
 ## Ignore Visual Studio temporary files, build results, and
