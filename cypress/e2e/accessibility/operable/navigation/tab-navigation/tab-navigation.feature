@@ -1,5 +1,9 @@
 Feature: Tab Navigation 
 
+
+# Tab Navigation on the Home Page
+# *******************************
+
 Scenario: Tab Navigation on the Home Page
 
   As a user,
@@ -8,19 +12,21 @@ Scenario: Tab Navigation on the Home Page
 
   #Steps
   Given I am on the home page
-  When a. I press the Tab key twice
+  When I press the Tab key to navigate to the next focusable element - 1
+  Then I should arrive at the "Skip To New Content" feature
+
+  Given I am on the home page
+  When I press the Tab key to navigate to the next focusable element - 2
   Then I should arrive at the "new account or login" button
   
-  When b. I press the Tab key to navigate to the next focusable element
+  When I press the Tab key to navigate to the next focusable element - 3
   Then I should arrive at the page title
 
-  When c. I press the Tab key to navigate to the next focusable element
+  When I press the Tab key to navigate to the next focusable element - 4
   Then I should arrive at the testimonies
 
-  When d. I press the Tab key to navigate to the next focusable element
+  When I press the Tab key to navigate to the next focusable element - 5
   Then I should arrive at the "About" link
 
-  When e. I press the Tab key to navigate to the next focusable element
+  When I press the Tab key to navigate to the next focusable element - 6
   Then I should arrive at the "Privacy" link
-
-

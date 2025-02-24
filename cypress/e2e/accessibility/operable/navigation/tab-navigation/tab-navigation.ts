@@ -2,13 +2,22 @@ import { Given, When, Then } from '@badeball/cypress-cucumber-preprocessor';
 
 
 // Scenario: Tab Navigation on the Home Page
+// *****************************************
 
 Given('I am on the home page', () => {
   cy.visit('/www/index.html');
 });
 
-//1. Tabbing toward "new account or login" button
-When('a. I press the Tab key twice', () => {
+//1. Tabbing toward the "Skip To New Content" feature
+When('I press the Tab key to navigate to the next focusable element - 1', () => {
+  cy.tab();
+});
+Then('I should arrive at the "Skip To New Content" feature', () => {
+  cy.focused().should('have.attr', 'id', "skipToMainContent");
+});
+
+//1a. Tabbing toward "new account or login" button
+When('I press the Tab key to navigate to the next focusable element - 2', () => {
   cy.tab();
   cy.tab();
 });
@@ -17,7 +26,7 @@ Then('I should arrive at the "new account or login" button', () => {
 });
 
 //2. Tabbing toward title
-When('b. I press the Tab key to navigate to the next focusable element', () => {
+When('I press the Tab key to navigate to the next focusable element - 3', () => {
   cy.tab();
 });
 Then('I should arrive at the page title', () => {
@@ -25,7 +34,7 @@ Then('I should arrive at the page title', () => {
 });
 
 //3. Tabbing toward testimonies
-When('c. I press the Tab key to navigate to the next focusable element', () => {
+When('I press the Tab key to navigate to the next focusable element - 4', () => {
   cy.tab();
 });
 Then('I should arrive at the testimonies', () => {
@@ -33,7 +42,7 @@ Then('I should arrive at the testimonies', () => {
 });
 
 //4. Tabbing toward about link
-When('d. I press the Tab key to navigate to the next focusable element', () => {
+When('I press the Tab key to navigate to the next focusable element - 5', () => {
   cy.tab();
 });
 Then('I should arrive at the "About" link', () => {
@@ -41,9 +50,10 @@ Then('I should arrive at the "About" link', () => {
 });
 
 //5. Tabbing toward about privacy link
-When('e. I press the Tab key to navigate to the next focusable element', () => {
+When('I press the Tab key to navigate to the next focusable element - 6', () => {
   cy.tab();
 });
 Then('I should arrive at the "Privacy" link', () => {
   cy.focused().should('have.attr', 'id', "privacy-link");
 });
+
