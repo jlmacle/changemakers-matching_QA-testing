@@ -16,16 +16,17 @@ Then('I should arrive at the "Skip To New Content" feature', () => {
   cy.focused().should('have.attr', 'id', "skipToMainContent");
 });
 
-//1a. Tabbing toward "new account or login" button
+
+//2. Tabbing toward "new account or login" button
 When('I press the Tab key to navigate to the next focusable element - 2', () => {
-  cy.tab();
+  
   cy.tab();
 });
 Then('I should arrive at the "new account or login" button', () => {
   cy.focused().should('have.attr', 'id', "newAccountOrLogin-button");
 });
 
-//2. Tabbing toward title
+//3. Tabbing toward title
 When('I press the Tab key to navigate to the next focusable element - 3', () => {
   cy.tab();
 });
@@ -33,7 +34,7 @@ Then('I should arrive at the page title', () => {
   cy.focused().should('have.attr', 'id', "homePageTitle-link");
 });
 
-//3. Tabbing toward testimonies
+//4. Tabbing toward testimonies
 When('I press the Tab key to navigate to the next focusable element - 4', () => {
   cy.tab();
 });
@@ -41,7 +42,7 @@ Then('I should arrive at the testimonies', () => {
   cy.focused().should('have.attr', 'id', "testimonies");
 });
 
-//4. Tabbing toward about link
+//5. Tabbing toward about link
 When('I press the Tab key to navigate to the next focusable element - 5', () => {
   cy.tab();
 });
@@ -49,7 +50,7 @@ Then('I should arrive at the "About" link', () => {
   cy.focused().should('have.attr', 'id', "about-link");
 });
 
-//5. Tabbing toward about privacy link
+//6. Tabbing toward about privacy link
 When('I press the Tab key to navigate to the next focusable element - 6', () => {
   cy.tab();
 });

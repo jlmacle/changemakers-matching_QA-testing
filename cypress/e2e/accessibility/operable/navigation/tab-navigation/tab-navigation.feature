@@ -15,10 +15,9 @@ Scenario: Tab Navigation on the Home Page
   When I press the Tab key to navigate to the next focusable element - 1
   Then I should arrive at the "Skip To New Content" feature
 
-  Given I am on the home page
   When I press the Tab key to navigate to the next focusable element - 2
   Then I should arrive at the "new account or login" button
-  
+
   When I press the Tab key to navigate to the next focusable element - 3
   Then I should arrive at the page title
 
