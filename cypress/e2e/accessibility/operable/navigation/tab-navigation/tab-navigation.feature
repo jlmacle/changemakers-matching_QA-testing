@@ -12,22 +12,22 @@ Scenario: Tab Navigation on the Home Page
 
   #Steps
   Given I am on the home page
-  When I press the Tab key to navigate to the next focusable element - 1
-  Then I should arrive at the "Skip To New Content" feature
+  When  I press the Tab key to navigate to the next focusable element
+  Then  I should arrive at the "Skip To New Content" feature
 
-  When I press the Tab key to navigate to the next focusable element - 2
+  When I press the Tab key to navigate to the next focusable element
   Then I should arrive at the "new account or login" button
 
-  When I press the Tab key to navigate to the next focusable element - 3
+  When I press the Tab key to navigate to the next focusable element
   Then I should arrive at the page title - home page
 
-  When I press the Tab key to navigate to the next focusable element - 4
+  When I press the Tab key to navigate to the next focusable element
   Then I should arrive at the testimonies
 
-  When I press the Tab key to navigate to the next focusable element - 5
+  When I press the Tab key to navigate to the next focusable element
   Then I should arrive at the "About" link
 
-  When I press the Tab key to navigate to the next focusable element - 6
+  When I press the Tab key to navigate to the next focusable element
   Then I should arrive at the "Privacy" link
 
 
@@ -43,7 +43,7 @@ Scenario: Tab Navigation on the Representative Page
 
   #Steps
   Given I am on the representative page
-  When  I press the Tab key - 1
+  When  I press the Tab key to navigate to the next focusable element
   Then  I should arrive at the page title - representative page
 
   When  I press the Tab key - 2
@@ -52,10 +52,10 @@ Scenario: Tab Navigation on the Representative Page
   When  I press the Tab key - 3
   Then  I should arrive at the password field
 
-  When I press the Tab key to navigate to the next focusable element - 4 - representative page
+  When I press the Tab key to navigate to the next focusable element
   Then I should arrive at the "About" link - representative page
 
-  When I press the Tab key to navigate to the next focusable element - 5 - representative page
+  When I press the Tab key to navigate to the next focusable element
   Then I should arrive at the "Privacy" link - representative page
   
 

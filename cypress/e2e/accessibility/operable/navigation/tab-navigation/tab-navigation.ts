@@ -71,7 +71,7 @@ Given('I am on the representative page', () => {
 });
 
 //1. Tabbing toward title
-When('I press the Tab key - 1', () => {
+When('I press the Tab key to navigate to the next focusable element', () => {
   cy.tab();
 });
 Then('I should arrive at the page title - representative page', () => {
