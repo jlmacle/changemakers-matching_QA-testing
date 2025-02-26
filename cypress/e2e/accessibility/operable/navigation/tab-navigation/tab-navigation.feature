@@ -46,10 +46,10 @@ Scenario: Tab Navigation on the Representative Page
   When  I press the Tab key to navigate to the next focusable element
   Then  I should arrive at the page title - representative page
 
-  When  I press the Tab key - 2
+  When  I press the Tab key to navigate to the next focusable element
   Then  I should arrive at the username field
 
-  When  I press the Tab key - 3
+  When  I press the Tab key to navigate to the next focusable element
   Then  I should arrive at the password field
 
   When I press the Tab key to navigate to the next focusable element
