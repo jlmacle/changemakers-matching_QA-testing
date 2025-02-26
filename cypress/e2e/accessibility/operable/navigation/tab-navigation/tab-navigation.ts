@@ -30,7 +30,7 @@ Then('I should arrive at the "new account or login" button', () => {
 When('I press the Tab key to navigate to the next focusable element - 3', () => {
   cy.tab();
 });
-Then('I should arrive at the page title', () => {
+Then('I should arrive at the page title - home page', () => {
   cy.focused().should('have.attr', 'id', "homePageTitle-link");
 });
 
@@ -58,3 +58,54 @@ Then('I should arrive at the "Privacy" link', () => {
   cy.focused().should('have.attr', 'id', "privacy-link");
 });
 
+
+// **************************************************
+// **************************************************
+
+
+// Scenario: Tab Navigation on the Representative Page
+// **************************************************
+
+Given('I am on the representative page', () => {
+  cy.visit('/www/_html/new-accountProject-representative.html');
+});
+
+//1. Tabbing toward title
+When('I press the Tab key - 1', () => {
+  cy.tab();
+});
+Then('I should arrive at the page title - representative page', () => {
+  cy.focused().should('have.attr', 'id', "homePageTitle-link");
+});
+
+//2. Tabbing toward username field
+When('I press the Tab key - 2', () => {
+  cy.tab();
+});
+Then('I should arrive at the username field', () => {
+  cy.focused().should('have.attr', 'id', "username");
+});
+
+//3. Tabbing toward password field
+When('I press the Tab key - 3', () => {
+  cy.tab();
+});
+Then('I should arrive at the password field', () => {
+  cy.focused().should('have.attr', 'id', "password");
+});
+
+//4. Tabbing toward about link
+When('I press the Tab key to navigate to the next focusable element - 4 - representative page', () => {
+  cy.tab();
+});
+Then('I should arrive at the "About" link - representative page', () => {
+  cy.focused().should('have.attr', 'id', "about-link");
+});
+
+//5. Tabbing toward about privacy link
+When('I press the Tab key to navigate to the next focusable element - 5 - representative page', () => {
+  cy.tab();
+});
+Then('I should arrive at the "Privacy" link - representative page', () => {
+  cy.focused().should('have.attr', 'id', "privacy-link");
+});
