@@ -3,9 +3,7 @@
   "version": "1.0.0",
   "description": "End to end testing for the changemakers matching project.",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+  "scripts": {},
   "author": "",
   "license": "MIT",
   "dependencies": {
@@ -16,5 +14,9 @@
     "cypress": "^14.0.1",
     "cypress-cucumber-preprocessor": "^4.3.1",
     "cypress-esbuild-preprocessor": "^1.0.2"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.50.1",
+    "@types/node": "^22.13.5"
   }
 }
