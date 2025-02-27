@@ -12,10 +12,7 @@ Reporting with Allure:
 https://allurereport.org/docs/install-for-nodejs/ 
 
 
--------------
-Automation server:
-https://www.jenkins.io/download/
-https://www.jenkins.io/doc/book/installing/war-file/ 
+
 
 
 
