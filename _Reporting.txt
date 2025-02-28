@@ -4,3 +4,11 @@ rm -r allure-results
 npx cypress run 
 npx allure generate --clean
 npx allure serve -h 127.0.0.1
+
+-------------
+
+Reporting with Playwright:
+
+npx playwright test
+
+npx playwright show-report
