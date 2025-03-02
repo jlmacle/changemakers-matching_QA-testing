@@ -1,7 +1,7 @@
 Reporting with Allure:
 
 rm -r allure-results
-npx cypress run 
+npx cypress run / npx cypress open
 npx allure generate --clean
 npx allure serve -h 127.0.0.1
 
