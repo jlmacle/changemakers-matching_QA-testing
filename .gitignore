@@ -413,7 +413,7 @@ FodyWeavers.xsd
 *.sln.iml
 
 # Playwright
-/test-results/
+/playwright-results/
 /playwright-report/
 /blob-report/
 /playwright/.cache/
