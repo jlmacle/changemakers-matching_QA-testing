@@ -7,8 +7,8 @@ Given('I am on the new account project representative page', () => {
 // Scenario: valid username
 // *****************************************
 
-When('The user enters "Valid_user_name_123" in the username field', () => {
-  cy.get('#username').type('Valid_user_name_123');
+When('The user enters "Valid_123" in the username field', () => {
+  cy.get('#username').type('Valid_123');
 });
 
 Then('The username validation message should display "✅ The username is valid."', () => {
@@ -22,6 +22,6 @@ When('The user enters "abc" in the username field', () => {
   cy.get('#username').type("abc");
 });
 
-Then('The username validation message should display "⚠️ The username must be at least 4 characters long."', () => {
-  cy.get('#newAccount-projRep-errorInUsername').should('contain', '⚠️ The username must be at least 4 characters long.');
+Then('The username validation message should display "⚠️ The username must between 4 and 10 characters long."', () => {
+  cy.get('#newAccount-projRep-errorInUsername').should('contain', '⚠️ The username must between 4 and 10 characters long.');
 });
