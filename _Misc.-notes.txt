@@ -1,5 +1,9 @@
-Parentheses seem to be an issue 
+Cucumber with Cypress: Parentheses seem to be an issue 
 when processing the step labels
+
+Cucumber with Playwright: as of 03/07/25, 
+I couldn't find mainstream information concerning
+using successfully baseURL when @cucumber/cucumber and features used.
 
 https://playwright.dev/docs/test-parallel 
 "Playwright Test runs tests in parallel. 
