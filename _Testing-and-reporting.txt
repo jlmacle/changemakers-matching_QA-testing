@@ -12,3 +12,8 @@ Reporting with Playwright:
 npx playwright test
 
 npx playwright show-report
+
+-------------
+
+Common Screen Resolutions in 2025: Mobile, Desktop & Tablet
+https://www.browserstack.com/guide/common-screen-resolutions
