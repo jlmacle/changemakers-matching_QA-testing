@@ -34,5 +34,6 @@ IFS=',' read -r -A viewports <<< "$viewport_sizes"
   done
 } > "$output_file"
 
+
 # Confirmation message
 echo "Feature file '$output_file' generated successfully!"
