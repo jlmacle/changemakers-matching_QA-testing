@@ -31,6 +31,12 @@ npx playwright show-report
 Reporting with Allure:
 https://allurereport.org/docs/install-for-nodejs/ 
 
+-------------
+
+Scripting with Python to avoid the cognitive complexity of shell scripting
+https://www.python.org/downloads/release/python-3132/
+
+md5 python-3.13.2-macos11.pkg --check=9916903cff14723bdbc41e3ed5530eeb
 
 
 
