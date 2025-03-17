@@ -39,15 +39,8 @@ with open(outputfile,'w') as output_file:
         scenario_line = scenario_root+" "+'"'+feature_variation+'"'+" "+"on viewport size"+" "+viewport
         output_file.write("\t"+scenario_line+"\n")
         output_file.write("\t\t"+given_line+"\n")
-        and_line = "And"+"\t"+"The viewport size is"+" "+viewport
+        and_line = "And"+"\t\t"+"The viewport size is"+" "+viewport
         output_file.write("\t\t"+and_line+"\n")
         output_file.write("\t\t"+when_line+"\n")
         output_file.write("\t\t"+then_line+"\n")
         output_file.write("\n\n")
-
-print(feature_line)
-print(scenario_line)
-print(given_line)
-print(and_line)
-print(when_line)
-print(then_line)
