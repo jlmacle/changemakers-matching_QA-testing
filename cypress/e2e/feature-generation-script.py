@@ -5,18 +5,18 @@ import os
 viewports = ["1920×1080", "1366×768", "1536×864", "1280×720", "360×800", "390×844", "393×873", "412×915", "768×1024", "1280×800", "800×1280", "820×1180"
 ]
 
-feature_variation = "Valid_123"
+feature_variation = "abc"
 
 # Building the file name
-root_feature_name = "valid-username-"
-outputfile = root_feature_name + feature_variation + "-displays" + ".feature"
+root_feature_name = "invalid-username-"
+outputfile = root_feature_name + feature_variation + "-displays-username-constraints" + ".feature"
 
 # Building the "Feature" line
-feature_title = "Username validation: valid username: " + feature_variation 
+feature_title = "Username validation: invalid username: " + feature_variation 
 feature_line = "Feature: " + feature_title 
 
 # Building the "Scenario" line
-scenario_root = "Scenario: "+"The user enters valid username"
+scenario_root = "Scenario: "+"The user enters invalid username"
 
 # Building the "Given" line
 given_line = "Given"+"\t"+"I am on the new account project representative page"
@@ -27,7 +27,7 @@ when_line_part2 = "in the username field"
 when_line = when_line_root+" "+'"'+feature_variation+'"'+" "+when_line_part2
 
 # Building the "Then" line
-then_line = "Then"+"\t"+"The username validation message should display"+" "+'"✅ The username is valid."'
+then_line = "Then"+"\t"+"The username validation message should display"+" "+'"⚠️ The username must between 4 and 10 characters long."'
 
 if os.path.exists(outputfile):
     os.remove(outputfile)
