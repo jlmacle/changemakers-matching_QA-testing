@@ -1,6 +1,5 @@
 import { Given, When, Then } from '@badeball/cypress-cucumber-preprocessor';
 
-
 // Scenario: Tab Navigation on the Home Page
 // *****************************************
 
