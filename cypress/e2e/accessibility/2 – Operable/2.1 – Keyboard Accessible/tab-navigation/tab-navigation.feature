@@ -10,8 +10,8 @@ Scenario: Tab Navigation on the Home Page
   I want to navigate through the home page elements using the Tab key,
   So that I can confirm that the correct elements receive focus in the expected order.
 
-  #Steps
   Given I am on the home page
+
   When  I press the Tab key to navigate to the next focusable element
   Then  I should arrive at the "Skip To New Content" feature
 
@@ -41,8 +41,8 @@ Scenario: Tab Navigation on the Representative Page
   I want to navigate through the representative page elements using the Tab key,
   So that I can confirm that the correct elements receive focus in the expected order.
 
-  #Steps
   Given I am on the representative page
+  
   When  I press the Tab key to navigate to the next focusable element
   Then  I should arrive at the page title - representative page
 
