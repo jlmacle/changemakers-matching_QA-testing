@@ -27,34 +27,6 @@ Alt + Shift + L: list of lists
 Alt + Shift + I: list of list items 
 https://help.gnome.org/users/orca/stable/commands_structural_navigation.html.en
 
---------------------------------------------------------------------------------
 
-Potential inspiration:
-https://www.bretignolles-sur-mer.fr/
-
---------------------------------------------------------------------------------
-
-What should be:
-1. Perceivable
-2. Operable
-3. Understandable
-4. Robust
-in the website?
-
---------------------------------------------------------------------------------
-Todo:
-The focus is not seen at the first tab on the home page.(2 tabs needed)
-
-https://www.linkedin.com/feed/update/urn:li:activity:7282670115664396288?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7282670115664396288%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29
-"Support spaces and copy/paste when typing into form fields."
-"X icon is remarkably confusing, name it explicitly"
-"Include nav landmarks, so users can jump within the page quickly."
-
-
-Misc.
-https://www.linkedin.com/feed/update/urn:li:activity:7282670115664396288?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7282670115664396288%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29
-"Blue is the safest hue for users to perceive color as you do."
-"Avoid superscript, use same letter size instead (1st, 2nd)."
-
-https://www.linkedin.com/feed/update/urn:li:activity:7287043690986962944?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7287043690986962944%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29
-Screen readers insights.
+About the accessibility tree
+https://developer.chrome.com/blog/full-accessibility-tree
