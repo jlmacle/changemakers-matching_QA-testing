@@ -15,7 +15,7 @@ with open(output_file, 'w') as f:
         width, height = viewport.split('×')
         
         f.write(f"\tGiven('The viewport size is {viewport}', () => {{\n")
-        f.write(f"\t\tcy.viewport({width}, {height});\n")
+        f.write(f"\t\tcy.viewport({width},{height});\n")
         f.write(f"\t}});\n")
         f.write("\n")
 
