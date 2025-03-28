@@ -19,15 +19,15 @@ feature_line = "Feature: " + feature_title
 scenario_root = "Scenario: "+"The user enters invalid username"
 
 # Building the "Given" line
-given_line = "Given"+"\t"+"I am on the new account project representative page"
+given_line = "Given"+" "+"I am on the new account project representative page"
 
 # Building the "When" line
-when_line_root = "When"+"\t"+"The user enters"
+when_line_root = "When"+" "+"The user enters"
 when_line_part2 = "in the username field"
 when_line = when_line_root+" "+'"'+feature_variation+'"'+" "+when_line_part2
 
 # Building the "Then" line
-then_line = "Then"+"\t"+"The username validation message should display"+" "+'"⚠️ The username must between 4 and 10 characters long."'
+then_line = "Then"+" "+"The username validation message should display"+" "+'"⚠️ The username must between 4 and 10 characters long."'
 
 if os.path.exists(outputfile):
     os.remove(outputfile)
@@ -39,7 +39,7 @@ with open(outputfile,'w') as output_file:
         scenario_line = scenario_root+" "+'"'+feature_variation+'"'+" "+"on viewport size"+" "+viewport
         output_file.write("\t"+scenario_line+"\n")
         output_file.write("\t\t"+given_line+"\n")
-        and_line = "And"+"\t\t"+"The viewport size is"+" "+viewport
+        and_line = "And"+" "+"The viewport size is"+" "+viewport
         output_file.write("\t\t"+and_line+"\n")
         output_file.write("\t\t"+when_line+"\n")
         output_file.write("\t\t"+then_line+"\n")
