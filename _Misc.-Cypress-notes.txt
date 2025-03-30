@@ -1,0 +1,13 @@
+Cucumber with Cypress: 
+    - Parentheses seem to be an issue 
+when processing the step labels
+    - Using tabs, instead of spaces, after Given, When,... got the steps to be ignored.
+
+-----
+
+should('be.visible')
+https://docs.cypress.io/app/references/assertions#Visibility 
+
+"// retry until the element with
+// data-testid "form-submit" is visible
+cy.get('[data-testid="form-submit"]').should('be.visible')"
