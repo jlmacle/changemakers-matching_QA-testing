@@ -3,9 +3,10 @@ import { Given, When, Then } from '@badeball/cypress-cucumber-preprocessor';
   // Scenario: valid username "Valid_123"
   Given('I am on the new account project representative page', () => {
     cy.visit('/www/_html/new-accountProject-representative.html');
+    cy.get('body').should('be.visible');
   });
 
-	// Given section   *****************************************
+	// Viewports Given section   *****************************************
   Given('The viewport size is 1920×1080', () => {
 	cy.viewport(1920,1080);
   });
@@ -53,12 +54,17 @@ import { Given, When, Then } from '@badeball/cypress-cucumber-preprocessor';
   Given('The viewport size is 820×1180', () => {
 	cy.viewport(820,1180);
   });
-  // Given section   *****************************************
+  // Viewports Given section   *****************************************
 
   When('The user enters "Valid_123" in the username field', () => {
-    cy.get('#username').type('Valid_123');
+    cy.get('#username')
+    .should('be.visible')
+    .clear()
+    .type('Valid_123');
   });
 
   Then('The username validation message should display "✅ The username is valid."', () => {
-    cy.get('#newAccount-projRep-errorInUsername').should('contain', '✅ The username is valid.');
+    cy.get('#newAccount-projRep-errorInUsername')
+    .should('be.visible')
+    .should('contain', '✅ The username is valid.');
   });
