@@ -68,4 +68,4 @@ Then('The username validation message should display "⚠️ The username must b
   cy.get('#newAccount-projRep-errorInUsername')
   .should('be.visible')
   .should('contain', '⚠️ The username must between 4 and 10 characters long.');  
-});
+}); 
