@@ -5,11 +5,12 @@ Feature: Username validation: invalid username: too short: parentalité
 		When The user enters "parentalité" in the username field
 		Then The username validation message should display
 		  """
-			⚠️ Invalid character present. <br>The username can only contain lowercase letters (without accents), numbers and underscores.
+		⚠️ Invalid character present. <br>The username can only contain lowercase letters (without accents), numbers and underscores.
 		  """
 
 	Examples: 
 		|	viewport	|
+		#
 		|	1920×1080	|
 		|	1366×768	|
 		|	1536×864	|
