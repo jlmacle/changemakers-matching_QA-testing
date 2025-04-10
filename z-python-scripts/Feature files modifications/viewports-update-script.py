@@ -135,6 +135,7 @@ def modify_feature_file(input_file, output_file, viewport_sizes, force=False):
         
         # Generate new examples section from viewport_sizes
         new_examples = "Examples:\n"  # Add the Examples line back
+        new_examples += "\t\t| viewport   |"
         
         # Add each device category and its viewport sizes
         for device_type, sizes in viewport_sizes.items():
