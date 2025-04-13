@@ -1,4 +1,4 @@
-Feature: Username validation: invalid username: too short: parentalité
+Feature: Username validation: invalid username: invalid character: parentalité
 	Scenario: The user enters invalid username "parentalité" on viewport size is <viewport>
 		Given I am on the new account project representative page
 		And The viewport size is <viewport>
