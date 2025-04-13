@@ -1,8 +1,8 @@
-Feature: Username validation: invalid username: invalid character: parentalité
-	Scenario: The user enters invalid username "parentalité" on viewport size is <viewport>
+Feature: Username validation: invalid username: invalid character: équipe
+	Scenario: The user enters invalid username "équipe" on viewport size is <viewport>
 		Given I am on the new account project representative page
 		And The viewport size is <viewport>
-		When The user enters "parentalité" in the username field
+		When The user enters "équipe" in the username field
 		Then The username validation message should display
 		  """
 		⚠️ Invalid character present. <br>The username can only contain lowercase letters (without accents), numbers and underscores.
