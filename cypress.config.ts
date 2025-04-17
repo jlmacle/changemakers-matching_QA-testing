@@ -8,6 +8,10 @@ import { allureCypress } from "allure-cypress/reporter";
 export default defineConfig({
   projectId: '79ph2x',
   e2e: {
+    retries: {
+      runMode: 2,
+      openMode: 2
+    },    
     baseUrl: 'http://127.0.0.1:3000',
     experimentalStudio: true,
     video: true, // Enable or disable video recording
