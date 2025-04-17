@@ -1,4 +1,4 @@
-import { Given, When, Then } from '@badeball/cypress-cucumber-preprocessor';
+import { Given } from '@badeball/cypress-cucumber-preprocessor';
 
 Given('I am on the new account project representative page', () => {
   cy.visit('/www/_html/new-accountProject-representative.html');
