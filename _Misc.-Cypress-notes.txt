@@ -3,3 +3,7 @@ Cucumber with Cypress:
 when processing the step labels
     - Using tabs, instead of spaces, after Given, When,... got the steps to be ignored.
 
+---
+Use of data-cy as one of Cypress' best practices 
+https://docs.cypress.io/app/core-concepts/best-practices
+
