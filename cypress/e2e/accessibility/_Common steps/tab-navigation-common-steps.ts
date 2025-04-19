@@ -9,19 +9,19 @@ When('I press the Tab key to navigate to the next focusable element', () => {
 Then('I should arrive at the page title - home page', () => {
   cy.focused()
   .should('be.visible')
-  .should('have.attr', 'id', "homePageTitle-link");
+  .should('have.attr', 'data-cy', "homePageTitle-link");
 });
 
 // Testing focused element: "About" link
 Then('I should arrive at the "About" link', () => {
   cy.focused()
   .should('be.visible')
-  .should('have.attr', 'id', "about-link");
+  .should('have.attr', 'data-cy', "about-link");
 });
 
 // Testing focused element: "Privacy" link
 Then('I should arrive at the "Privacy" link', () => {
   cy.focused()
   .should('be.visible')
-  .should('have.attr', 'id', "privacy-link");
+  .should('have.attr', 'data-cy', "privacy-link");
 });
