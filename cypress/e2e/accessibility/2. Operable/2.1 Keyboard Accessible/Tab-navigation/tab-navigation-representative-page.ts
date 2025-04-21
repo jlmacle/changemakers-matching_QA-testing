@@ -12,21 +12,21 @@ Given('I am on the representative page', () => {
 Then('I should arrive at the page title', () => {
   cy.focused()
   .should('be.visible')
-  .should('have.attr', 'id', "homePageTitle-link");
+  .should('have.attr', 'data-cy', "homePageTitle-link");
 });
 
 //2. Tabbing toward username field (Tabbing step externalized)
 Then('I should arrive at the username field', () => {
   cy.focused()
   .should('be.visible')
-  .should('have.attr', 'id', "username");
+  .should('have.attr', 'data-cy', "username");
 });
 
 //3. Tabbing toward password field (Tabbing step externalized)
 Then('I should arrive at the password field', () => {
   cy.focused()
   .should('be.visible')
-  .should('have.attr', 'id', "password");
+  .should('have.attr', 'data-cy', "password");
 });
 
 //4. Tabbing toward about link (Tabbing step externalized)
