@@ -15,6 +15,7 @@
     "cypress": "^14.0.1",
     "cypress-cucumber-preprocessor": "^4.3.1",
     "cypress-esbuild-preprocessor": "^1.0.2",
+    "lighthouse": "^12.5.1",
     "playwright": "^1.51.1"
   },
   "devDependencies": {
