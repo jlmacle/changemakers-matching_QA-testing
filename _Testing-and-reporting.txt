@@ -1,20 +1,3 @@
-Reporting with Allure:
-
-rm -r allure-results
-npx cypress run / npx cypress open
-npx allure generate --clean
-npx allure serve -h 127.0.0.1
-
--------------
-
-Reporting with Playwright:
-
-npx playwright test
-
-npx playwright show-report
-
--------------
-
 Common Screen Resolutions in 2025: Mobile, Desktop & Tablet
 https://www.browserstack.com/guide/common-screen-resolutions
 
