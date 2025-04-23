@@ -1,4 +1,4 @@
-Testing:
+Node
 
 - Nodejs (https://nodejs.org/en/download)
 [Nodejs' bin directory might need to be added the PATH]
@@ -8,8 +8,6 @@ Testing:
 Cypress
 
 “npm install” at the root of the testing directory 
-
-npx cypress open
 
 -------------
 
@@ -22,14 +20,15 @@ Do you want to use TypeScript or JavaScript? · TypeScript
 ✔ Add a GitHub Actions workflow? (y/N) · false
 ✔ Install Playwright browsers (can be done manually via 'npx playwright install')? (Y/n) · true
 
-npx playwright test
+-------------
 
-npx playwright show-report
+Allure:
+https://allurereport.org/docs/install-for-nodejs/ 
 
 -------------
 
-Reporting with Allure:
-https://allurereport.org/docs/install-for-nodejs/ 
+Lighthouse
+https://www.npmjs.com/package/lighthouse 
 
 -------------
 
