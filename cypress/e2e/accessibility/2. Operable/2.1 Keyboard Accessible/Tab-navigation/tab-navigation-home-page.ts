@@ -17,7 +17,7 @@ Then('I should arrive at the "Skip To New Content" feature', () => {
 
 
 //2. Tabbing toward "new account or login" button (Tabbing step externalized)
-Then('I should arrive at the "new account or login" button', () => {
+Then('I should arrive at the "New account - Login" button', () => {
   cy.focused()
   .should('be.visible')
   .should('have.attr', 'data-cy', "newAccountOrLogin-button");
