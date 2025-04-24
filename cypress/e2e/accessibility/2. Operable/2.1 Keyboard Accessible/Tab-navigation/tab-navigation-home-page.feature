@@ -12,7 +12,7 @@ Scenario: Tab Navigation on the Home Page
   Then  I should arrive at the "Skip To New Content" feature
 
   When I press the Tab key to navigate to the next focusable element
-  Then I should arrive at the "new account or login" button
+  Then I should arrive at the "New account - Login" button
 
   When I press the Tab key to navigate to the next focusable element
   Then I should arrive at the page title - home page
