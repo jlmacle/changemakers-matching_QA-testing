@@ -21,7 +21,9 @@ export default defineConfig({
     async setupNodeEvents(on, config) {      
       on("file:preprocessor", createBundler({ plugins: [createEsbuildPlugin(config)] }));
       await addCucumberPreprocessorPlugin(on, config);
-      allureCypress(on, config);           
+      allureCypress(on, config, {
+        resultsDir: "./z-allure-results"
+      });           
       return config;
     },
     env: {
