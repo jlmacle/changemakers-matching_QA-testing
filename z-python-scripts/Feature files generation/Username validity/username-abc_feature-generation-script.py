@@ -26,7 +26,7 @@ when_line_part2 = "in the username field"
 when_line = when_line_root+" "+'"'+feature_variation+'"'+" "+when_line_part2
 
 # Building the "Then" line
-then_line = "Then"+" "+"The username validation message should display"+" "+'"⚠️ The username must between 4 and 10 characters long."'
+then_line = "Then"+" "+"the username validation message should display"+" "+'"⚠️ The username must between 4 and 10 characters long."'
 
 if os.path.exists(outputfile):
     os.remove(outputfile)
@@ -37,7 +37,7 @@ with open(outputfile,'w') as output_file:
     scenario_line = scenario_root+" "+'"'+feature_variation+'"'+" on viewport size is <viewport>"
     output_file.write("\t"+scenario_line+"\n")
     output_file.write("\t\t"+given_line+"\n")
-    and_line = "And"+" "+"The viewport size is <viewport>"
+    and_line = "And"+" "+"the viewport size is <viewport>"
     output_file.write("\t\t"+and_line+"\n")
     output_file.write("\t\t"+when_line+"\n")
     output_file.write("\t\t"+then_line+"\n")

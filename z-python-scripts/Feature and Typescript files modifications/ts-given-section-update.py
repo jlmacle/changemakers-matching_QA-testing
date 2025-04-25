@@ -64,7 +64,7 @@ def generate_given_section_file(viewport_sizes, output_file):
                 for viewport in sizes:
                     try:
                         width, height = viewport.split('×')
-                        f.write(f"Given('The viewport size is {viewport}', () => {{\n")
+                        f.write(f"Given('the viewport size is {viewport}', () => {{\n")
                         f.write(f"\tcy.viewport({width},{height});\n")
                         f.write(f"}});\n\n")
                     except ValueError:
