@@ -7,6 +7,7 @@ import { OrtoniReportConfig } from "ortoni-report";
 // import dotenv from 'dotenv';
 // import path from 'path';
 // dotenv.config({ path: path.resolve(__dirname, '.env') });
+
 const reportConfig: OrtoniReportConfig = {
   open: process.env.CI ? "never" : "always", // default to never
   folderPath: "z-playwright-report",
