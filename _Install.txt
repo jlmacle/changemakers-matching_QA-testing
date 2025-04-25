@@ -20,6 +20,10 @@ Do you want to use TypeScript or JavaScript? · TypeScript
 ✔ Add a GitHub Actions workflow? (y/N) · false
 ✔ Install Playwright browsers (can be done manually via 'npx playwright install')? (Y/n) · true
 
+
+Ortoni Report
+https://www.npmjs.com/package/ortoni-report 
+
 -------------
 
 Allure:
