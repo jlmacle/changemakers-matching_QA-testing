@@ -1,5 +1,5 @@
 import { defineConfig, devices } from '@playwright/test';
-
+import { OrtoniReportConfig } from "ortoni-report"; 
 /**
  * Read environment variables from file.
  * https://github.com/motdotla/dotenv
@@ -7,13 +7,34 @@ import { defineConfig, devices } from '@playwright/test';
 // import dotenv from 'dotenv';
 // import path from 'path';
 // dotenv.config({ path: path.resolve(__dirname, '.env') });
-
+const reportConfig: OrtoniReportConfig = {
+  open: process.env.CI ? "never" : "always", // default to never
+  folderPath: "z-playwright-report",
+  filename: "index.html",
+  //logo:"logo.{png, jpg}",
+  title: "Playwright Test Report (Ortoni format)",
+  showProject: !true,
+  projectName: "Changemakers matching",
+  testType: "e2e",
+  authorName: "JL",
+  base64Image: false,
+  stdIO: false,
+  preferredTheme: "light",
+  meta: {
+    //project: "Playwright",
+    //version: "3.0.0",
+    description: "Playwright test report",
+    //testCycle: "1",
+    release: "1.0.0",
+    platform: "macOS",
+  },
+};
 /**
  * See https://playwright.dev/docs/test-configuration.
  */
 export default defineConfig({
-  testDir: './playwright-tests',
-  outputDir: 'playwright-results',
+  testDir: 'c-playwright-tests',
+  outputDir: 'z-playwright-results',
   /* Run tests in files in parallel */
   fullyParallel: true,
   /* Fail the build on CI if you accidentally left test.only in the source code. */
@@ -23,7 +44,8 @@ export default defineConfig({
   /* Opt out of parallel tests on CI. */
   workers: process.env.CI ? 1 : undefined,
   /* Reporter to use. See https://playwright.dev/docs/test-reporters */
-  reporter: 'html',
+  reporter: [["ortoni-report", reportConfig]],
+  /*reporter: [['html', { outputFolder: 'z-playwright-report' }]],*/
   /* Shared settings for all the projects below. See https://playwright.dev/docs/api/class-testoptions. */
   use: {
     /* Base URL to use in actions like `await page.goto('/')`. */
