@@ -1,9 +1,9 @@
 Feature: Username validation: valid username: Valid_123
 	Scenario: The user enters valid username "Valid_123" on viewport size is <viewport>
 		Given I am on the new account project representative page
-		And The viewport size is <viewport>
-		When The user enters "Valid_123" in the username field
-		Then The username validation message should display "✅ The username is valid."
+		And the viewport size is <viewport>
+		When the user enters "Valid_123" in the username field
+		Then the username validation message should display "✅ The username is valid."
 
 
 	Examples:
