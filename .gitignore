@@ -1,4 +1,7 @@
 .DS_Store
+
+# Cypress 
+
 cypress/.DS_Store
 cypress/e2e/.DS_Store
 cypress/e2e/accessibility/.DS_Store
@@ -7,8 +10,14 @@ cypress/e2e/accessibility/operable/.DS_Store
 cypress/screenshots/
 cypress/videos/
 
-allure-report/
-allure-results/
+# Allure
+z-allure-results/
+
+# Playwright
+z-playwright-report
+z-playwright-results/
+/blob-report/
+/playwright/.cache/
 
 # From the python utility scripts
 z-misc-python-scripts/output.txt
@@ -415,8 +424,4 @@ FodyWeavers.xsd
 # JetBrains Rider
 *.sln.iml
 
-# Playwright
-/playwright-results/
-/playwright-report/
-/blob-report/
-/playwright/.cache/
+
