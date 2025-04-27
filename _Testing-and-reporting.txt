@@ -1,3 +1,13 @@
+npx cypress open
+
+-------------
+
+VS Code extension
+https://marketplace.visualstudio.com/items/?itemName=ms-playwright.playwright 
+npx playwright test --ui
+
+-------------
+
 Common Screen Resolutions in 2025: Mobile, Desktop & Tablet
 https://www.browserstack.com/guide/common-screen-resolutions
 
