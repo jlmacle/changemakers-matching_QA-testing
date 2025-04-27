@@ -8,12 +8,7 @@ Given('I am on the representative page', () => {
   cy.get('body').should('be.visible');
 });
 
-//1. Tabbing toward title (Tabbing step externalized)
-Then('I should arrive at the page title', () => {
-  cy.focused()
-  .should('be.visible')
-  .should('have.attr', 'data-cy', "homePageTitle-link");
-});
+//1. Tabbing toward title (Tabbing step and focused element testing externalized)
 
 //2. Tabbing toward username field (Tabbing step externalized)
 Then('I should arrive at the username field', () => {

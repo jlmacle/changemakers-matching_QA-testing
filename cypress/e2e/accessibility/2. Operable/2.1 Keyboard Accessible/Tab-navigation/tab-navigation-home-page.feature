@@ -15,7 +15,7 @@ Scenario: Tab Navigation on the Home Page
   Then I should arrive at the "New account - Login" button
 
   When I press the Tab key to navigate to the next focusable element
-  Then I should arrive at the page title - home page
+  Then I should arrive at the page title
 
   When I press the Tab key to navigate to the next focusable element
   Then I should arrive at the testimonies
