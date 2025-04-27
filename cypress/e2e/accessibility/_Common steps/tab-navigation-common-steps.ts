@@ -6,10 +6,10 @@ When('I press the Tab key to navigate to the next focusable element', () => {
   });
 
 // Testing focused element: Page title link
-Then('I should arrive at the page title - home page', () => {
+Then('I should arrive at the page title', () => {
   cy.focused()
   .should('be.visible')
-  .should('have.attr', 'data-cy', "homePageTitle-link");
+  .should('have.attr', 'data-cy', "title-link");
 });
 
 // Testing focused element: "About" link
