@@ -14,14 +14,14 @@ Given('I am on the representative page', () => {
 Then('I should arrive at the username field', () => {
   cy.focused()
   .should('be.visible')
-  .should('have.attr', 'data-cy', "username");
+  .should('have.attr', 'data-test', "username");
 });
 
 //3. Tabbing toward password field (Tabbing step externalized)
 Then('I should arrive at the password field', () => {
   cy.focused()
   .should('be.visible')
-  .should('have.attr', 'data-cy', "password");
+  .should('have.attr', 'data-test', "password");
 });
 
 //4. Tabbing toward about link (Tabbing step externalized)
