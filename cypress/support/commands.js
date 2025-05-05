@@ -8,6 +8,16 @@
 // https://on.cypress.io/custom-commands
 // ***********************************************
 //
+
+Cypress.Commands.add('typeInUsername', (value) => {
+    return cy
+    .get('[data-test="username"]')
+    .should('be.visible')
+    .clear()
+    .type(value);
+}
+);
+
 //
 // -- This is a parent command --
 // Cypress.Commands.add('login', (email, password) => { ... })
