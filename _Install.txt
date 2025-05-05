@@ -21,6 +21,10 @@ Do you want to use TypeScript or JavaScript? · TypeScript
 ✔ Install Playwright browsers (can be done manually via 'npx playwright install')? (Y/n) · true
 
 
+npx playwright install chromium firefox webkit
+
+-------------
+
 Ortoni Report
 https://www.npmjs.com/package/ortoni-report 
 
