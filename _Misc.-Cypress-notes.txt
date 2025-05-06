@@ -4,6 +4,24 @@ when processing the step labels
     - Using tabs, instead of spaces, after Given, When,... got the steps to be ignored.
 
 ---
-Use of data-cy as one of Cypress' best practices 
+
+Use of data-test as one of Cypress' best practices 
 https://docs.cypress.io/app/core-concepts/best-practices
+
+---
+should('be.visible')
+https://docs.cypress.io/app/references/assertions#Visibility 
+// retry until the element with
+// data-testid "form-submit" is visible
+cy.get('[data-testid="form-submit"]').should('be.visible')
+// retry until the list item with
+// text "write tests" is visible
+cy.contains('[data-testid="todo"] li', 'write tests').should('be.visible')
+
+https://docs.cypress.io/api/commands/get
+https://www.w3schools.com/css/css_selectors.asp
+cy.get(selector)
+cy.get(alias)
+cy.get(selector, options)
+cy.get(alias, options)
 
