@@ -11,3 +11,4 @@ import { Then } from '@badeball/cypress-cucumber-preprocessor';
   Then('the username validation message should display "✅ The username is valid."', () => {
     cy.assertErrorInUsername('✅ The username is valid.');
   });
+  
