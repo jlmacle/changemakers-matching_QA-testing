@@ -24,6 +24,7 @@ Cypress.Commands.add('assertErrorInUsername', (value) => {
     .should('be.visible')
     .should('contain', value);
 });
+
 //
 // -- This is a parent command --
 // Cypress.Commands.add('login', (email, password) => { ... })
