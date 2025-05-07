@@ -18,6 +18,12 @@ Cypress.Commands.add('typeInUsername', (value) => {
 }
 );
 
+Cypress.Commands.add('assertErrorInUsername', (value) => {
+    return cy
+    .get('[data-test="newAccount-projRep-errorInUsername"]')
+    .should('be.visible')
+    .should('contain', value);
+});
 //
 // -- This is a parent command --
 // Cypress.Commands.add('login', (email, password) => { ... })
