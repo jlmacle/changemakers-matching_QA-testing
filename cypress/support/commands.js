@@ -9,6 +9,7 @@
 // ***********************************************
 //
 
+/* Action commands */
 Cypress.Commands.add('typeInUsername', (value) => {
     return cy
     .get('[data-test="username"]')
@@ -18,6 +19,7 @@ Cypress.Commands.add('typeInUsername', (value) => {
 }
 );
 
+/* Assertion commands */
 Cypress.Commands.add('assertErrorInUsername', (value) => {
     return cy
     .get('[data-test="newAccount-projRep-errorInUsername"]')
