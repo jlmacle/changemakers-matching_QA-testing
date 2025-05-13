@@ -1,29 +1,26 @@
 import { test, expect } from '@playwright/test';  
   
-  test('Tab Navigation on the Home Page', async ({ page }) => {
-    await page.goto('/www/index.html');
+  test.afterEach(async ({ page }) => {
+    await page.close();
+  });
 
-    await page.keyboard.press('Tab');
-    let focusedElement = await page.evaluate(() => document.activeElement ? document.activeElement.id : null);
-    expect(focusedElement).toBe("skipToMainContent");
-  
-    await page.keyboard.press('Tab');
-    focusedElement = await page.evaluate(() => document.activeElement ? document.activeElement.id : null);
-    expect(focusedElement).toBe("newAccountOrLogin-button");
-  
-    await page.keyboard.press('Tab');
-    focusedElement = await page.evaluate(() => document.activeElement ? document.activeElement.id : null);
-    expect(focusedElement).toBe("title-link");
-  
-    await page.keyboard.press('Tab');
-    focusedElement = await page.evaluate(() => document.activeElement ? document.activeElement.id : null);
-    expect(focusedElement).toBe("testimonies");
-  
-    await page.keyboard.press('Tab');
-    focusedElement = await page.evaluate(() => document.activeElement ? document.activeElement.id : null);
-    expect(focusedElement).toBe("about-link");
-  
-    await page.keyboard.press('Tab');
-    focusedElement = await page.evaluate(() => document.activeElement ? document.activeElement.id : null);
-    expect(focusedElement).toBe("privacy-link");    
+  test('Tab Navigation on the Home Page', async ({ page }) => {
+    await page.goto('/www/index.html', { waitUntil: 'load' });
+    
+    // Selectors in the order Tab is expected to find them
+    const focusOrder = [
+      '[data-test="skipToMainContent"]',
+      '[data-test="newAccountOrLogin-button"]',
+      '[data-test="title-link"]',
+      '[data-test="testimonies"]',
+      '[data-test="about-link"]',
+      '[data-test="privacy-link"]'
+    ];
+
+    // Stepping through with Tab and asserting focus each time
+    for (const selector of focusOrder) {
+      await page.keyboard.press('Tab');
+      await expect(page.locator(selector)).toBeFocused();
+    }
+ 
   });
