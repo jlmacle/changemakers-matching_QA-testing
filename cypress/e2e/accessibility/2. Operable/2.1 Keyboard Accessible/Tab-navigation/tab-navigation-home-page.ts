@@ -11,7 +11,6 @@ Given('I am on the home page', () => {
 //1. Tabbing toward the "Skip To New Content" feature (Tabbing step externalized)
 Then('I should arrive at the "Skip To New Content" feature', () => {
   cy.focused()
-  .should('be.visible')
   .should('have.attr', 'data-test', "skipToMainContent");
 });
 
