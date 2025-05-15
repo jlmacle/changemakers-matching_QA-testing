@@ -5,22 +5,22 @@ import { test, expect } from '@playwright/test';
   });
 
   test('Tab Navigation on the Home Page', async ({ page }) => {
-    await page.goto('/www/index.html', { waitUntil: 'load' });
-    
-    // Selectors in the order Tab is expected to find them
-    const focusOrder = [
-      '[data-test="skipToMainContent"]',
-      '[data-test="newAccountOrLogin-button"]',
-      '[data-test="title-link"]',
-      '[data-test="testimonies"]',
-      '[data-test="about-link"]',
-      '[data-test="privacy-link"]'
-    ];
+  await page.goto('/www/index.html', { waitUntil: 'load' });
 
-    // Stepping through with Tab and asserting focus each time
-    for (const selector of focusOrder) {
-      await page.keyboard.press('Tab');
-      await expect(page.locator(selector)).toBeFocused();
-    }
- 
-  });
+  // The sequence of data-test values we expect to receive focus
+  const dataTests = [
+    'skipToMainContent',
+    'newAccountOrLogin-button',
+    'title-link',
+    'testimonies',
+    'about-link',
+    'privacy-link'
+  ];
+
+  for (const dataTest of dataTests) {
+    await page.keyboard.press('Tab');
+
+    const focused = page.locator(':focus-visible');
+    await expect(focused).toHaveAttribute('data-test', dataTest);
+  }
+});
