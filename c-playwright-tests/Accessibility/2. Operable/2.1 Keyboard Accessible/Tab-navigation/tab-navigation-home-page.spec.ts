@@ -20,4 +20,6 @@ import { test, expect } from '@playwright/test';
       const focused = page.locator(':focus-visible');
       await expect(focused).toHaveAttribute('data-test', dataTest);
     }
+
+    await page.close();
 });
