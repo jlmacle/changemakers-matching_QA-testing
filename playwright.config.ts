@@ -1,20 +1,12 @@
 import { defineConfig, devices } from '@playwright/test';
 import { OrtoniReportConfig } from "ortoni-report"; 
-/**
- * Read environment variables from file.
- * https://github.com/motdotla/dotenv
- */
-// import dotenv from 'dotenv';
-// import path from 'path';
-// dotenv.config({ path: path.resolve(__dirname, '.env') });
+
 
 const reportConfig: OrtoniReportConfig = {
   open: process.env.CI ? "never" : "always", // default to never
   folderPath: "z-playwright-report",
   filename: "index.html",
-  //logo:"logo.{png, jpg}",
   title: "Playwright Test Report (Ortoni format)",
-  //showProject: !true,
   projectName: "Changemakers matching",
   testType: "e2e",
   authorName: "JL",
@@ -22,11 +14,7 @@ const reportConfig: OrtoniReportConfig = {
   stdIO: false,
   preferredTheme: "light",
   meta: {
-    //project: "Playwright",
-    //version: "3.0.0",
     description: "Playwright test report",
-    //testCycle: "1",
-    release: "1.0.0",
     platform: "macOS",
   },
 };
@@ -36,71 +24,63 @@ const reportConfig: OrtoniReportConfig = {
 export default defineConfig({
   testDir: 'c-playwright-tests',
   outputDir: 'z-playwright-results',
-  /* Run tests in files in parallel */
-  fullyParallel: true,
-  /* Fail the build on CI if you accidentally left test.only in the source code. */
-  forbidOnly: !!process.env.CI,
-  retries: 4,
-  /* Retry on CI only */
-  //retries: process.env.CI ? 3 : 0,
+  /* Running tests sequentially ensures each test gets the full system resources, 
+      avoiding potential conflicts. 
+      https://playwright.dev/docs/ci#workers */
+  fullyParallel: false,
   /* Opt out of parallel tests on CI. */
   workers: process.env.CI ? 1 : undefined,
+  /* Fail the build on CI if you accidentally left test.only in the source code. */
+  forbidOnly: !!process.env.CI,
+  retries: 4,    
   /* Reporter to use. See https://playwright.dev/docs/test-reporters */
   reporter: [["ortoni-report", reportConfig]],
-  /*reporter: [['html', { outputFolder: 'z-playwright-report' }]],*/
   /* Shared settings for all the projects below. See https://playwright.dev/docs/api/class-testoptions. */
   use: {
     /* Base URL to use in actions like `await page.goto('/')`. */
     baseURL: 'http://127.0.0.1:3000',
+    viewport: { width: 1280, height: 720 },  
 
-    /* Collect trace when retrying the failed test. See https://playwright.dev/docs/trace-viewer */
-    trace: 'on-first-retry',
+    /* “We don't recommend setting this to on so that traces are run on every test as it's very performance heavy.”
+        https://playwright.dev/docs/best-practices#debugging-on-ci  */
+    //trace: 'on-first-retry',
 
-    video: 'retain-on-failure',
+    //video: 'retain-on-failure',
   },
 
   /* Configure projects for major browsers */
   projects: [
-    {
-      name: 'chromium',
-      use: { ...devices['Desktop Chrome'] },
-    },
-
-    /* {
-      name: 'firefox',
-      use: { ...devices['Desktop Firefox'] },
-    },
-
-    {
-      name: 'webkit',
-      use: { ...devices['Desktop Safari'] },
-    }, */
-
-    /* Test against mobile viewports. */
-    // {
-    //   name: 'Mobile Chrome',
-    //   use: { ...devices['Pixel 5'] },
-    // },
-    // {
-    //   name: 'Mobile Safari',
-    //   use: { ...devices['iPhone 12'] },
-    // },
-
-    /* Test against branded browsers. */
-    // {
-    //   name: 'Microsoft Edge',
-    //   use: { ...devices['Desktop Edge'], channel: 'msedge' },
-    // },
-    // {
-    //   name: 'Google Chrome',
-    //   use: { ...devices['Desktop Chrome'], channel: 'chrome' },
-    // },
+    // Desktop
+    { name: 'Desktop 1920×1080', 
+      use: { viewport: { width: 1920, height: 1080 } }, 
+      /* tab-navigation-home-page.spec.ts',
+        'tab-navigation-representative-page.spec.ts' tested with this viewport */
+       },
+    { name: 'Desktop 1366×768',  
+      use: { viewport: { width: 1366, height: 768 } } , 
+      testIgnore: [
+        '**/tab-navigation-home-page.spec.ts',
+        '**/tab-navigation-representative-page.spec.ts',
+      ], },
+    { name: 'Desktop 1536×864',  
+      use: { viewport: { width: 1536, height: 864 } }, 
+      testIgnore: [
+        '**/tab-navigation-home-page.spec.ts',
+        '**/tab-navigation-representative-page.spec.ts',
+      ],},
+    { name: 'Desktop 1280×720',  
+      use: { viewport: { width: 1280, height: 720 } }, 
+      testIgnore: [
+        '**/tab-navigation-home-page.spec.ts',
+        '**/tab-navigation-representative-page.spec.ts',
+      ],},
+    
   ],
 
   /* Run your local dev server before starting the tests */
-  // webServer: {
-  //   command: 'npm run start',
-  //   url: 'http://127.0.0.1:3000',
-  //   reuseExistingServer: !process.env.CI,
-  // },
+  /* webServer: {
+    command: 'npm run start',
+    url: 'http://127.0.0.1:3000',
+    reuseExistingServer: !process.env.CI,
+  }, */
 });
