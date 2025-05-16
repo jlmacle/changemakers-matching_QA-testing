@@ -7,7 +7,6 @@
   "author": "",
   "license": "MIT",
   "dependencies": {
-    "@playwright/test": "^1.51.1",
     "allure-commandline": "^2.32.0",
     "allure-cypress": "^3.1.0",
     "allure-js-commons": "^3.1.0",
@@ -20,6 +19,7 @@
     "playwright": "^1.51.1"
   },
   "devDependencies": {
+    "@playwright/test": "^1.52.0",
     "@types/node": "^22.13.5"
   }
 }
