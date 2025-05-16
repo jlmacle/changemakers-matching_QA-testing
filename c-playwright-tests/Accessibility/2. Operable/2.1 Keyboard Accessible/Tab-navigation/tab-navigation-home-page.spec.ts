@@ -5,7 +5,7 @@ import { test, expect } from '@playwright/test';
   test('Tab Navigation on the Home Page', async ({ page }) => {
     await page.goto('/www/index.html', { waitUntil: 'load' });
 
-    // The sequence of data-test values we expect to receive focus
+    // The sequence of data-test values we expect
     const dataTests = [
       'skipToMainContent',
       'newAccountOrLogin-button',
