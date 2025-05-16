@@ -1,25 +1,27 @@
 import { test, expect } from '@playwright/test';
 
-  test('Tab Navigation on the Representative Page', async ({ page }) => {
-    await page.goto('www/_html/new-accountProject-representative.html');
-    
-    await page.keyboard.press('Tab');
-    let focusedElement = await page.evaluate(() => document.activeElement ? document.activeElement.id : null);
-    expect(focusedElement).toBe("title-link");
-  
-    await page.keyboard.press('Tab');
-    focusedElement = await page.evaluate(() => document.activeElement ? document.activeElement.id : null);
-    expect(focusedElement).toBe("username");
+  test.afterEach(async ({ page }) => {
+    await page.close();
+  });
 
+  test('Tab Navigation on the Representative Page', async ({ page }) => {
+    await page.goto('/www/_html/new-accountProject-representative.html', { waitUntil: 'load' });
+        
+    // Selectors in the order Tab is expected to find them
+    const dataTests = [
+      'title-link',
+      'username',
+      'password',
+      'about-link',
+      'privacy-link'
+    ];
+
+    
+  for (const dataTest of dataTests) {
     await page.keyboard.press('Tab');
-    focusedElement = await page.evaluate(() => document.activeElement ? document.activeElement.id : null);
-    expect(focusedElement).toBe("password");
-  
-    await page.keyboard.press('Tab');
-    focusedElement = await page.evaluate(() => document.activeElement ? document.activeElement.id : null);
-    expect(focusedElement).toBe("about-link");
-  
-    await page.keyboard.press('Tab');
-    focusedElement = await page.evaluate(() => document.activeElement ? document.activeElement.id : null);
-    expect(focusedElement).toBe("privacy-link");    
+
+    const focused = page.locator(':focus-visible');
+    await expect(focused).toHaveAttribute('data-test', dataTest);
+  }
+ 
   });
