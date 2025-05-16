@@ -1,13 +1,11 @@
 import { test, expect } from '@playwright/test';
 
-  test.afterEach(async ({ page }) => {
-    await page.close();
-  });
-
+  // new browser context for each test  
+  // https://playwright.dev/docs/browser-contexts#introduction
   test('Tab Navigation on the Representative Page', async ({ page }) => {
     await page.goto('/www/_html/new-accountProject-representative.html', { waitUntil: 'load' });
         
-    // Selectors in the order Tab is expected to find them
+    // The sequence of data-test values we expect
     const dataTests = [
       'title-link',
       'username',
@@ -19,7 +17,6 @@ import { test, expect } from '@playwright/test';
     
   for (const dataTest of dataTests) {
     await page.keyboard.press('Tab');
-
     const focused = page.locator(':focus-visible');
     await expect(focused).toHaveAttribute('data-test', dataTest);
   }
