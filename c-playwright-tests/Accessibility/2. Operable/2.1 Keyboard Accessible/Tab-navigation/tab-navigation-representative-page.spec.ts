@@ -13,12 +13,13 @@ import { test, expect } from '@playwright/test';
       'about-link',
       'privacy-link'
     ];
-
     
-  for (const dataTest of dataTests) {
-    await page.keyboard.press('Tab');
-    const focused = page.locator(':focus-visible');
-    await expect(focused).toHaveAttribute('data-test', dataTest);
-  }
+    for (const dataTest of dataTests) {
+      await page.keyboard.press('Tab');
+      const focused = page.locator(':focus-visible');
+      await expect(focused).toHaveAttribute('data-test', dataTest);
+    }
+    
+    await page.close();
  
   });
