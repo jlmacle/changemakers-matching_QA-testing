@@ -6,7 +6,6 @@ test.describe('Username validation: invalid username (too long): 01234567890', (
       // Navigation to the page
       await page.goto('http://127.0.0.1:3000/www/_html/new-accountProject-representative.html');
       await page.waitForLoadState('load');
-      await page.waitForFunction(() => typeof window.checkUsername === 'function'); 
 
       // Filling form with invalid username
       const username = await page.locator('[data-test="username"]');
