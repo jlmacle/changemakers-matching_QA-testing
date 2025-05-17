@@ -4,7 +4,10 @@ npx cypress open
 
 VS Code extension
 https://marketplace.visualstudio.com/items/?itemName=ms-playwright.playwright 
-npx playwright test --ui
+
+-------------
+
+https://playwright.dev/docs/running-tests
 
 -------------
 
