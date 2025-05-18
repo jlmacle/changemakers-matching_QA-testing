@@ -338,14 +338,14 @@
                     <div class="column is-one-sixth">
                         <div class="box  " style="border-left: 5px solid hsl(var(--bulma-primary-h), var(--bulma-primary-s), var(--bulma-primary-l)) !important"
                             data-status="all">
-                            <p class="title is-size-3 mb-0">6</p>
+                            <p class="title is-size-3 mb-0">7</p>
                             <p class="subtitle is-size-7">All Tests</p>
                         </div>
                     </div>
                     <div class="column is-one-sixth">
                         <div class="box  " style="border-left: 5px solid hsl(var(--bulma-success-h), var(--bulma-success-s), var(--bulma-success-l)) !important"
                             data-status="passed">
-                            <p class="title is-size-3 mb-0">6</p>
+                            <p class="title is-size-3 mb-0">7</p>
                             <p class="subtitle is-size-7">Passed</p>
                         </div>
                     </div>
@@ -369,7 +369,7 @@
                                     <span class="icon has-text-info mr-2">
                                         <i class="fas fa-calendar-alt"></i>
                                     </span>
-                                    <span class="is-size-5">16-May-2025 8:01:09 PM</span>
+                                    <span class="is-size-5">18-May-2025 7:06:19 AM</span>
                                 </p>
                             </div>
                             <div class="field">
@@ -378,7 +378,7 @@
                                     <span class="icon has-text-warning mr-2">
                                         <i class="fas fa-stopwatch"></i>
                                     </span>
-                                    <span class="is-size-5">07s:271ms</span>
+                                    <span class="is-size-5">06s:555ms</span>
                                 </p>
                             </div>
                         </div>
@@ -458,7 +458,7 @@
                                 data: {
                                     labels: ['Passed', 'Failed', 'Skipped', 'Flaky'],
                                     datasets: [{
-                                        data: [6, 0, 0, 0, 0],
+                                        data: [7, 0, 0, 0, 0],
                                 backgroundColor: ['#28a745', '#ff6685', '#66d1ff', '#ffb70f', '#69748c']}]
                                 },
                                 options: {
@@ -506,10 +506,12 @@
                   "Desktop 1920×1080",
                   "Desktop 1366×768",
                   "Desktop 1536×864",
+                  "Mobile 360×800",
                   "Desktop 1280×720"
                 ];
                             const totalTests = [
                   3,
+                  1,
                   1,
                   1,
                   1
@@ -553,9 +555,11 @@
                   3,
                   1,
                   1,
+                  1,
                   1
                 ];
                             const failedTests = [
+                  0,
                   0,
                   0,
                   0,
@@ -565,15 +569,18 @@
                   0,
                   0,
                   0,
+                  0,
                   0
                 ];
                             const retryTests = [
                   0,
                   0,
                   0,
+                  0,
                   0
                 ];
                             const flakyTests = [
+                  0,
                   0,
                   0,
                   0,
@@ -655,7 +662,7 @@
                             <div class="box filter is-clickable" style="border-left: 5px solid hsl(var(--bulma-primary-h), var(--bulma-primary-s), var(--bulma-primary-l)) !important"
                                 data-status="all">
                                 <p class="title is-size-6 mb-0">
-                                    6 <span class="icon is-small"><i class="fa-solid fa-vial"></i></span>
+                                    7 <span class="icon is-small"><i class="fa-solid fa-vial"></i></span>
                                 </p>
                             </div>
                         </div>
@@ -663,7 +670,7 @@
                             <div class="box filter is-clickable" style="border-left: 5px solid hsl(var(--bulma-success-h), var(--bulma-success-s), var(--bulma-success-l)) !important"
                                 data-status="passed">
                                 <p class="title is-size-6 mb-0">
-                                    6 <span class="icon is-small"><i class="fa fa-check-circle"></i></span>
+                                    7 <span class="icon is-small"><i class="fa fa-check-circle"></i></span>
                                 </p>
                             </div>
                         </div>
@@ -703,6 +710,12 @@
                                                 <label class="checkbox is-capitalized">
                                                     <input name="Desktop 1536×864" type="checkbox" data-filter-type="project" value="Desktop 1536×864" />
                                                     Desktop 1536×864
+                                                </label>
+                                            </div>
+                                            <div class="dropdown-item">
+                                                <label class="checkbox is-capitalized">
+                                                    <input name="Mobile 360×800" type="checkbox" data-filter-type="project" value="Mobile 360×800" />
+                                                    Mobile 360×800
                                                 </label>
                                             </div>
                                             <div class="dropdown-item">
@@ -890,7 +903,7 @@
                                             status-passed
                                              ml-4" data-suite-name="Tab Navigation on the Home Page"
                                             data-test-tags="" data-project-name="Desktop 1920×1080" data-test-id="0"
-                                            data-test-history-id="tab-navigation-home-page.spec.ts:Desktop 1920×1080:Tab Navigation on the Home Page" data-test-status="passed " data-test-duration="383ms">
+                                            data-test-history-id="tab-navigation-home-page.spec.ts:Desktop 1920×1080:Tab Navigation on the Home Page" data-test-status="passed " data-test-duration="773ms">
                                             <div class="icon-text">
                                                 <span>Tab Navigation on the Home Page</span>
                                             </div>
@@ -936,7 +949,7 @@
                                             status-passed
                                              ml-4" data-suite-name="Tab Navigation on the Representative Page"
                                             data-test-tags="" data-project-name="Desktop 1920×1080" data-test-id="1"
-                                            data-test-history-id="tab-navigation-representative-page.spec.ts:Desktop 1920×1080:Tab Navigation on the Representative Page" data-test-status="passed " data-test-duration="263ms">
+                                            data-test-history-id="tab-navigation-representative-page.spec.ts:Desktop 1920×1080:Tab Navigation on the Representative Page" data-test-status="passed " data-test-duration="787ms">
                                             <div class="icon-text">
                                                 <span>Tab Navigation on the Representative Page</span>
                                             </div>
@@ -982,7 +995,7 @@
                                             status-passed
                                              ml-4" data-suite-name="Username validation: invalid username (too long): 01234567890"
                                             data-test-tags="" data-project-name="Desktop 1920×1080" data-test-id="2"
-                                            data-test-history-id="invalid-username-01234567890-displays-username-constraints.spec.ts:Desktop 1920×1080:01234567890 (too long)" data-test-status="passed " data-test-duration="352ms">
+                                            data-test-history-id="invalid-username-01234567890-displays-username-constraints.spec.ts:Desktop 1920×1080:01234567890 (too long)" data-test-status="passed " data-test-duration="243ms">
                                             <div class="icon-text">
                                                 <span>01234567890 (too long)</span>
                                             </div>
@@ -991,7 +1004,7 @@
                                             status-passed
                                              ml-4" data-suite-name="Username validation: invalid username (too long): 01234567890"
                                             data-test-tags="" data-project-name="Desktop 1366×768" data-test-id="3"
-                                            data-test-history-id="invalid-username-01234567890-displays-username-constraints.spec.ts:Desktop 1366×768:01234567890 (too long)" data-test-status="passed " data-test-duration="359ms">
+                                            data-test-history-id="invalid-username-01234567890-displays-username-constraints.spec.ts:Desktop 1366×768:01234567890 (too long)" data-test-status="passed " data-test-duration="570ms">
                                             <div class="icon-text">
                                                 <span>01234567890 (too long)</span>
                                             </div>
@@ -1000,7 +1013,7 @@
                                             status-passed
                                              ml-4" data-suite-name="Username validation: invalid username (too long): 01234567890"
                                             data-test-tags="" data-project-name="Desktop 1536×864" data-test-id="4"
-                                            data-test-history-id="invalid-username-01234567890-displays-username-constraints.spec.ts:Desktop 1536×864:01234567890 (too long)" data-test-status="passed " data-test-duration="476ms">
+                                            data-test-history-id="invalid-username-01234567890-displays-username-constraints.spec.ts:Desktop 1536×864:01234567890 (too long)" data-test-status="passed " data-test-duration="420ms">
                                             <div class="icon-text">
                                                 <span>01234567890 (too long)</span>
                                             </div>
@@ -1008,8 +1021,17 @@
                                         </div>                <div class="test-item 
                                             status-passed
                                              ml-4" data-suite-name="Username validation: invalid username (too long): 01234567890"
-                                            data-test-tags="" data-project-name="Desktop 1280×720" data-test-id="5"
-                                            data-test-history-id="invalid-username-01234567890-displays-username-constraints.spec.ts:Desktop 1280×720:01234567890 (too long)" data-test-status="passed " data-test-duration="408ms">
+                                            data-test-tags="" data-project-name="Mobile 360×800" data-test-id="5"
+                                            data-test-history-id="invalid-username-01234567890-displays-username-constraints.spec.ts:Mobile 360×800:01234567890 (too long)" data-test-status="passed " data-test-duration="547ms">
+                                            <div class="icon-text">
+                                                <span>01234567890 (too long)</span>
+                                            </div>
+                                            <span class="tag duration-tag has-text-weight-medium">Mobile 360×800</span>
+                                        </div>                <div class="test-item 
+                                            status-passed
+                                             ml-4" data-suite-name="Username validation: invalid username (too long): 01234567890"
+                                            data-test-tags="" data-project-name="Desktop 1280×720" data-test-id="6"
+                                            data-test-history-id="invalid-username-01234567890-displays-username-constraints.spec.ts:Desktop 1280×720:01234567890 (too long)" data-test-status="passed " data-test-duration="543ms">
                                             <div class="icon-text">
                                                 <span>01234567890 (too long)</span>
                                             </div>
@@ -2184,7 +2206,7 @@
     "title": "Tab Navigation on the Home Page",
     "status": "passed",
     "flaky": "expected",
-    "duration": "383ms",
+    "duration": "773ms",
     "errors": [],
     "steps": [
       {
@@ -2286,7 +2308,7 @@
     "title": "Tab Navigation on the Representative Page",
     "status": "passed",
     "flaky": "expected",
-    "duration": "263ms",
+    "duration": "787ms",
     "errors": [],
     "steps": [
       {
@@ -2377,7 +2399,7 @@
     "title": "01234567890 (too long)",
     "status": "passed",
     "flaky": "expected",
-    "duration": "352ms",
+    "duration": "243ms",
     "errors": [],
     "steps": [
       {
@@ -2393,11 +2415,6 @@
       {
         "snippet": "",
         "title": "page.waitForLoadState",
-        "location": ""
-      },
-      {
-        "snippet": "",
-        "title": "page.waitForFunction",
         "location": ""
       },
       {
@@ -2438,7 +2455,7 @@
     "title": "01234567890 (too long)",
     "status": "passed",
     "flaky": "expected",
-    "duration": "359ms",
+    "duration": "570ms",
     "errors": [],
     "steps": [
       {
@@ -2454,11 +2471,6 @@
       {
         "snippet": "",
         "title": "page.waitForLoadState",
-        "location": ""
-      },
-      {
-        "snippet": "",
-        "title": "page.waitForFunction",
         "location": ""
       },
       {
@@ -2499,7 +2511,7 @@
     "title": "01234567890 (too long)",
     "status": "passed",
     "flaky": "expected",
-    "duration": "476ms",
+    "duration": "420ms",
     "errors": [],
     "steps": [
       {
@@ -2519,7 +2531,58 @@
       },
       {
         "snippet": "",
-        "title": "page.waitForFunction",
+        "title": "locator.fill(01234567890)",
+        "location": ""
+      },
+      {
+        "snippet": "",
+        "title": "locator.dispatchEvent([data-test=\"username\"])",
+        "location": ""
+      },
+      {
+        "snippet": "",
+        "title": "expect.toHaveText",
+        "location": ""
+      },
+      {
+        "snippet": "",
+        "title": "After Hooks",
+        "location": ""
+      }
+    ],
+    "logs": "",
+    "filePath": "invalid-username-01234567890-displays-username-constraints.spec.ts",
+    "base64Image": false,
+    "screenshots": []
+  },
+  {
+    "port": 2004,
+    "annotations": [],
+    "testTags": [],
+    "location": "invalid-username-01234567890-displays-username-constraints.spec.ts:5:9",
+    "retry": "",
+    "isRetry": 0,
+    "projectName": "Mobile 360×800",
+    "suite": "Username validation: invalid username (too long): 01234567890",
+    "title": "01234567890 (too long)",
+    "status": "passed",
+    "flaky": "expected",
+    "duration": "547ms",
+    "errors": [],
+    "steps": [
+      {
+        "snippet": "",
+        "title": "Before Hooks",
+        "location": ""
+      },
+      {
+        "snippet": "",
+        "title": "page.goto(http://127.0.0.1:3000/www/_html/new-accountProject-representative.html)",
+        "location": ""
+      },
+      {
+        "snippet": "",
+        "title": "page.waitForLoadState",
         "location": ""
       },
       {
@@ -2560,7 +2623,7 @@
     "title": "01234567890 (too long)",
     "status": "passed",
     "flaky": "expected",
-    "duration": "408ms",
+    "duration": "543ms",
     "errors": [],
     "steps": [
       {
@@ -2576,11 +2639,6 @@
       {
         "snippet": "",
         "title": "page.waitForLoadState",
-        "location": ""
-      },
-      {
-        "snippet": "",
-        "title": "page.waitForFunction",
         "location": ""
       },
       {
@@ -2616,63 +2674,63 @@
     "history": [
       {
         "status": "passed",
-        "duration": "383ms",
+        "duration": "773ms",
         "error_message": "",
-        "run_date": "May 16, 2025, 08:01 PM GMT+2"
+        "run_date": "May 18, 2025, 07:06 AM GMT+2"
       },
       {
         "status": "passed",
-        "duration": "499ms",
+        "duration": "01s:181ms",
         "error_message": "",
-        "run_date": "May 16, 2025, 07:58 PM GMT+2"
+        "run_date": "May 17, 2025, 09:10 AM GMT+2"
+      },
+      {
+        "status": "failed",
+        "duration": "06s:540ms",
+        "error_message": "Error: <span style=\"color:#A00\">Timed out 5000ms waiting for <span style=\"color:var(--snippet-color)\">expect(<span style=\"font-weight:normal;text-decoration:none;font-style:normal\"><span style=\"color:#A00\">locator<span style=\"color:var(--snippet-color)\">).<span style=\"font-weight:normal;text-decoration:none;font-style:normal\">toHaveAttribute(<span style=\"font-weight:normal;text-decoration:none;font-style:normal\"><span style=\"color:#0A0\">expected<span style=\"color:var(--snippet-color)\">)<span style=\"font-weight:normal;text-decoration:none;font-style:normal\">\n\nLocator: locator(&#039;:focus-visible&#039;)\nExpected string: <span style=\"color:#0A0\">&quot;newAccountOrLogin-button&quot;<span style=\"color:var(--snippet-color)\">\nReceived: &lt;element(s) not found>\nCall log:\n  - expect.toHaveAttribute with timeout 5000ms<span style=\"font-weight:normal;text-decoration:none;font-style:normal\">\n  - waiting for locator(&#039;:focus-visible&#039;)<span style=\"font-weight:normal;text-decoration:none;font-style:normal\">\n    4 × locator resolved to &lt;a href=&quot;#main&quot; aria-hidden=&quot;false&quot; id=&quot;skipToMainContent&quot; data-test=&quot;skipToMainContent&quot; class=&quot;to-ignore-when-modal1&quot;>↵            Next is new account creation and log…&lt;/a><span style=\"font-weight:normal;text-decoration:none;font-style:normal\">\n      - unexpected value &quot;skipToMainContent&quot;<span style=\"font-weight:normal;text-decoration:none;font-style:normal\">\n\n    at /Users/dev/Desktop/changemakers-matching_testing/c-playwright-tests/Accessibility/2. Operable/2.1 Keyboard Accessible/Tab-navigation/tab-navigation-home-page.spec.ts:21:29</span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span>",
+        "run_date": "May 17, 2025, 09:08 AM GMT+2"
+      },
+      {
+        "status": "flaky",
+        "duration": "490ms",
+        "error_message": "",
+        "run_date": "May 17, 2025, 09:08 AM GMT+2"
       },
       {
         "status": "passed",
-        "duration": "330ms",
+        "duration": "750ms",
         "error_message": "",
-        "run_date": "May 16, 2025, 07:23 PM GMT+2"
+        "run_date": "May 16, 2025, 08:49 PM GMT+2"
       },
       {
         "status": "passed",
-        "duration": "437ms",
+        "duration": "01s:196ms",
         "error_message": "",
-        "run_date": "May 16, 2025, 07:22 PM GMT+2"
+        "run_date": "May 16, 2025, 08:48 PM GMT+2"
       },
       {
         "status": "passed",
-        "duration": "333ms",
+        "duration": "651ms",
         "error_message": "",
-        "run_date": "May 16, 2025, 07:09 PM GMT+2"
+        "run_date": "May 16, 2025, 08:48 PM GMT+2"
       },
       {
         "status": "passed",
-        "duration": "457ms",
+        "duration": "709ms",
         "error_message": "",
-        "run_date": "May 16, 2025, 07:01 PM GMT+2"
+        "run_date": "May 16, 2025, 08:47 PM GMT+2"
       },
       {
         "status": "passed",
-        "duration": "380ms",
+        "duration": "704ms",
         "error_message": "",
-        "run_date": "May 16, 2025, 07:00 PM GMT+2"
+        "run_date": "May 16, 2025, 08:20 PM GMT+2"
       },
       {
         "status": "passed",
-        "duration": "492ms",
+        "duration": "01s:07ms",
         "error_message": "",
-        "run_date": "May 16, 2025, 06:56 PM GMT+2"
-      },
-      {
-        "status": "passed",
-        "duration": "442ms",
-        "error_message": "",
-        "run_date": "May 16, 2025, 06:39 PM GMT+2"
-      },
-      {
-        "status": "passed",
-        "duration": "605ms",
-        "error_message": "",
-        "run_date": "May 16, 2025, 06:31 PM GMT+2"
+        "run_date": "May 16, 2025, 08:18 PM GMT+2"
       }
     ]
   },
@@ -2681,63 +2739,63 @@
     "history": [
       {
         "status": "passed",
-        "duration": "263ms",
+        "duration": "787ms",
         "error_message": "",
-        "run_date": "May 16, 2025, 08:01 PM GMT+2"
+        "run_date": "May 18, 2025, 07:06 AM GMT+2"
       },
       {
         "status": "passed",
-        "duration": "324ms",
+        "duration": "01s:119ms",
         "error_message": "",
-        "run_date": "May 16, 2025, 07:58 PM GMT+2"
-      },
-      {
-        "status": "passed",
-        "duration": "557ms",
-        "error_message": "",
-        "run_date": "May 16, 2025, 07:58 PM GMT+2"
-      },
-      {
-        "status": "passed",
-        "duration": "442ms",
-        "error_message": "",
-        "run_date": "May 16, 2025, 07:23 PM GMT+2"
+        "run_date": "May 17, 2025, 09:10 AM GMT+2"
       },
       {
         "status": "failed",
-        "duration": "05s:238ms",
-        "error_message": "Error: <span style=\"color:#A00\">Timed out 5000ms waiting for <span style=\"color:var(--snippet-color)\">expect(<span style=\"font-weight:normal;text-decoration:none;font-style:normal\"><span style=\"color:#A00\">locator<span style=\"color:var(--snippet-color)\">).<span style=\"font-weight:normal;text-decoration:none;font-style:normal\">toHaveAttribute(<span style=\"font-weight:normal;text-decoration:none;font-style:normal\"><span style=\"color:#0A0\">expected<span style=\"color:var(--snippet-color)\">)<span style=\"font-weight:normal;text-decoration:none;font-style:normal\">\n\nLocator: locator(&#039;:focus-visible&#039;)\nExpected string: <span style=\"color:#0A0\">&quot;password&quot;<span style=\"color:var(--snippet-color)\">\nReceived: &lt;element(s) not found>\nCall log:\n  - expect.toHaveAttribute with timeout 5000ms<span style=\"font-weight:normal;text-decoration:none;font-style:normal\">\n  - waiting for locator(&#039;:focus-visible&#039;)<span style=\"font-weight:normal;text-decoration:none;font-style:normal\">\n    - waiting for&quot; http://127.0.0.1:3000/www/_html/new-accountProject-representative.html&quot; navigation to finish...<span style=\"font-weight:normal;text-decoration:none;font-style:normal\">\n    - navigated to &quot;http://127.0.0.1:3000/www/_html/new-accountProject-representative.html&quot;<span style=\"font-weight:normal;text-decoration:none;font-style:normal\">\n\n    at /Users/dev/Desktop/changemakers-matching_testing/c-playwright-tests/Accessibility/2. Operable/2.1 Keyboard Accessible/Tab-navigation/tab-navigation-representative-page.spec.ts:21:27</span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span>",
-        "run_date": "May 16, 2025, 07:23 PM GMT+2"
+        "duration": "06s:423ms",
+        "error_message": "Error: <span style=\"color:#A00\">Timed out 5000ms waiting for <span style=\"color:var(--snippet-color)\">expect(<span style=\"font-weight:normal;text-decoration:none;font-style:normal\"><span style=\"color:#A00\">locator<span style=\"color:var(--snippet-color)\">).<span style=\"font-weight:normal;text-decoration:none;font-style:normal\">toHaveAttribute(<span style=\"font-weight:normal;text-decoration:none;font-style:normal\"><span style=\"color:#0A0\">expected<span style=\"color:var(--snippet-color)\">)<span style=\"font-weight:normal;text-decoration:none;font-style:normal\">\n\nLocator: locator(&#039;:focus-visible&#039;)\nExpected string: <span style=\"color:#0A0\">&quot;privacy-link&quot;<span style=\"color:var(--snippet-color)\">\nReceived: &lt;element(s) not found>\nCall log:\n  - expect.toHaveAttribute with timeout 5000ms<span style=\"font-weight:normal;text-decoration:none;font-style:normal\">\n  - waiting for locator(&#039;:focus-visible&#039;)<span style=\"font-weight:normal;text-decoration:none;font-style:normal\">\n    2 × waiting for&quot; http://127.0.0.1:3000/www/_html/new-accountProject-representative.html&quot; navigation to finish...<span style=\"font-weight:normal;text-decoration:none;font-style:normal\">\n      - navigated to &quot;http://127.0.0.1:3000/www/_html/new-accountProject-representative.html&quot;<span style=\"font-weight:normal;text-decoration:none;font-style:normal\">\n\n    at /Users/dev/Desktop/changemakers-matching_testing/c-playwright-tests/Accessibility/2. Operable/2.1 Keyboard Accessible/Tab-navigation/tab-navigation-representative-page.spec.ts:20:29</span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span>",
+        "run_date": "May 17, 2025, 09:08 AM GMT+2"
       },
       {
         "status": "flaky",
-        "duration": "372ms",
+        "duration": "546ms",
         "error_message": "",
-        "run_date": "May 16, 2025, 07:23 PM GMT+2"
+        "run_date": "May 17, 2025, 09:08 AM GMT+2"
       },
       {
         "status": "passed",
-        "duration": "312ms",
+        "duration": "763ms",
         "error_message": "",
-        "run_date": "May 16, 2025, 07:22 PM GMT+2"
+        "run_date": "May 16, 2025, 08:49 PM GMT+2"
       },
       {
-        "status": "failed",
-        "duration": "05s:147ms",
-        "error_message": "Error: <span style=\"color:#A00\">Timed out 5000ms waiting for <span style=\"color:var(--snippet-color)\">expect(<span style=\"font-weight:normal;text-decoration:none;font-style:normal\"><span style=\"color:#A00\">locator<span style=\"color:var(--snippet-color)\">).<span style=\"font-weight:normal;text-decoration:none;font-style:normal\">toHaveAttribute(<span style=\"font-weight:normal;text-decoration:none;font-style:normal\"><span style=\"color:#0A0\">expected<span style=\"color:var(--snippet-color)\">)<span style=\"font-weight:normal;text-decoration:none;font-style:normal\">\n\nLocator: locator(&#039;:focus-visible&#039;)\nExpected string: <span style=\"color:#0A0\">&quot;title-link&quot;<span style=\"color:var(--snippet-color)\">\nReceived: &lt;element(s) not found>\nCall log:\n  - expect.toHaveAttribute with timeout 5000ms<span style=\"font-weight:normal;text-decoration:none;font-style:normal\">\n  - waiting for locator(&#039;:focus-visible&#039;)<span style=\"font-weight:normal;text-decoration:none;font-style:normal\">\n    - waiting for&quot; http://127.0.0.1:3000/www/_html/new-accountProject-representative.html&quot; navigation to finish...<span style=\"font-weight:normal;text-decoration:none;font-style:normal\">\n    - navigated to &quot;http://127.0.0.1:3000/www/_html/new-accountProject-representative.html&quot;<span style=\"font-weight:normal;text-decoration:none;font-style:normal\">\n\n    at /Users/dev/Desktop/changemakers-matching_testing/c-playwright-tests/Accessibility/2. Operable/2.1 Keyboard Accessible/Tab-navigation/tab-navigation-representative-page.spec.ts:24:27</span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span>",
-        "run_date": "May 16, 2025, 07:09 PM GMT+2"
-      },
-      {
-        "status": "flaky",
-        "duration": "376ms",
+        "status": "passed",
+        "duration": "01s:231ms",
         "error_message": "",
-        "run_date": "May 16, 2025, 07:09 PM GMT+2"
+        "run_date": "May 16, 2025, 08:48 PM GMT+2"
       },
       {
-        "status": "failed",
-        "duration": "05s:166ms",
-        "error_message": "Error: <span style=\"color:#A00\">Timed out 5000ms waiting for <span style=\"color:var(--snippet-color)\">expect(<span style=\"font-weight:normal;text-decoration:none;font-style:normal\"><span style=\"color:#A00\">locator<span style=\"color:var(--snippet-color)\">).<span style=\"font-weight:normal;text-decoration:none;font-style:normal\">toHaveAttribute(<span style=\"font-weight:normal;text-decoration:none;font-style:normal\"><span style=\"color:#0A0\">expected<span style=\"color:var(--snippet-color)\">)<span style=\"font-weight:normal;text-decoration:none;font-style:normal\">\n\nLocator: locator(&#039;:focus-visible&#039;)\nExpected string: <span style=\"color:#0A0\">&quot;title-link&quot;<span style=\"color:var(--snippet-color)\">\nReceived: &lt;element(s) not found>\nCall log:\n  - expect.toHaveAttribute with timeout 5000ms<span style=\"font-weight:normal;text-decoration:none;font-style:normal\">\n  - waiting for locator(&#039;:focus-visible&#039;)<span style=\"font-weight:normal;text-decoration:none;font-style:normal\">\n    - waiting for&quot; http://127.0.0.1:3000/www/_html/new-accountProject-representative.html&quot; navigation to finish...<span style=\"font-weight:normal;text-decoration:none;font-style:normal\">\n    - navigated to &quot;http://127.0.0.1:3000/www/_html/new-accountProject-representative.html&quot;<span style=\"font-weight:normal;text-decoration:none;font-style:normal\">\n\n    at /Users/dev/Desktop/changemakers-matching_testing/c-playwright-tests/Accessibility/2. Operable/2.1 Keyboard Accessible/Tab-navigation/tab-navigation-representative-page.spec.ts:24:27</span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span>",
-        "run_date": "May 16, 2025, 07:01 PM GMT+2"
+        "status": "passed",
+        "duration": "659ms",
+        "error_message": "",
+        "run_date": "May 16, 2025, 08:48 PM GMT+2"
+      },
+      {
+        "status": "passed",
+        "duration": "693ms",
+        "error_message": "",
+        "run_date": "May 16, 2025, 08:47 PM GMT+2"
+      },
+      {
+        "status": "passed",
+        "duration": "706ms",
+        "error_message": "",
+        "run_date": "May 16, 2025, 08:20 PM GMT+2"
+      },
+      {
+        "status": "passed",
+        "duration": "931ms",
+        "error_message": "",
+        "run_date": "May 16, 2025, 08:18 PM GMT+2"
       }
     ]
   },
@@ -2746,63 +2804,63 @@
     "history": [
       {
         "status": "passed",
-        "duration": "352ms",
-        "error_message": "",
-        "run_date": "May 16, 2025, 08:01 PM GMT+2"
-      },
-      {
-        "status": "passed",
         "duration": "243ms",
         "error_message": "",
-        "run_date": "May 16, 2025, 07:58 PM GMT+2"
+        "run_date": "May 18, 2025, 07:06 AM GMT+2"
       },
       {
         "status": "passed",
-        "duration": "251ms",
+        "duration": "01s:124ms",
         "error_message": "",
-        "run_date": "May 16, 2025, 07:23 PM GMT+2"
+        "run_date": "May 17, 2025, 09:10 AM GMT+2"
       },
       {
         "status": "passed",
-        "duration": "328ms",
+        "duration": "01s:407ms",
         "error_message": "",
-        "run_date": "May 16, 2025, 07:22 PM GMT+2"
+        "run_date": "May 17, 2025, 09:08 AM GMT+2"
       },
       {
         "status": "passed",
-        "duration": "189ms",
+        "duration": "844ms",
         "error_message": "",
-        "run_date": "May 16, 2025, 07:09 PM GMT+2"
+        "run_date": "May 17, 2025, 09:04 AM GMT+2"
       },
       {
         "status": "passed",
-        "duration": "190ms",
+        "duration": "302ms",
         "error_message": "",
-        "run_date": "May 16, 2025, 07:01 PM GMT+2"
+        "run_date": "May 16, 2025, 08:49 PM GMT+2"
       },
       {
         "status": "passed",
-        "duration": "217ms",
+        "duration": "01s:164ms",
         "error_message": "",
-        "run_date": "May 16, 2025, 07:00 PM GMT+2"
+        "run_date": "May 16, 2025, 08:48 PM GMT+2"
       },
       {
         "status": "passed",
-        "duration": "194ms",
+        "duration": "262ms",
         "error_message": "",
-        "run_date": "May 16, 2025, 06:56 PM GMT+2"
+        "run_date": "May 16, 2025, 08:48 PM GMT+2"
       },
       {
         "status": "passed",
-        "duration": "191ms",
+        "duration": "250ms",
         "error_message": "",
-        "run_date": "May 16, 2025, 06:39 PM GMT+2"
+        "run_date": "May 16, 2025, 08:47 PM GMT+2"
       },
       {
         "status": "passed",
-        "duration": "263ms",
+        "duration": "280ms",
         "error_message": "",
-        "run_date": "May 16, 2025, 06:21 PM GMT+2"
+        "run_date": "May 16, 2025, 08:20 PM GMT+2"
+      },
+      {
+        "status": "passed",
+        "duration": "372ms",
+        "error_message": "",
+        "run_date": "May 16, 2025, 08:18 PM GMT+2"
       }
     ]
   },
@@ -2811,63 +2869,63 @@
     "history": [
       {
         "status": "passed",
-        "duration": "359ms",
+        "duration": "570ms",
         "error_message": "",
-        "run_date": "May 16, 2025, 08:01 PM GMT+2"
+        "run_date": "May 18, 2025, 07:06 AM GMT+2"
       },
       {
         "status": "passed",
-        "duration": "383ms",
+        "duration": "01s:120ms",
         "error_message": "",
-        "run_date": "May 16, 2025, 07:58 PM GMT+2"
+        "run_date": "May 17, 2025, 09:10 AM GMT+2"
       },
       {
         "status": "passed",
-        "duration": "330ms",
+        "duration": "01s:501ms",
         "error_message": "",
-        "run_date": "May 16, 2025, 07:23 PM GMT+2"
+        "run_date": "May 17, 2025, 09:08 AM GMT+2"
       },
       {
         "status": "passed",
-        "duration": "369ms",
+        "duration": "911ms",
         "error_message": "",
-        "run_date": "May 16, 2025, 07:22 PM GMT+2"
+        "run_date": "May 17, 2025, 09:04 AM GMT+2"
       },
       {
         "status": "passed",
-        "duration": "331ms",
+        "duration": "376ms",
         "error_message": "",
-        "run_date": "May 16, 2025, 07:09 PM GMT+2"
+        "run_date": "May 16, 2025, 08:49 PM GMT+2"
       },
       {
         "status": "passed",
-        "duration": "403ms",
+        "duration": "01s:111ms",
         "error_message": "",
-        "run_date": "May 16, 2025, 07:01 PM GMT+2"
+        "run_date": "May 16, 2025, 08:48 PM GMT+2"
       },
       {
         "status": "passed",
-        "duration": "371ms",
+        "duration": "575ms",
         "error_message": "",
-        "run_date": "May 16, 2025, 07:00 PM GMT+2"
+        "run_date": "May 16, 2025, 08:48 PM GMT+2"
       },
       {
         "status": "passed",
-        "duration": "397ms",
+        "duration": "386ms",
         "error_message": "",
-        "run_date": "May 16, 2025, 06:56 PM GMT+2"
+        "run_date": "May 16, 2025, 08:47 PM GMT+2"
       },
       {
         "status": "passed",
-        "duration": "332ms",
+        "duration": "617ms",
         "error_message": "",
-        "run_date": "May 16, 2025, 06:39 PM GMT+2"
+        "run_date": "May 16, 2025, 08:20 PM GMT+2"
       },
       {
         "status": "passed",
-        "duration": "401ms",
+        "duration": "981ms",
         "error_message": "",
-        "run_date": "May 16, 2025, 06:21 PM GMT+2"
+        "run_date": "May 16, 2025, 08:18 PM GMT+2"
       }
     ]
   },
@@ -2876,63 +2934,86 @@
     "history": [
       {
         "status": "passed",
-        "duration": "476ms",
+        "duration": "420ms",
         "error_message": "",
-        "run_date": "May 16, 2025, 08:01 PM GMT+2"
+        "run_date": "May 18, 2025, 07:06 AM GMT+2"
       },
       {
         "status": "passed",
-        "duration": "366ms",
+        "duration": "500ms",
         "error_message": "",
-        "run_date": "May 16, 2025, 07:58 PM GMT+2"
+        "run_date": "May 17, 2025, 09:10 AM GMT+2"
       },
       {
         "status": "passed",
-        "duration": "351ms",
+        "duration": "917ms",
         "error_message": "",
-        "run_date": "May 16, 2025, 07:23 PM GMT+2"
+        "run_date": "May 17, 2025, 09:08 AM GMT+2"
       },
       {
         "status": "passed",
-        "duration": "391ms",
+        "duration": "519ms",
         "error_message": "",
-        "run_date": "May 16, 2025, 07:22 PM GMT+2"
+        "run_date": "May 17, 2025, 09:04 AM GMT+2"
       },
       {
         "status": "passed",
-        "duration": "334ms",
+        "duration": "450ms",
         "error_message": "",
-        "run_date": "May 16, 2025, 07:09 PM GMT+2"
+        "run_date": "May 16, 2025, 08:49 PM GMT+2"
       },
       {
         "status": "passed",
-        "duration": "316ms",
+        "duration": "582ms",
         "error_message": "",
-        "run_date": "May 16, 2025, 07:01 PM GMT+2"
+        "run_date": "May 16, 2025, 08:48 PM GMT+2"
       },
       {
         "status": "passed",
-        "duration": "385ms",
+        "duration": "415ms",
         "error_message": "",
-        "run_date": "May 16, 2025, 07:00 PM GMT+2"
+        "run_date": "May 16, 2025, 08:48 PM GMT+2"
       },
       {
         "status": "passed",
-        "duration": "349ms",
+        "duration": "395ms",
         "error_message": "",
-        "run_date": "May 16, 2025, 06:56 PM GMT+2"
+        "run_date": "May 16, 2025, 08:47 PM GMT+2"
       },
       {
         "status": "passed",
-        "duration": "340ms",
+        "duration": "589ms",
         "error_message": "",
-        "run_date": "May 16, 2025, 06:39 PM GMT+2"
+        "run_date": "May 16, 2025, 08:20 PM GMT+2"
       },
       {
         "status": "passed",
-        "duration": "445ms",
+        "duration": "983ms",
         "error_message": "",
-        "run_date": "May 16, 2025, 06:21 PM GMT+2"
+        "run_date": "May 16, 2025, 08:18 PM GMT+2"
+      }
+    ]
+  },
+  {
+    "testId": "invalid-username-01234567890-displays-username-constraints.spec.ts:Mobile 360×800:01234567890 (too long)",
+    "history": [
+      {
+        "status": "passed",
+        "duration": "547ms",
+        "error_message": "",
+        "run_date": "May 18, 2025, 07:06 AM GMT+2"
+      },
+      {
+        "status": "passed",
+        "duration": "679ms",
+        "error_message": "",
+        "run_date": "May 17, 2025, 09:08 AM GMT+2"
+      },
+      {
+        "status": "passed",
+        "duration": "586ms",
+        "error_message": "",
+        "run_date": "May 17, 2025, 09:04 AM GMT+2"
       }
     ]
   },
@@ -2941,63 +3022,63 @@
     "history": [
       {
         "status": "passed",
-        "duration": "408ms",
+        "duration": "543ms",
         "error_message": "",
-        "run_date": "May 16, 2025, 08:01 PM GMT+2"
+        "run_date": "May 18, 2025, 07:06 AM GMT+2"
       },
       {
         "status": "passed",
-        "duration": "497ms",
+        "duration": "515ms",
         "error_message": "",
-        "run_date": "May 16, 2025, 07:58 PM GMT+2"
+        "run_date": "May 17, 2025, 09:10 AM GMT+2"
       },
       {
         "status": "passed",
-        "duration": "354ms",
+        "duration": "932ms",
         "error_message": "",
-        "run_date": "May 16, 2025, 07:23 PM GMT+2"
+        "run_date": "May 17, 2025, 09:08 AM GMT+2"
       },
       {
         "status": "passed",
-        "duration": "370ms",
+        "duration": "563ms",
         "error_message": "",
-        "run_date": "May 16, 2025, 07:22 PM GMT+2"
+        "run_date": "May 17, 2025, 09:04 AM GMT+2"
       },
       {
         "status": "passed",
-        "duration": "319ms",
+        "duration": "358ms",
         "error_message": "",
-        "run_date": "May 16, 2025, 07:09 PM GMT+2"
+        "run_date": "May 16, 2025, 08:49 PM GMT+2"
       },
       {
         "status": "passed",
-        "duration": "334ms",
+        "duration": "548ms",
         "error_message": "",
-        "run_date": "May 16, 2025, 07:01 PM GMT+2"
+        "run_date": "May 16, 2025, 08:48 PM GMT+2"
       },
       {
         "status": "passed",
-        "duration": "394ms",
+        "duration": "329ms",
         "error_message": "",
-        "run_date": "May 16, 2025, 07:00 PM GMT+2"
+        "run_date": "May 16, 2025, 08:48 PM GMT+2"
       },
       {
         "status": "passed",
-        "duration": "348ms",
+        "duration": "332ms",
         "error_message": "",
-        "run_date": "May 16, 2025, 06:56 PM GMT+2"
+        "run_date": "May 16, 2025, 08:47 PM GMT+2"
       },
       {
         "status": "passed",
-        "duration": "324ms",
+        "duration": "294ms",
         "error_message": "",
-        "run_date": "May 16, 2025, 06:39 PM GMT+2"
+        "run_date": "May 16, 2025, 08:20 PM GMT+2"
       },
       {
         "status": "passed",
         "duration": "372ms",
         "error_message": "",
-        "run_date": "May 16, 2025, 06:21 PM GMT+2"
+        "run_date": "May 16, 2025, 08:18 PM GMT+2"
       }
     ]
   }
