@@ -86,6 +86,12 @@ export default defineConfig({
         '**/tab-navigation-home-page.spec.ts',
         '**/tab-navigation-representative-page.spec.ts',
       ],},
+      { name: 'Mobile 393×873',  
+      use: { viewport: { width: 393, height: 873 } }, 
+      testIgnore: [
+        '**/tab-navigation-home-page.spec.ts',
+        '**/tab-navigation-representative-page.spec.ts',
+      ],},
     
   ],
 
