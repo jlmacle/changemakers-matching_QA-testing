@@ -34,6 +34,7 @@ export default defineConfig({
   forbidOnly: !!process.env.CI,
   retries: 4,    
   /* Reporter to use. See https://playwright.dev/docs/test-reporters */
+  //reporter: process.env.CI ? 'blob' : 'html',
   reporter: [["ortoni-report", reportConfig]],
   /* Shared settings for all the projects below. See https://playwright.dev/docs/api/class-testoptions. */
   use: {
@@ -88,6 +89,12 @@ export default defineConfig({
       ],},
       { name: 'Mobile 393×873',  
       use: { viewport: { width: 393, height: 873 } }, 
+      testIgnore: [
+        '**/tab-navigation-home-page.spec.ts',
+        '**/tab-navigation-representative-page.spec.ts',
+      ],},
+      { name: 'Mobile 412×915',  
+      use: { viewport: { width: 412, height: 915 } }, 
       testIgnore: [
         '**/tab-navigation-home-page.spec.ts',
         '**/tab-navigation-representative-page.spec.ts',
