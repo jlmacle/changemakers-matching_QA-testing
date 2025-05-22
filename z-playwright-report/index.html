@@ -338,14 +338,14 @@
                     <div class="column is-one-sixth">
                         <div class="box  " style="border-left: 5px solid hsl(var(--bulma-primary-h), var(--bulma-primary-s), var(--bulma-primary-l)) !important"
                             data-status="all">
-                            <p class="title is-size-3 mb-0">10</p>
+                            <p class="title is-size-3 mb-0">11</p>
                             <p class="subtitle is-size-7">All Tests</p>
                         </div>
                     </div>
                     <div class="column is-one-sixth">
                         <div class="box  " style="border-left: 5px solid hsl(var(--bulma-success-h), var(--bulma-success-s), var(--bulma-success-l)) !important"
                             data-status="passed">
-                            <p class="title is-size-3 mb-0">10</p>
+                            <p class="title is-size-3 mb-0">11</p>
                             <p class="subtitle is-size-7">Passed</p>
                         </div>
                     </div>
@@ -369,7 +369,7 @@
                                     <span class="icon has-text-info mr-2">
                                         <i class="fas fa-calendar-alt"></i>
                                     </span>
-                                    <span class="is-size-5">20-May-2025 8:23:03 PM</span>
+                                    <span class="is-size-5">22-May-2025 10:11:00 AM</span>
                                 </p>
                             </div>
                             <div class="field">
@@ -378,7 +378,7 @@
                                     <span class="icon has-text-warning mr-2">
                                         <i class="fas fa-stopwatch"></i>
                                     </span>
-                                    <span class="is-size-5">10s:577ms</span>
+                                    <span class="is-size-5">17s:899ms</span>
                                 </p>
                             </div>
                         </div>
@@ -458,7 +458,7 @@
                                 data: {
                                     labels: ['Passed', 'Failed', 'Skipped', 'Flaky'],
                                     datasets: [{
-                                        data: [10, 0, 0, 0, 0],
+                                        data: [11, 0, 0, 0, 0],
                                 backgroundColor: ['#28a745', '#ff6685', '#66d1ff', '#ffb70f', '#69748c']}]
                                 },
                                 options: {
@@ -510,10 +510,12 @@
                   "Desktop 1280×720",
                   "Mobile 390×844",
                   "Mobile 393×873",
-                  "Mobile 412×915"
+                  "Mobile 412×915",
+                  "Tablet 768×1024"
                 ];
                             const totalTests = [
                   3,
+                  1,
                   1,
                   1,
                   1,
@@ -565,9 +567,11 @@
                   1,
                   1,
                   1,
+                  1,
                   1
                 ];
                             const failedTests = [
+                  0,
                   0,
                   0,
                   0,
@@ -585,6 +589,7 @@
                   0,
                   0,
                   0,
+                  0,
                   0
                 ];
                             const retryTests = [
@@ -595,9 +600,11 @@
                   0,
                   0,
                   0,
+                  0,
                   0
                 ];
                             const flakyTests = [
+                  0,
                   0,
                   0,
                   0,
@@ -683,7 +690,7 @@
                             <div class="box filter is-clickable" style="border-left: 5px solid hsl(var(--bulma-primary-h), var(--bulma-primary-s), var(--bulma-primary-l)) !important"
                                 data-status="all">
                                 <p class="title is-size-6 mb-0">
-                                    10 <span class="icon is-small"><i class="fa-solid fa-vial"></i></span>
+                                    11 <span class="icon is-small"><i class="fa-solid fa-vial"></i></span>
                                 </p>
                             </div>
                         </div>
@@ -691,7 +698,7 @@
                             <div class="box filter is-clickable" style="border-left: 5px solid hsl(var(--bulma-success-h), var(--bulma-success-s), var(--bulma-success-l)) !important"
                                 data-status="passed">
                                 <p class="title is-size-6 mb-0">
-                                    10 <span class="icon is-small"><i class="fa fa-check-circle"></i></span>
+                                    11 <span class="icon is-small"><i class="fa fa-check-circle"></i></span>
                                 </p>
                             </div>
                         </div>
@@ -761,6 +768,12 @@
                                                 <label class="checkbox is-capitalized">
                                                     <input name="Mobile 412×915" type="checkbox" data-filter-type="project" value="Mobile 412×915" />
                                                     Mobile 412×915
+                                                </label>
+                                            </div>
+                                            <div class="dropdown-item">
+                                                <label class="checkbox is-capitalized">
+                                                    <input name="Tablet 768×1024" type="checkbox" data-filter-type="project" value="Tablet 768×1024" />
+                                                    Tablet 768×1024
                                                 </label>
                                             </div>
                                             <hr class="dropdown-divider" />
@@ -913,52 +926,6 @@
                                                 <polyline points="9 18 15 12 9 6" />
                                             </svg>
                                         </span>
-                                        <span>tab-navigation-representative-page.spec.ts</span>
-                                    </div>
-                                </summary>
-                                <div class="test-content">
-                                    <details class="test-case">
-                                        <summary>
-                                            <span class="icon is-small">
-                                                <svg class="image is-16x16" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                                    <path
-                                                        d="M181.344 42.656v394.671C181.344 478.562 214.781 512 256 512c41.25 0 74.672-33.438 74.672-74.673V42.656H181.344z"
-                                                        fill="#e6e9ed" />
-                                                    <path
-                                                        d="M352 32c0 17.672-14.312 32-32 32H192c-17.656 0-32-14.328-32-32s14.344-32 32-32h128c17.688 0 32 14.328 32 32z"
-                                                        fill="#ccd1d9" />
-                                                    <path
-                                                        d="M181.344 192v245.327C181.344 478.562 214.781 512 256 512c41.25 0 74.672-33.438 74.672-74.673V192H181.344z"
-                                                        fill="#a0d468" />
-                                                    <g fill="#434a54">
-                                                        <path
-                                                            d="M245.344 266.655c0-5.89-4.781-10.655-10.672-10.655h-53.328v21.328h53.328c5.89 0 10.672-4.781 10.672-10.673zM234.672 319.999h-53.328v21.328h53.328c5.891 0 10.672-4.781 10.672-10.671s-4.782-10.657-10.672-10.657zM245.344 202.656c0-5.891-4.781-10.656-10.672-10.656h-53.328v21.328h53.328c5.89 0 10.672-4.781 10.672-10.672z" />
-                                                    </g>
-                                                </svg>
-                                            </span>
-                                            <span class="is-size-6">Tab Navigation on the Representative Page</span>
-                                        </summary>
-                                        <div class="test-item 
-                                            status-passed
-                                             ml-4" data-suite-name="Tab Navigation on the Representative Page"
-                                            data-test-tags="" data-project-name="Desktop 1920×1080" data-test-id="0"
-                                            data-test-history-id="tab-navigation-representative-page.spec.ts:Desktop 1920×1080:Tab Navigation on the Representative Page" data-test-status="passed " data-test-duration="936ms">
-                                            <div class="icon-text">
-                                                <span>Tab Navigation on the Representative Page</span>
-                                            </div>
-                                            <span class="tag duration-tag has-text-weight-medium">Desktop 1920×1080</span>
-                                        </div>            </details>
-                                </div>
-                            </details>
-                            <details class="test-group">
-                                <summary class="is-size-5">
-                                    <div class="icon-text">
-                                        <span class="icon">
-                                            <svg class="icon-chevron" width="16" height="16" viewBox="0 0 24 24" fill="none"
-                                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                                <polyline points="9 18 15 12 9 6" />
-                                            </svg>
-                                        </span>
                                         <span>tab-navigation-home-page.spec.ts</span>
                                     </div>
                                 </summary>
@@ -987,10 +954,56 @@
                                         <div class="test-item 
                                             status-passed
                                              ml-4" data-suite-name="Tab Navigation on the Home Page"
-                                            data-test-tags="" data-project-name="Desktop 1920×1080" data-test-id="1"
-                                            data-test-history-id="tab-navigation-home-page.spec.ts:Desktop 1920×1080:Tab Navigation on the Home Page" data-test-status="passed " data-test-duration="936ms">
+                                            data-test-tags="" data-project-name="Desktop 1920×1080" data-test-id="0"
+                                            data-test-history-id="tab-navigation-home-page.spec.ts:Desktop 1920×1080:Tab Navigation on the Home Page" data-test-status="passed " data-test-duration="01s:093ms">
                                             <div class="icon-text">
                                                 <span>Tab Navigation on the Home Page</span>
+                                            </div>
+                                            <span class="tag duration-tag has-text-weight-medium">Desktop 1920×1080</span>
+                                        </div>            </details>
+                                </div>
+                            </details>
+                            <details class="test-group">
+                                <summary class="is-size-5">
+                                    <div class="icon-text">
+                                        <span class="icon">
+                                            <svg class="icon-chevron" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                                <polyline points="9 18 15 12 9 6" />
+                                            </svg>
+                                        </span>
+                                        <span>tab-navigation-representative-page.spec.ts</span>
+                                    </div>
+                                </summary>
+                                <div class="test-content">
+                                    <details class="test-case">
+                                        <summary>
+                                            <span class="icon is-small">
+                                                <svg class="image is-16x16" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                                    <path
+                                                        d="M181.344 42.656v394.671C181.344 478.562 214.781 512 256 512c41.25 0 74.672-33.438 74.672-74.673V42.656H181.344z"
+                                                        fill="#e6e9ed" />
+                                                    <path
+                                                        d="M352 32c0 17.672-14.312 32-32 32H192c-17.656 0-32-14.328-32-32s14.344-32 32-32h128c17.688 0 32 14.328 32 32z"
+                                                        fill="#ccd1d9" />
+                                                    <path
+                                                        d="M181.344 192v245.327C181.344 478.562 214.781 512 256 512c41.25 0 74.672-33.438 74.672-74.673V192H181.344z"
+                                                        fill="#a0d468" />
+                                                    <g fill="#434a54">
+                                                        <path
+                                                            d="M245.344 266.655c0-5.89-4.781-10.655-10.672-10.655h-53.328v21.328h53.328c5.89 0 10.672-4.781 10.672-10.673zM234.672 319.999h-53.328v21.328h53.328c5.891 0 10.672-4.781 10.672-10.671s-4.782-10.657-10.672-10.657zM245.344 202.656c0-5.891-4.781-10.656-10.672-10.656h-53.328v21.328h53.328c5.89 0 10.672-4.781 10.672-10.672z" />
+                                                    </g>
+                                                </svg>
+                                            </span>
+                                            <span class="is-size-6">Tab Navigation on the Representative Page</span>
+                                        </summary>
+                                        <div class="test-item 
+                                            status-passed
+                                             ml-4" data-suite-name="Tab Navigation on the Representative Page"
+                                            data-test-tags="" data-project-name="Desktop 1920×1080" data-test-id="1"
+                                            data-test-history-id="tab-navigation-representative-page.spec.ts:Desktop 1920×1080:Tab Navigation on the Representative Page" data-test-status="passed " data-test-duration="01s:100ms">
+                                            <div class="icon-text">
+                                                <span>Tab Navigation on the Representative Page</span>
                                             </div>
                                             <span class="tag duration-tag has-text-weight-medium">Desktop 1920×1080</span>
                                         </div>            </details>
@@ -1034,7 +1047,7 @@
                                             status-passed
                                              ml-4" data-suite-name="Username validation: invalid username (too long): 01234567890"
                                             data-test-tags="" data-project-name="Desktop 1920×1080" data-test-id="2"
-                                            data-test-history-id="invalid-username-01234567890-displays-username-constraints.spec.ts:Desktop 1920×1080:01234567890 (too long)" data-test-status="passed " data-test-duration="291ms">
+                                            data-test-history-id="invalid-username-01234567890-displays-username-constraints.spec.ts:Desktop 1920×1080:01234567890 (too long)" data-test-status="passed " data-test-duration="522ms">
                                             <div class="icon-text">
                                                 <span>01234567890 (too long)</span>
                                             </div>
@@ -1043,7 +1056,7 @@
                                             status-passed
                                              ml-4" data-suite-name="Username validation: invalid username (too long): 01234567890"
                                             data-test-tags="" data-project-name="Desktop 1536×864" data-test-id="3"
-                                            data-test-history-id="invalid-username-01234567890-displays-username-constraints.spec.ts:Desktop 1536×864:01234567890 (too long)" data-test-status="passed " data-test-duration="500ms">
+                                            data-test-history-id="invalid-username-01234567890-displays-username-constraints.spec.ts:Desktop 1536×864:01234567890 (too long)" data-test-status="passed " data-test-duration="01s:117ms">
                                             <div class="icon-text">
                                                 <span>01234567890 (too long)</span>
                                             </div>
@@ -1052,7 +1065,7 @@
                                             status-passed
                                              ml-4" data-suite-name="Username validation: invalid username (too long): 01234567890"
                                             data-test-tags="" data-project-name="Desktop 1366×768" data-test-id="4"
-                                            data-test-history-id="invalid-username-01234567890-displays-username-constraints.spec.ts:Desktop 1366×768:01234567890 (too long)" data-test-status="passed " data-test-duration="624ms">
+                                            data-test-history-id="invalid-username-01234567890-displays-username-constraints.spec.ts:Desktop 1366×768:01234567890 (too long)" data-test-status="passed " data-test-duration="822ms">
                                             <div class="icon-text">
                                                 <span>01234567890 (too long)</span>
                                             </div>
@@ -1061,7 +1074,7 @@
                                             status-passed
                                              ml-4" data-suite-name="Username validation: invalid username (too long): 01234567890"
                                             data-test-tags="" data-project-name="Mobile 360×800" data-test-id="5"
-                                            data-test-history-id="invalid-username-01234567890-displays-username-constraints.spec.ts:Mobile 360×800:01234567890 (too long)" data-test-status="passed " data-test-duration="732ms">
+                                            data-test-history-id="invalid-username-01234567890-displays-username-constraints.spec.ts:Mobile 360×800:01234567890 (too long)" data-test-status="passed " data-test-duration="695ms">
                                             <div class="icon-text">
                                                 <span>01234567890 (too long)</span>
                                             </div>
@@ -1070,7 +1083,7 @@
                                             status-passed
                                              ml-4" data-suite-name="Username validation: invalid username (too long): 01234567890"
                                             data-test-tags="" data-project-name="Desktop 1280×720" data-test-id="6"
-                                            data-test-history-id="invalid-username-01234567890-displays-username-constraints.spec.ts:Desktop 1280×720:01234567890 (too long)" data-test-status="passed " data-test-duration="786ms">
+                                            data-test-history-id="invalid-username-01234567890-displays-username-constraints.spec.ts:Desktop 1280×720:01234567890 (too long)" data-test-status="passed " data-test-duration="733ms">
                                             <div class="icon-text">
                                                 <span>01234567890 (too long)</span>
                                             </div>
@@ -1079,7 +1092,7 @@
                                             status-passed
                                              ml-4" data-suite-name="Username validation: invalid username (too long): 01234567890"
                                             data-test-tags="" data-project-name="Mobile 390×844" data-test-id="7"
-                                            data-test-history-id="invalid-username-01234567890-displays-username-constraints.spec.ts:Mobile 390×844:01234567890 (too long)" data-test-status="passed " data-test-duration="557ms">
+                                            data-test-history-id="invalid-username-01234567890-displays-username-constraints.spec.ts:Mobile 390×844:01234567890 (too long)" data-test-status="passed " data-test-duration="556ms">
                                             <div class="icon-text">
                                                 <span>01234567890 (too long)</span>
                                             </div>
@@ -1088,7 +1101,7 @@
                                             status-passed
                                              ml-4" data-suite-name="Username validation: invalid username (too long): 01234567890"
                                             data-test-tags="" data-project-name="Mobile 393×873" data-test-id="8"
-                                            data-test-history-id="invalid-username-01234567890-displays-username-constraints.spec.ts:Mobile 393×873:01234567890 (too long)" data-test-status="passed " data-test-duration="598ms">
+                                            data-test-history-id="invalid-username-01234567890-displays-username-constraints.spec.ts:Mobile 393×873:01234567890 (too long)" data-test-status="passed " data-test-duration="614ms">
                                             <div class="icon-text">
                                                 <span>01234567890 (too long)</span>
                                             </div>
@@ -1097,11 +1110,20 @@
                                             status-passed
                                              ml-4" data-suite-name="Username validation: invalid username (too long): 01234567890"
                                             data-test-tags="" data-project-name="Mobile 412×915" data-test-id="9"
-                                            data-test-history-id="invalid-username-01234567890-displays-username-constraints.spec.ts:Mobile 412×915:01234567890 (too long)" data-test-status="passed " data-test-duration="373ms">
+                                            data-test-history-id="invalid-username-01234567890-displays-username-constraints.spec.ts:Mobile 412×915:01234567890 (too long)" data-test-status="passed " data-test-duration="585ms">
                                             <div class="icon-text">
                                                 <span>01234567890 (too long)</span>
                                             </div>
                                             <span class="tag duration-tag has-text-weight-medium">Mobile 412×915</span>
+                                        </div>                <div class="test-item 
+                                            status-passed
+                                             ml-4" data-suite-name="Username validation: invalid username (too long): 01234567890"
+                                            data-test-tags="" data-project-name="Tablet 768×1024" data-test-id="10"
+                                            data-test-history-id="invalid-username-01234567890-displays-username-constraints.spec.ts:Tablet 768×1024:01234567890 (too long)" data-test-status="passed " data-test-duration="446ms">
+                                            <div class="icon-text">
+                                                <span>01234567890 (too long)</span>
+                                            </div>
+                                            <span class="tag duration-tag has-text-weight-medium">Tablet 768×1024</span>
                                         </div>            </details>
                                 </div>
                             </details>
@@ -2264,98 +2286,6 @@
     "port": 2004,
     "annotations": [],
     "testTags": [],
-    "location": "tab-navigation-representative-page.spec.ts:5:7",
-    "retry": "",
-    "isRetry": 0,
-    "projectName": "Desktop 1920×1080",
-    "suite": "Tab Navigation on the Representative Page",
-    "title": "Tab Navigation on the Representative Page",
-    "status": "passed",
-    "flaky": "expected",
-    "duration": "936ms",
-    "errors": [],
-    "steps": [
-      {
-        "snippet": "",
-        "title": "Before Hooks",
-        "location": ""
-      },
-      {
-        "snippet": "",
-        "title": "page.goto(/www/_html/new-accountProject-representative.html)",
-        "location": ""
-      },
-      {
-        "snippet": "",
-        "title": "keyboard.press(Tab)",
-        "location": ""
-      },
-      {
-        "snippet": "",
-        "title": "expect.toHaveAttribute",
-        "location": ""
-      },
-      {
-        "snippet": "",
-        "title": "keyboard.press(Tab)",
-        "location": ""
-      },
-      {
-        "snippet": "",
-        "title": "expect.toHaveAttribute",
-        "location": ""
-      },
-      {
-        "snippet": "",
-        "title": "keyboard.press(Tab)",
-        "location": ""
-      },
-      {
-        "snippet": "",
-        "title": "expect.toHaveAttribute",
-        "location": ""
-      },
-      {
-        "snippet": "",
-        "title": "keyboard.press(Tab)",
-        "location": ""
-      },
-      {
-        "snippet": "",
-        "title": "expect.toHaveAttribute",
-        "location": ""
-      },
-      {
-        "snippet": "",
-        "title": "keyboard.press(Tab)",
-        "location": ""
-      },
-      {
-        "snippet": "",
-        "title": "expect.toHaveAttribute",
-        "location": ""
-      },
-      {
-        "snippet": "",
-        "title": "page.close",
-        "location": ""
-      },
-      {
-        "snippet": "",
-        "title": "After Hooks",
-        "location": ""
-      }
-    ],
-    "logs": "",
-    "filePath": "tab-navigation-representative-page.spec.ts",
-    "filters": {},
-    "base64Image": false,
-    "screenshots": []
-  },
-  {
-    "port": 2004,
-    "annotations": [],
-    "testTags": [],
     "location": "tab-navigation-home-page.spec.ts:5:7",
     "retry": "",
     "isRetry": 0,
@@ -2364,7 +2294,7 @@
     "title": "Tab Navigation on the Home Page",
     "status": "passed",
     "flaky": "expected",
-    "duration": "936ms",
+    "duration": "01s:093ms",
     "errors": [],
     "steps": [
       {
@@ -2450,6 +2380,98 @@
     ],
     "logs": "",
     "filePath": "tab-navigation-home-page.spec.ts",
+    "filters": {},
+    "base64Image": false,
+    "screenshots": []
+  },
+  {
+    "port": 2004,
+    "annotations": [],
+    "testTags": [],
+    "location": "tab-navigation-representative-page.spec.ts:5:7",
+    "retry": "",
+    "isRetry": 0,
+    "projectName": "Desktop 1920×1080",
+    "suite": "Tab Navigation on the Representative Page",
+    "title": "Tab Navigation on the Representative Page",
+    "status": "passed",
+    "flaky": "expected",
+    "duration": "01s:100ms",
+    "errors": [],
+    "steps": [
+      {
+        "snippet": "",
+        "title": "Before Hooks",
+        "location": ""
+      },
+      {
+        "snippet": "",
+        "title": "page.goto(/www/_html/new-accountProject-representative.html)",
+        "location": ""
+      },
+      {
+        "snippet": "",
+        "title": "keyboard.press(Tab)",
+        "location": ""
+      },
+      {
+        "snippet": "",
+        "title": "expect.toHaveAttribute",
+        "location": ""
+      },
+      {
+        "snippet": "",
+        "title": "keyboard.press(Tab)",
+        "location": ""
+      },
+      {
+        "snippet": "",
+        "title": "expect.toHaveAttribute",
+        "location": ""
+      },
+      {
+        "snippet": "",
+        "title": "keyboard.press(Tab)",
+        "location": ""
+      },
+      {
+        "snippet": "",
+        "title": "expect.toHaveAttribute",
+        "location": ""
+      },
+      {
+        "snippet": "",
+        "title": "keyboard.press(Tab)",
+        "location": ""
+      },
+      {
+        "snippet": "",
+        "title": "expect.toHaveAttribute",
+        "location": ""
+      },
+      {
+        "snippet": "",
+        "title": "keyboard.press(Tab)",
+        "location": ""
+      },
+      {
+        "snippet": "",
+        "title": "expect.toHaveAttribute",
+        "location": ""
+      },
+      {
+        "snippet": "",
+        "title": "page.close",
+        "location": ""
+      },
+      {
+        "snippet": "",
+        "title": "After Hooks",
+        "location": ""
+      }
+    ],
+    "logs": "",
+    "filePath": "tab-navigation-representative-page.spec.ts",
     "base64Image": false,
     "screenshots": []
   },
@@ -2465,7 +2487,7 @@
     "title": "01234567890 (too long)",
     "status": "passed",
     "flaky": "expected",
-    "duration": "291ms",
+    "duration": "522ms",
     "errors": [],
     "steps": [
       {
@@ -2521,7 +2543,7 @@
     "title": "01234567890 (too long)",
     "status": "passed",
     "flaky": "expected",
-    "duration": "500ms",
+    "duration": "01s:117ms",
     "errors": [],
     "steps": [
       {
@@ -2577,7 +2599,7 @@
     "title": "01234567890 (too long)",
     "status": "passed",
     "flaky": "expected",
-    "duration": "624ms",
+    "duration": "822ms",
     "errors": [],
     "steps": [
       {
@@ -2633,7 +2655,7 @@
     "title": "01234567890 (too long)",
     "status": "passed",
     "flaky": "expected",
-    "duration": "732ms",
+    "duration": "695ms",
     "errors": [],
     "steps": [
       {
@@ -2689,7 +2711,7 @@
     "title": "01234567890 (too long)",
     "status": "passed",
     "flaky": "expected",
-    "duration": "786ms",
+    "duration": "733ms",
     "errors": [],
     "steps": [
       {
@@ -2745,7 +2767,7 @@
     "title": "01234567890 (too long)",
     "status": "passed",
     "flaky": "expected",
-    "duration": "557ms",
+    "duration": "556ms",
     "errors": [],
     "steps": [
       {
@@ -2801,7 +2823,7 @@
     "title": "01234567890 (too long)",
     "status": "passed",
     "flaky": "expected",
-    "duration": "598ms",
+    "duration": "614ms",
     "errors": [],
     "steps": [
       {
@@ -2857,7 +2879,63 @@
     "title": "01234567890 (too long)",
     "status": "passed",
     "flaky": "expected",
-    "duration": "373ms",
+    "duration": "585ms",
+    "errors": [],
+    "steps": [
+      {
+        "snippet": "",
+        "title": "Before Hooks",
+        "location": ""
+      },
+      {
+        "snippet": "",
+        "title": "page.goto(http://127.0.0.1:3000/www/_html/new-accountProject-representative.html)",
+        "location": ""
+      },
+      {
+        "snippet": "",
+        "title": "page.waitForLoadState",
+        "location": ""
+      },
+      {
+        "snippet": "",
+        "title": "locator.fill(01234567890)",
+        "location": ""
+      },
+      {
+        "snippet": "",
+        "title": "locator.dispatchEvent([data-test=\"username\"])",
+        "location": ""
+      },
+      {
+        "snippet": "",
+        "title": "expect.toHaveText",
+        "location": ""
+      },
+      {
+        "snippet": "",
+        "title": "After Hooks",
+        "location": ""
+      }
+    ],
+    "logs": "",
+    "filePath": "invalid-username-01234567890-displays-username-constraints.spec.ts",
+    "base64Image": false,
+    "screenshots": []
+  },
+  {
+    "port": 2004,
+    "annotations": [],
+    "testTags": [],
+    "location": "invalid-username-01234567890-displays-username-constraints.spec.ts:5:9",
+    "retry": "",
+    "isRetry": 0,
+    "projectName": "Tablet 768×1024",
+    "suite": "Username validation: invalid username (too long): 01234567890",
+    "title": "01234567890 (too long)",
+    "status": "passed",
+    "flaky": "expected",
+    "duration": "446ms",
     "errors": [],
     "steps": [
       {
@@ -2904,73 +2982,56 @@
 ];
             const testHistory = [
   {
-    "testId": "tab-navigation-representative-page.spec.ts:Desktop 1920×1080:Tab Navigation on the Representative Page",
+    "testId": "tab-navigation-home-page.spec.ts:Desktop 1920×1080:Tab Navigation on the Home Page",
     "history": [
       {
         "status": "passed",
-        "duration": "936ms",
+        "duration": "01s:093ms",
         "error_message": "",
-        "run_date": "May 20, 2025, 08:23 PM GMT+2"
+        "run_date": "May 22, 2025, 10:11 AM GMT+2"
       },
       {
         "status": "passed",
-        "duration": "818ms",
+        "duration": "723ms",
         "error_message": "",
-        "run_date": "May 19, 2025, 05:22 PM GMT+2"
+        "run_date": "May 21, 2025, 04:23 PM GMT+2"
       },
       {
         "status": "passed",
-        "duration": "795ms",
+        "duration": "632ms",
         "error_message": "",
-        "run_date": "May 18, 2025, 09:40 AM GMT+2"
-      },
-      {
-        "status": "passed",
-        "duration": "787ms",
-        "error_message": "",
-        "run_date": "May 18, 2025, 07:06 AM GMT+2"
-      },
-      {
-        "status": "passed",
-        "duration": "01s:119ms",
-        "error_message": "",
-        "run_date": "May 17, 2025, 09:10 AM GMT+2"
+        "run_date": "May 21, 2025, 03:25 PM GMT+2"
       },
       {
         "status": "failed",
-        "duration": "06s:423ms",
-        "error_message": "Error: <span style=\"color:#A00\">Timed out 5000ms waiting for <span style=\"color:var(--snippet-color)\">expect(<span style=\"font-weight:normal;text-decoration:none;font-style:normal\"><span style=\"color:#A00\">locator<span style=\"color:var(--snippet-color)\">).<span style=\"font-weight:normal;text-decoration:none;font-style:normal\">toHaveAttribute(<span style=\"font-weight:normal;text-decoration:none;font-style:normal\"><span style=\"color:#0A0\">expected<span style=\"color:var(--snippet-color)\">)<span style=\"font-weight:normal;text-decoration:none;font-style:normal\">\n\nLocator: locator(&#039;:focus-visible&#039;)\nExpected string: <span style=\"color:#0A0\">&quot;privacy-link&quot;<span style=\"color:var(--snippet-color)\">\nReceived: &lt;element(s) not found>\nCall log:\n  - expect.toHaveAttribute with timeout 5000ms<span style=\"font-weight:normal;text-decoration:none;font-style:normal\">\n  - waiting for locator(&#039;:focus-visible&#039;)<span style=\"font-weight:normal;text-decoration:none;font-style:normal\">\n    2 × waiting for&quot; http://127.0.0.1:3000/www/_html/new-accountProject-representative.html&quot; navigation to finish...<span style=\"font-weight:normal;text-decoration:none;font-style:normal\">\n      - navigated to &quot;http://127.0.0.1:3000/www/_html/new-accountProject-representative.html&quot;<span style=\"font-weight:normal;text-decoration:none;font-style:normal\">\n\n    at /Users/dev/Desktop/changemakers-matching_testing/c-playwright-tests/Accessibility/2. Operable/2.1 Keyboard Accessible/Tab-navigation/tab-navigation-representative-page.spec.ts:20:29</span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span>",
-        "run_date": "May 17, 2025, 09:08 AM GMT+2"
+        "duration": "874ms",
+        "error_message": "Error: page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:3000/www/index.html\nCall log:\n  - navigating to &quot;http://127.0.0.1:3000/www/index.html&quot;, waiting until &quot;load&quot;<span style=\"font-weight:normal;text-decoration:none;font-style:normal\">\n\n    at /Users/dev/Desktop/changemakers-matching_testing/c-playwright-tests/Accessibility/2. Operable/2.1 Keyboard Accessible/Tab-navigation/tab-navigation-home-page.spec.ts:6:16</span>",
+        "run_date": "May 21, 2025, 03:25 PM GMT+2"
       },
       {
-        "status": "flaky",
-        "duration": "546ms",
-        "error_message": "",
-        "run_date": "May 17, 2025, 09:08 AM GMT+2"
+        "status": "failed",
+        "duration": "519ms",
+        "error_message": "Error: page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:3000/www/index.html\nCall log:\n  - navigating to &quot;http://127.0.0.1:3000/www/index.html&quot;, waiting until &quot;load&quot;<span style=\"font-weight:normal;text-decoration:none;font-style:normal\">\n\n    at /Users/dev/Desktop/changemakers-matching_testing/c-playwright-tests/Accessibility/2. Operable/2.1 Keyboard Accessible/Tab-navigation/tab-navigation-home-page.spec.ts:6:16</span>",
+        "run_date": "May 21, 2025, 03:25 PM GMT+2"
       },
       {
-        "status": "passed",
-        "duration": "763ms",
-        "error_message": "",
-        "run_date": "May 16, 2025, 08:49 PM GMT+2"
+        "status": "failed",
+        "duration": "427ms",
+        "error_message": "Error: page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:3000/www/index.html\nCall log:\n  - navigating to &quot;http://127.0.0.1:3000/www/index.html&quot;, waiting until &quot;load&quot;<span style=\"font-weight:normal;text-decoration:none;font-style:normal\">\n\n    at /Users/dev/Desktop/changemakers-matching_testing/c-playwright-tests/Accessibility/2. Operable/2.1 Keyboard Accessible/Tab-navigation/tab-navigation-home-page.spec.ts:6:16</span>",
+        "run_date": "May 21, 2025, 03:25 PM GMT+2"
       },
       {
-        "status": "passed",
-        "duration": "01s:231ms",
-        "error_message": "",
-        "run_date": "May 16, 2025, 08:48 PM GMT+2"
+        "status": "failed",
+        "duration": "392ms",
+        "error_message": "Error: page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:3000/www/index.html\nCall log:\n  - navigating to &quot;http://127.0.0.1:3000/www/index.html&quot;, waiting until &quot;load&quot;<span style=\"font-weight:normal;text-decoration:none;font-style:normal\">\n\n    at /Users/dev/Desktop/changemakers-matching_testing/c-playwright-tests/Accessibility/2. Operable/2.1 Keyboard Accessible/Tab-navigation/tab-navigation-home-page.spec.ts:6:16</span>",
+        "run_date": "May 21, 2025, 03:25 PM GMT+2"
       },
       {
-        "status": "passed",
-        "duration": "659ms",
-        "error_message": "",
-        "run_date": "May 16, 2025, 08:48 PM GMT+2"
-      }
-    ]
-  },
-  {
-    "testId": "tab-navigation-home-page.spec.ts:Desktop 1920×1080:Tab Navigation on the Home Page",
-    "history": [
+        "status": "failed",
+        "duration": "334ms",
+        "error_message": "Error: page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:3000/www/index.html\nCall log:\n  - navigating to &quot;http://127.0.0.1:3000/www/index.html&quot;, waiting until &quot;load&quot;<span style=\"font-weight:normal;text-decoration:none;font-style:normal\">\n\n    at /Users/dev/Desktop/changemakers-matching_testing/c-playwright-tests/Accessibility/2. Operable/2.1 Keyboard Accessible/Tab-navigation/tab-navigation-home-page.spec.ts:6:16</span>",
+        "run_date": "May 21, 2025, 03:25 PM GMT+2"
+      },
       {
         "status": "passed",
         "duration": "936ms",
@@ -2982,60 +3043,125 @@
         "duration": "738ms",
         "error_message": "",
         "run_date": "May 19, 2025, 05:22 PM GMT+2"
+      }
+    ]
+  },
+  {
+    "testId": "tab-navigation-representative-page.spec.ts:Desktop 1920×1080:Tab Navigation on the Representative Page",
+    "history": [
+      {
+        "status": "passed",
+        "duration": "01s:100ms",
+        "error_message": "",
+        "run_date": "May 22, 2025, 10:11 AM GMT+2"
       },
       {
         "status": "passed",
-        "duration": "814ms",
+        "duration": "620ms",
         "error_message": "",
-        "run_date": "May 18, 2025, 09:40 AM GMT+2"
+        "run_date": "May 21, 2025, 04:23 PM GMT+2"
       },
       {
         "status": "passed",
-        "duration": "773ms",
+        "duration": "571ms",
         "error_message": "",
-        "run_date": "May 18, 2025, 07:06 AM GMT+2"
-      },
-      {
-        "status": "passed",
-        "duration": "01s:181ms",
-        "error_message": "",
-        "run_date": "May 17, 2025, 09:10 AM GMT+2"
+        "run_date": "May 21, 2025, 03:25 PM GMT+2"
       },
       {
         "status": "failed",
-        "duration": "06s:540ms",
-        "error_message": "Error: <span style=\"color:#A00\">Timed out 5000ms waiting for <span style=\"color:var(--snippet-color)\">expect(<span style=\"font-weight:normal;text-decoration:none;font-style:normal\"><span style=\"color:#A00\">locator<span style=\"color:var(--snippet-color)\">).<span style=\"font-weight:normal;text-decoration:none;font-style:normal\">toHaveAttribute(<span style=\"font-weight:normal;text-decoration:none;font-style:normal\"><span style=\"color:#0A0\">expected<span style=\"color:var(--snippet-color)\">)<span style=\"font-weight:normal;text-decoration:none;font-style:normal\">\n\nLocator: locator(&#039;:focus-visible&#039;)\nExpected string: <span style=\"color:#0A0\">&quot;newAccountOrLogin-button&quot;<span style=\"color:var(--snippet-color)\">\nReceived: &lt;element(s) not found>\nCall log:\n  - expect.toHaveAttribute with timeout 5000ms<span style=\"font-weight:normal;text-decoration:none;font-style:normal\">\n  - waiting for locator(&#039;:focus-visible&#039;)<span style=\"font-weight:normal;text-decoration:none;font-style:normal\">\n    4 × locator resolved to &lt;a href=&quot;#main&quot; aria-hidden=&quot;false&quot; id=&quot;skipToMainContent&quot; data-test=&quot;skipToMainContent&quot; class=&quot;to-ignore-when-modal1&quot;>↵            Next is new account creation and log…&lt;/a><span style=\"font-weight:normal;text-decoration:none;font-style:normal\">\n      - unexpected value &quot;skipToMainContent&quot;<span style=\"font-weight:normal;text-decoration:none;font-style:normal\">\n\n    at /Users/dev/Desktop/changemakers-matching_testing/c-playwright-tests/Accessibility/2. Operable/2.1 Keyboard Accessible/Tab-navigation/tab-navigation-home-page.spec.ts:21:29</span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span>",
-        "run_date": "May 17, 2025, 09:08 AM GMT+2"
+        "duration": "01s:04ms",
+        "error_message": "Error: page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:3000/www/_html/new-accountProject-representative.html\nCall log:\n  - navigating to &quot;http://127.0.0.1:3000/www/_html/new-accountProject-representative.html&quot;, waiting until &quot;load&quot;<span style=\"font-weight:normal;text-decoration:none;font-style:normal\">\n\n    at /Users/dev/Desktop/changemakers-matching_testing/c-playwright-tests/Accessibility/2. Operable/2.1 Keyboard Accessible/Tab-navigation/tab-navigation-representative-page.spec.ts:6:16</span>",
+        "run_date": "May 21, 2025, 03:25 PM GMT+2"
       },
       {
-        "status": "flaky",
-        "duration": "490ms",
-        "error_message": "",
-        "run_date": "May 17, 2025, 09:08 AM GMT+2"
+        "status": "failed",
+        "duration": "479ms",
+        "error_message": "Error: page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:3000/www/_html/new-accountProject-representative.html\nCall log:\n  - navigating to &quot;http://127.0.0.1:3000/www/_html/new-accountProject-representative.html&quot;, waiting until &quot;load&quot;<span style=\"font-weight:normal;text-decoration:none;font-style:normal\">\n\n    at /Users/dev/Desktop/changemakers-matching_testing/c-playwright-tests/Accessibility/2. Operable/2.1 Keyboard Accessible/Tab-navigation/tab-navigation-representative-page.spec.ts:6:16</span>",
+        "run_date": "May 21, 2025, 03:25 PM GMT+2"
+      },
+      {
+        "status": "failed",
+        "duration": "420ms",
+        "error_message": "Error: page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:3000/www/_html/new-accountProject-representative.html\nCall log:\n  - navigating to &quot;http://127.0.0.1:3000/www/_html/new-accountProject-representative.html&quot;, waiting until &quot;load&quot;<span style=\"font-weight:normal;text-decoration:none;font-style:normal\">\n\n    at /Users/dev/Desktop/changemakers-matching_testing/c-playwright-tests/Accessibility/2. Operable/2.1 Keyboard Accessible/Tab-navigation/tab-navigation-representative-page.spec.ts:6:16</span>",
+        "run_date": "May 21, 2025, 03:25 PM GMT+2"
+      },
+      {
+        "status": "failed",
+        "duration": "398ms",
+        "error_message": "Error: page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:3000/www/_html/new-accountProject-representative.html\nCall log:\n  - navigating to &quot;http://127.0.0.1:3000/www/_html/new-accountProject-representative.html&quot;, waiting until &quot;load&quot;<span style=\"font-weight:normal;text-decoration:none;font-style:normal\">\n\n    at /Users/dev/Desktop/changemakers-matching_testing/c-playwright-tests/Accessibility/2. Operable/2.1 Keyboard Accessible/Tab-navigation/tab-navigation-representative-page.spec.ts:6:16</span>",
+        "run_date": "May 21, 2025, 03:25 PM GMT+2"
+      },
+      {
+        "status": "failed",
+        "duration": "344ms",
+        "error_message": "Error: page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:3000/www/_html/new-accountProject-representative.html\nCall log:\n  - navigating to &quot;http://127.0.0.1:3000/www/_html/new-accountProject-representative.html&quot;, waiting until &quot;load&quot;<span style=\"font-weight:normal;text-decoration:none;font-style:normal\">\n\n    at /Users/dev/Desktop/changemakers-matching_testing/c-playwright-tests/Accessibility/2. Operable/2.1 Keyboard Accessible/Tab-navigation/tab-navigation-representative-page.spec.ts:6:16</span>",
+        "run_date": "May 21, 2025, 03:25 PM GMT+2"
       },
       {
         "status": "passed",
-        "duration": "750ms",
+        "duration": "936ms",
         "error_message": "",
-        "run_date": "May 16, 2025, 08:49 PM GMT+2"
+        "run_date": "May 20, 2025, 08:23 PM GMT+2"
       },
       {
         "status": "passed",
-        "duration": "01s:196ms",
+        "duration": "818ms",
         "error_message": "",
-        "run_date": "May 16, 2025, 08:48 PM GMT+2"
-      },
-      {
-        "status": "passed",
-        "duration": "651ms",
-        "error_message": "",
-        "run_date": "May 16, 2025, 08:48 PM GMT+2"
+        "run_date": "May 19, 2025, 05:22 PM GMT+2"
       }
     ]
   },
   {
     "testId": "invalid-username-01234567890-displays-username-constraints.spec.ts:Desktop 1920×1080:01234567890 (too long)",
     "history": [
+      {
+        "status": "passed",
+        "duration": "522ms",
+        "error_message": "",
+        "run_date": "May 22, 2025, 10:11 AM GMT+2"
+      },
+      {
+        "status": "passed",
+        "duration": "336ms",
+        "error_message": "",
+        "run_date": "May 21, 2025, 04:23 PM GMT+2"
+      },
+      {
+        "status": "passed",
+        "duration": "414ms",
+        "error_message": "",
+        "run_date": "May 21, 2025, 03:25 PM GMT+2"
+      },
+      {
+        "status": "failed",
+        "duration": "287ms",
+        "error_message": "Error: page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:3000/www/_html/new-accountProject-representative.html\nCall log:\n  - navigating to &quot;http://127.0.0.1:3000/www/_html/new-accountProject-representative.html&quot;, waiting until &quot;load&quot;<span style=\"font-weight:normal;text-decoration:none;font-style:normal\">\n\n    at /Users/dev/Desktop/changemakers-matching_testing/c-playwright-tests/Accessibility/3. Understandable/3.3 Input Assistance/3.3.1 Error Identification Level A/invalid-username-01234567890-displays-username-constraints.spec.ts:7:18</span>",
+        "run_date": "May 21, 2025, 03:25 PM GMT+2"
+      },
+      {
+        "status": "failed",
+        "duration": "391ms",
+        "error_message": "Error: page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:3000/www/_html/new-accountProject-representative.html\nCall log:\n  - navigating to &quot;http://127.0.0.1:3000/www/_html/new-accountProject-representative.html&quot;, waiting until &quot;load&quot;<span style=\"font-weight:normal;text-decoration:none;font-style:normal\">\n\n    at /Users/dev/Desktop/changemakers-matching_testing/c-playwright-tests/Accessibility/3. Understandable/3.3 Input Assistance/3.3.1 Error Identification Level A/invalid-username-01234567890-displays-username-constraints.spec.ts:7:18</span>",
+        "run_date": "May 21, 2025, 03:25 PM GMT+2"
+      },
+      {
+        "status": "failed",
+        "duration": "326ms",
+        "error_message": "Error: page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:3000/www/_html/new-accountProject-representative.html\nCall log:\n  - navigating to &quot;http://127.0.0.1:3000/www/_html/new-accountProject-representative.html&quot;, waiting until &quot;load&quot;<span style=\"font-weight:normal;text-decoration:none;font-style:normal\">\n\n    at /Users/dev/Desktop/changemakers-matching_testing/c-playwright-tests/Accessibility/3. Understandable/3.3 Input Assistance/3.3.1 Error Identification Level A/invalid-username-01234567890-displays-username-constraints.spec.ts:7:18</span>",
+        "run_date": "May 21, 2025, 03:25 PM GMT+2"
+      },
+      {
+        "status": "failed",
+        "duration": "306ms",
+        "error_message": "Error: page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:3000/www/_html/new-accountProject-representative.html\nCall log:\n  - navigating to &quot;http://127.0.0.1:3000/www/_html/new-accountProject-representative.html&quot;, waiting until &quot;load&quot;<span style=\"font-weight:normal;text-decoration:none;font-style:normal\">\n\n    at /Users/dev/Desktop/changemakers-matching_testing/c-playwright-tests/Accessibility/3. Understandable/3.3 Input Assistance/3.3.1 Error Identification Level A/invalid-username-01234567890-displays-username-constraints.spec.ts:7:18</span>",
+        "run_date": "May 21, 2025, 03:25 PM GMT+2"
+      },
+      {
+        "status": "failed",
+        "duration": "318ms",
+        "error_message": "Error: page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:3000/www/_html/new-accountProject-representative.html\nCall log:\n  - navigating to &quot;http://127.0.0.1:3000/www/_html/new-accountProject-representative.html&quot;, waiting until &quot;load&quot;<span style=\"font-weight:normal;text-decoration:none;font-style:normal\">\n\n    at /Users/dev/Desktop/changemakers-matching_testing/c-playwright-tests/Accessibility/3. Understandable/3.3 Input Assistance/3.3.1 Error Identification Level A/invalid-username-01234567890-displays-username-constraints.spec.ts:7:18</span>",
+        "run_date": "May 21, 2025, 03:25 PM GMT+2"
+      },
       {
         "status": "passed",
         "duration": "291ms",
@@ -3047,60 +3173,54 @@
         "duration": "441ms",
         "error_message": "",
         "run_date": "May 19, 2025, 05:22 PM GMT+2"
-      },
-      {
-        "status": "passed",
-        "duration": "328ms",
-        "error_message": "",
-        "run_date": "May 18, 2025, 09:40 AM GMT+2"
-      },
-      {
-        "status": "passed",
-        "duration": "243ms",
-        "error_message": "",
-        "run_date": "May 18, 2025, 07:06 AM GMT+2"
-      },
-      {
-        "status": "passed",
-        "duration": "01s:124ms",
-        "error_message": "",
-        "run_date": "May 17, 2025, 09:10 AM GMT+2"
-      },
-      {
-        "status": "passed",
-        "duration": "01s:407ms",
-        "error_message": "",
-        "run_date": "May 17, 2025, 09:08 AM GMT+2"
-      },
-      {
-        "status": "passed",
-        "duration": "844ms",
-        "error_message": "",
-        "run_date": "May 17, 2025, 09:04 AM GMT+2"
-      },
-      {
-        "status": "passed",
-        "duration": "302ms",
-        "error_message": "",
-        "run_date": "May 16, 2025, 08:49 PM GMT+2"
-      },
-      {
-        "status": "passed",
-        "duration": "01s:164ms",
-        "error_message": "",
-        "run_date": "May 16, 2025, 08:48 PM GMT+2"
-      },
-      {
-        "status": "passed",
-        "duration": "262ms",
-        "error_message": "",
-        "run_date": "May 16, 2025, 08:48 PM GMT+2"
       }
     ]
   },
   {
     "testId": "invalid-username-01234567890-displays-username-constraints.spec.ts:Desktop 1536×864:01234567890 (too long)",
     "history": [
+      {
+        "status": "passed",
+        "duration": "01s:117ms",
+        "error_message": "",
+        "run_date": "May 22, 2025, 10:11 AM GMT+2"
+      },
+      {
+        "status": "passed",
+        "duration": "638ms",
+        "error_message": "",
+        "run_date": "May 21, 2025, 04:23 PM GMT+2"
+      },
+      {
+        "status": "passed",
+        "duration": "541ms",
+        "error_message": "",
+        "run_date": "May 21, 2025, 03:25 PM GMT+2"
+      },
+      {
+        "status": "failed",
+        "duration": "394ms",
+        "error_message": "Error: page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:3000/www/_html/new-accountProject-representative.html\nCall log:\n  - navigating to &quot;http://127.0.0.1:3000/www/_html/new-accountProject-representative.html&quot;, waiting until &quot;load&quot;<span style=\"font-weight:normal;text-decoration:none;font-style:normal\">\n\n    at /Users/dev/Desktop/changemakers-matching_testing/c-playwright-tests/Accessibility/3. Understandable/3.3 Input Assistance/3.3.1 Error Identification Level A/invalid-username-01234567890-displays-username-constraints.spec.ts:7:18</span>",
+        "run_date": "May 21, 2025, 03:25 PM GMT+2"
+      },
+      {
+        "status": "failed",
+        "duration": "407ms",
+        "error_message": "Error: page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:3000/www/_html/new-accountProject-representative.html\nCall log:\n  - navigating to &quot;http://127.0.0.1:3000/www/_html/new-accountProject-representative.html&quot;, waiting until &quot;load&quot;<span style=\"font-weight:normal;text-decoration:none;font-style:normal\">\n\n    at /Users/dev/Desktop/changemakers-matching_testing/c-playwright-tests/Accessibility/3. Understandable/3.3 Input Assistance/3.3.1 Error Identification Level A/invalid-username-01234567890-displays-username-constraints.spec.ts:7:18</span>",
+        "run_date": "May 21, 2025, 03:25 PM GMT+2"
+      },
+      {
+        "status": "failed",
+        "duration": "497ms",
+        "error_message": "Error: page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:3000/www/_html/new-accountProject-representative.html\nCall log:\n  - navigating to &quot;http://127.0.0.1:3000/www/_html/new-accountProject-representative.html&quot;, waiting until &quot;load&quot;<span style=\"font-weight:normal;text-decoration:none;font-style:normal\">\n\n    at /Users/dev/Desktop/changemakers-matching_testing/c-playwright-tests/Accessibility/3. Understandable/3.3 Input Assistance/3.3.1 Error Identification Level A/invalid-username-01234567890-displays-username-constraints.spec.ts:7:18</span>",
+        "run_date": "May 21, 2025, 03:25 PM GMT+2"
+      },
+      {
+        "status": "flaky",
+        "duration": "01s:211ms",
+        "error_message": "",
+        "run_date": "May 21, 2025, 03:25 PM GMT+2"
+      },
       {
         "status": "passed",
         "duration": "500ms",
@@ -3118,54 +3238,60 @@
         "duration": "458ms",
         "error_message": "",
         "run_date": "May 18, 2025, 09:40 AM GMT+2"
-      },
-      {
-        "status": "passed",
-        "duration": "420ms",
-        "error_message": "",
-        "run_date": "May 18, 2025, 07:06 AM GMT+2"
-      },
-      {
-        "status": "passed",
-        "duration": "500ms",
-        "error_message": "",
-        "run_date": "May 17, 2025, 09:10 AM GMT+2"
-      },
-      {
-        "status": "passed",
-        "duration": "917ms",
-        "error_message": "",
-        "run_date": "May 17, 2025, 09:08 AM GMT+2"
-      },
-      {
-        "status": "passed",
-        "duration": "519ms",
-        "error_message": "",
-        "run_date": "May 17, 2025, 09:04 AM GMT+2"
-      },
-      {
-        "status": "passed",
-        "duration": "450ms",
-        "error_message": "",
-        "run_date": "May 16, 2025, 08:49 PM GMT+2"
-      },
-      {
-        "status": "passed",
-        "duration": "582ms",
-        "error_message": "",
-        "run_date": "May 16, 2025, 08:48 PM GMT+2"
-      },
-      {
-        "status": "passed",
-        "duration": "415ms",
-        "error_message": "",
-        "run_date": "May 16, 2025, 08:48 PM GMT+2"
       }
     ]
   },
   {
     "testId": "invalid-username-01234567890-displays-username-constraints.spec.ts:Desktop 1366×768:01234567890 (too long)",
     "history": [
+      {
+        "status": "passed",
+        "duration": "822ms",
+        "error_message": "",
+        "run_date": "May 22, 2025, 10:11 AM GMT+2"
+      },
+      {
+        "status": "passed",
+        "duration": "639ms",
+        "error_message": "",
+        "run_date": "May 21, 2025, 04:23 PM GMT+2"
+      },
+      {
+        "status": "passed",
+        "duration": "567ms",
+        "error_message": "",
+        "run_date": "May 21, 2025, 03:25 PM GMT+2"
+      },
+      {
+        "status": "failed",
+        "duration": "308ms",
+        "error_message": "Error: page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:3000/www/_html/new-accountProject-representative.html\nCall log:\n  - navigating to &quot;http://127.0.0.1:3000/www/_html/new-accountProject-representative.html&quot;, waiting until &quot;load&quot;<span style=\"font-weight:normal;text-decoration:none;font-style:normal\">\n\n    at /Users/dev/Desktop/changemakers-matching_testing/c-playwright-tests/Accessibility/3. Understandable/3.3 Input Assistance/3.3.1 Error Identification Level A/invalid-username-01234567890-displays-username-constraints.spec.ts:7:18</span>",
+        "run_date": "May 21, 2025, 03:25 PM GMT+2"
+      },
+      {
+        "status": "failed",
+        "duration": "418ms",
+        "error_message": "Error: page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:3000/www/_html/new-accountProject-representative.html\nCall log:\n  - navigating to &quot;http://127.0.0.1:3000/www/_html/new-accountProject-representative.html&quot;, waiting until &quot;load&quot;<span style=\"font-weight:normal;text-decoration:none;font-style:normal\">\n\n    at /Users/dev/Desktop/changemakers-matching_testing/c-playwright-tests/Accessibility/3. Understandable/3.3 Input Assistance/3.3.1 Error Identification Level A/invalid-username-01234567890-displays-username-constraints.spec.ts:7:18</span>",
+        "run_date": "May 21, 2025, 03:25 PM GMT+2"
+      },
+      {
+        "status": "failed",
+        "duration": "321ms",
+        "error_message": "Error: page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:3000/www/_html/new-accountProject-representative.html\nCall log:\n  - navigating to &quot;http://127.0.0.1:3000/www/_html/new-accountProject-representative.html&quot;, waiting until &quot;load&quot;<span style=\"font-weight:normal;text-decoration:none;font-style:normal\">\n\n    at /Users/dev/Desktop/changemakers-matching_testing/c-playwright-tests/Accessibility/3. Understandable/3.3 Input Assistance/3.3.1 Error Identification Level A/invalid-username-01234567890-displays-username-constraints.spec.ts:7:18</span>",
+        "run_date": "May 21, 2025, 03:25 PM GMT+2"
+      },
+      {
+        "status": "failed",
+        "duration": "354ms",
+        "error_message": "Error: page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:3000/www/_html/new-accountProject-representative.html\nCall log:\n  - navigating to &quot;http://127.0.0.1:3000/www/_html/new-accountProject-representative.html&quot;, waiting until &quot;load&quot;<span style=\"font-weight:normal;text-decoration:none;font-style:normal\">\n\n    at /Users/dev/Desktop/changemakers-matching_testing/c-playwright-tests/Accessibility/3. Understandable/3.3 Input Assistance/3.3.1 Error Identification Level A/invalid-username-01234567890-displays-username-constraints.spec.ts:7:18</span>",
+        "run_date": "May 21, 2025, 03:25 PM GMT+2"
+      },
+      {
+        "status": "failed",
+        "duration": "396ms",
+        "error_message": "Error: page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:3000/www/_html/new-accountProject-representative.html\nCall log:\n  - navigating to &quot;http://127.0.0.1:3000/www/_html/new-accountProject-representative.html&quot;, waiting until &quot;load&quot;<span style=\"font-weight:normal;text-decoration:none;font-style:normal\">\n\n    at /Users/dev/Desktop/changemakers-matching_testing/c-playwright-tests/Accessibility/3. Understandable/3.3 Input Assistance/3.3.1 Error Identification Level A/invalid-username-01234567890-displays-username-constraints.spec.ts:7:18</span>",
+        "run_date": "May 21, 2025, 03:25 PM GMT+2"
+      },
       {
         "status": "passed",
         "duration": "624ms",
@@ -3177,60 +3303,36 @@
         "duration": "496ms",
         "error_message": "",
         "run_date": "May 19, 2025, 05:22 PM GMT+2"
-      },
-      {
-        "status": "passed",
-        "duration": "558ms",
-        "error_message": "",
-        "run_date": "May 18, 2025, 09:40 AM GMT+2"
-      },
-      {
-        "status": "passed",
-        "duration": "570ms",
-        "error_message": "",
-        "run_date": "May 18, 2025, 07:06 AM GMT+2"
-      },
-      {
-        "status": "passed",
-        "duration": "01s:120ms",
-        "error_message": "",
-        "run_date": "May 17, 2025, 09:10 AM GMT+2"
-      },
-      {
-        "status": "passed",
-        "duration": "01s:501ms",
-        "error_message": "",
-        "run_date": "May 17, 2025, 09:08 AM GMT+2"
-      },
-      {
-        "status": "passed",
-        "duration": "911ms",
-        "error_message": "",
-        "run_date": "May 17, 2025, 09:04 AM GMT+2"
-      },
-      {
-        "status": "passed",
-        "duration": "376ms",
-        "error_message": "",
-        "run_date": "May 16, 2025, 08:49 PM GMT+2"
-      },
-      {
-        "status": "passed",
-        "duration": "01s:111ms",
-        "error_message": "",
-        "run_date": "May 16, 2025, 08:48 PM GMT+2"
-      },
-      {
-        "status": "passed",
-        "duration": "575ms",
-        "error_message": "",
-        "run_date": "May 16, 2025, 08:48 PM GMT+2"
       }
     ]
   },
   {
     "testId": "invalid-username-01234567890-displays-username-constraints.spec.ts:Mobile 360×800:01234567890 (too long)",
     "history": [
+      {
+        "status": "passed",
+        "duration": "695ms",
+        "error_message": "",
+        "run_date": "May 22, 2025, 10:11 AM GMT+2"
+      },
+      {
+        "status": "passed",
+        "duration": "608ms",
+        "error_message": "",
+        "run_date": "May 21, 2025, 04:23 PM GMT+2"
+      },
+      {
+        "status": "passed",
+        "duration": "379ms",
+        "error_message": "",
+        "run_date": "May 21, 2025, 03:25 PM GMT+2"
+      },
+      {
+        "status": "passed",
+        "duration": "859ms",
+        "error_message": "",
+        "run_date": "May 21, 2025, 03:25 PM GMT+2"
+      },
       {
         "status": "passed",
         "duration": "732ms",
@@ -3266,18 +3368,54 @@
         "duration": "679ms",
         "error_message": "",
         "run_date": "May 17, 2025, 09:08 AM GMT+2"
-      },
-      {
-        "status": "passed",
-        "duration": "586ms",
-        "error_message": "",
-        "run_date": "May 17, 2025, 09:04 AM GMT+2"
       }
     ]
   },
   {
     "testId": "invalid-username-01234567890-displays-username-constraints.spec.ts:Desktop 1280×720:01234567890 (too long)",
     "history": [
+      {
+        "status": "passed",
+        "duration": "733ms",
+        "error_message": "",
+        "run_date": "May 22, 2025, 10:11 AM GMT+2"
+      },
+      {
+        "status": "passed",
+        "duration": "668ms",
+        "error_message": "",
+        "run_date": "May 21, 2025, 04:23 PM GMT+2"
+      },
+      {
+        "status": "passed",
+        "duration": "490ms",
+        "error_message": "",
+        "run_date": "May 21, 2025, 03:25 PM GMT+2"
+      },
+      {
+        "status": "failed",
+        "duration": "405ms",
+        "error_message": "Error: page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:3000/www/_html/new-accountProject-representative.html\nCall log:\n  - navigating to &quot;http://127.0.0.1:3000/www/_html/new-accountProject-representative.html&quot;, waiting until &quot;load&quot;<span style=\"font-weight:normal;text-decoration:none;font-style:normal\">\n\n    at /Users/dev/Desktop/changemakers-matching_testing/c-playwright-tests/Accessibility/3. Understandable/3.3 Input Assistance/3.3.1 Error Identification Level A/invalid-username-01234567890-displays-username-constraints.spec.ts:7:18</span>",
+        "run_date": "May 21, 2025, 03:25 PM GMT+2"
+      },
+      {
+        "status": "failed",
+        "duration": "406ms",
+        "error_message": "Error: page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:3000/www/_html/new-accountProject-representative.html\nCall log:\n  - navigating to &quot;http://127.0.0.1:3000/www/_html/new-accountProject-representative.html&quot;, waiting until &quot;load&quot;<span style=\"font-weight:normal;text-decoration:none;font-style:normal\">\n\n    at /Users/dev/Desktop/changemakers-matching_testing/c-playwright-tests/Accessibility/3. Understandable/3.3 Input Assistance/3.3.1 Error Identification Level A/invalid-username-01234567890-displays-username-constraints.spec.ts:7:18</span>",
+        "run_date": "May 21, 2025, 03:25 PM GMT+2"
+      },
+      {
+        "status": "failed",
+        "duration": "497ms",
+        "error_message": "Error: page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:3000/www/_html/new-accountProject-representative.html\nCall log:\n  - navigating to &quot;http://127.0.0.1:3000/www/_html/new-accountProject-representative.html&quot;, waiting until &quot;load&quot;<span style=\"font-weight:normal;text-decoration:none;font-style:normal\">\n\n    at /Users/dev/Desktop/changemakers-matching_testing/c-playwright-tests/Accessibility/3. Understandable/3.3 Input Assistance/3.3.1 Error Identification Level A/invalid-username-01234567890-displays-username-constraints.spec.ts:7:18</span>",
+        "run_date": "May 21, 2025, 03:25 PM GMT+2"
+      },
+      {
+        "status": "flaky",
+        "duration": "01s:202ms",
+        "error_message": "",
+        "run_date": "May 21, 2025, 03:25 PM GMT+2"
+      },
       {
         "status": "passed",
         "duration": "786ms",
@@ -3295,54 +3433,36 @@
         "duration": "598ms",
         "error_message": "",
         "run_date": "May 18, 2025, 09:40 AM GMT+2"
-      },
-      {
-        "status": "passed",
-        "duration": "543ms",
-        "error_message": "",
-        "run_date": "May 18, 2025, 07:06 AM GMT+2"
-      },
-      {
-        "status": "passed",
-        "duration": "515ms",
-        "error_message": "",
-        "run_date": "May 17, 2025, 09:10 AM GMT+2"
-      },
-      {
-        "status": "passed",
-        "duration": "932ms",
-        "error_message": "",
-        "run_date": "May 17, 2025, 09:08 AM GMT+2"
-      },
-      {
-        "status": "passed",
-        "duration": "563ms",
-        "error_message": "",
-        "run_date": "May 17, 2025, 09:04 AM GMT+2"
-      },
-      {
-        "status": "passed",
-        "duration": "358ms",
-        "error_message": "",
-        "run_date": "May 16, 2025, 08:49 PM GMT+2"
-      },
-      {
-        "status": "passed",
-        "duration": "548ms",
-        "error_message": "",
-        "run_date": "May 16, 2025, 08:48 PM GMT+2"
-      },
-      {
-        "status": "passed",
-        "duration": "329ms",
-        "error_message": "",
-        "run_date": "May 16, 2025, 08:48 PM GMT+2"
       }
     ]
   },
   {
     "testId": "invalid-username-01234567890-displays-username-constraints.spec.ts:Mobile 390×844:01234567890 (too long)",
     "history": [
+      {
+        "status": "passed",
+        "duration": "556ms",
+        "error_message": "",
+        "run_date": "May 22, 2025, 10:11 AM GMT+2"
+      },
+      {
+        "status": "passed",
+        "duration": "407ms",
+        "error_message": "",
+        "run_date": "May 21, 2025, 04:23 PM GMT+2"
+      },
+      {
+        "status": "passed",
+        "duration": "446ms",
+        "error_message": "",
+        "run_date": "May 21, 2025, 03:25 PM GMT+2"
+      },
+      {
+        "status": "passed",
+        "duration": "811ms",
+        "error_message": "",
+        "run_date": "May 21, 2025, 03:25 PM GMT+2"
+      },
       {
         "status": "passed",
         "duration": "557ms",
@@ -3386,6 +3506,30 @@
     "history": [
       {
         "status": "passed",
+        "duration": "614ms",
+        "error_message": "",
+        "run_date": "May 22, 2025, 10:11 AM GMT+2"
+      },
+      {
+        "status": "passed",
+        "duration": "470ms",
+        "error_message": "",
+        "run_date": "May 21, 2025, 04:23 PM GMT+2"
+      },
+      {
+        "status": "passed",
+        "duration": "476ms",
+        "error_message": "",
+        "run_date": "May 21, 2025, 03:25 PM GMT+2"
+      },
+      {
+        "status": "skipped",
+        "duration": "",
+        "error_message": "",
+        "run_date": "May 21, 2025, 03:25 PM GMT+2"
+      },
+      {
+        "status": "passed",
         "duration": "598ms",
         "error_message": "",
         "run_date": "May 20, 2025, 08:23 PM GMT+2"
@@ -3415,6 +3559,30 @@
     "history": [
       {
         "status": "passed",
+        "duration": "585ms",
+        "error_message": "",
+        "run_date": "May 22, 2025, 10:11 AM GMT+2"
+      },
+      {
+        "status": "passed",
+        "duration": "548ms",
+        "error_message": "",
+        "run_date": "May 21, 2025, 04:23 PM GMT+2"
+      },
+      {
+        "status": "passed",
+        "duration": "442ms",
+        "error_message": "",
+        "run_date": "May 21, 2025, 03:25 PM GMT+2"
+      },
+      {
+        "status": "skipped",
+        "duration": "",
+        "error_message": "",
+        "run_date": "May 21, 2025, 03:25 PM GMT+2"
+      },
+      {
+        "status": "passed",
         "duration": "373ms",
         "error_message": "",
         "run_date": "May 20, 2025, 08:23 PM GMT+2"
@@ -3428,6 +3596,41 @@
       {
         "status": "passed",
         "duration": "402ms",
+        "error_message": "",
+        "run_date": "May 17, 2025, 09:04 AM GMT+2"
+      }
+    ]
+  },
+  {
+    "testId": "invalid-username-01234567890-displays-username-constraints.spec.ts:Tablet 768×1024:01234567890 (too long)",
+    "history": [
+      {
+        "status": "passed",
+        "duration": "446ms",
+        "error_message": "",
+        "run_date": "May 22, 2025, 10:11 AM GMT+2"
+      },
+      {
+        "status": "passed",
+        "duration": "544ms",
+        "error_message": "",
+        "run_date": "May 21, 2025, 04:23 PM GMT+2"
+      },
+      {
+        "status": "passed",
+        "duration": "482ms",
+        "error_message": "",
+        "run_date": "May 21, 2025, 03:25 PM GMT+2"
+      },
+      {
+        "status": "passed",
+        "duration": "595ms",
+        "error_message": "",
+        "run_date": "May 17, 2025, 09:08 AM GMT+2"
+      },
+      {
+        "status": "passed",
+        "duration": "611ms",
         "error_message": "",
         "run_date": "May 17, 2025, 09:04 AM GMT+2"
       }
