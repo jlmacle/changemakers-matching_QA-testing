@@ -338,14 +338,14 @@
                     <div class="column is-one-sixth">
                         <div class="box  " style="border-left: 5px solid hsl(var(--bulma-primary-h), var(--bulma-primary-s), var(--bulma-primary-l)) !important"
                             data-status="all">
-                            <p class="title is-size-3 mb-0">11</p>
+                            <p class="title is-size-3 mb-0">22</p>
                             <p class="subtitle is-size-7">All Tests</p>
                         </div>
                     </div>
                     <div class="column is-one-sixth">
                         <div class="box  " style="border-left: 5px solid hsl(var(--bulma-success-h), var(--bulma-success-s), var(--bulma-success-l)) !important"
                             data-status="passed">
-                            <p class="title is-size-3 mb-0">11</p>
+                            <p class="title is-size-3 mb-0">22</p>
                             <p class="subtitle is-size-7">Passed</p>
                         </div>
                     </div>
@@ -369,7 +369,7 @@
                                     <span class="icon has-text-info mr-2">
                                         <i class="fas fa-calendar-alt"></i>
                                     </span>
-                                    <span class="is-size-5">22-May-2025 10:11:00 AM</span>
+                                    <span class="is-size-5">23-May-2025 8:32:02 AM</span>
                                 </p>
                             </div>
                             <div class="field">
@@ -378,7 +378,7 @@
                                     <span class="icon has-text-warning mr-2">
                                         <i class="fas fa-stopwatch"></i>
                                     </span>
-                                    <span class="is-size-5">17s:899ms</span>
+                                    <span class="is-size-5">19s:911ms</span>
                                 </p>
                             </div>
                         </div>
@@ -458,7 +458,7 @@
                                 data: {
                                     labels: ['Passed', 'Failed', 'Skipped', 'Flaky'],
                                     datasets: [{
-                                        data: [11, 0, 0, 0, 0],
+                                        data: [22, 0, 0, 0, 0],
                                 backgroundColor: ['#28a745', '#ff6685', '#66d1ff', '#ffb70f', '#69748c']}]
                                 },
                                 options: {
@@ -504,25 +504,27 @@
                 
                             const projectNames = [
                   "Desktop 1920×1080",
-                  "Desktop 1536×864",
                   "Desktop 1366×768",
-                  "Mobile 360×800",
+                  "Desktop 1536×864",
                   "Desktop 1280×720",
+                  "Mobile 360×800",
                   "Mobile 390×844",
                   "Mobile 393×873",
                   "Mobile 412×915",
-                  "Tablet 768×1024"
+                  "Tablet 768×1024",
+                  "Tablet 1280×800"
                 ];
                             const totalTests = [
-                  3,
-                  1,
-                  1,
-                  1,
-                  1,
-                  1,
-                  1,
-                  1,
-                  1
+                  4,
+                  2,
+                  2,
+                  2,
+                  2,
+                  2,
+                  2,
+                  2,
+                  2,
+                  2
                 ];
                             function generateRandomColor() {
                                 const letters = '0123456789ABCDEF';
@@ -560,17 +562,19 @@
                                 }
                             });
                             const passedTests = [
-                  3,
-                  1,
-                  1,
-                  1,
-                  1,
-                  1,
-                  1,
-                  1,
-                  1
+                  4,
+                  2,
+                  2,
+                  2,
+                  2,
+                  2,
+                  2,
+                  2,
+                  2,
+                  2
                 ];
                             const failedTests = [
+                  0,
                   0,
                   0,
                   0,
@@ -590,6 +594,7 @@
                   0,
                   0,
                   0,
+                  0,
                   0
                 ];
                             const retryTests = [
@@ -601,9 +606,11 @@
                   0,
                   0,
                   0,
+                  0,
                   0
                 ];
                             const flakyTests = [
+                  0,
                   0,
                   0,
                   0,
@@ -690,7 +697,7 @@
                             <div class="box filter is-clickable" style="border-left: 5px solid hsl(var(--bulma-primary-h), var(--bulma-primary-s), var(--bulma-primary-l)) !important"
                                 data-status="all">
                                 <p class="title is-size-6 mb-0">
-                                    11 <span class="icon is-small"><i class="fa-solid fa-vial"></i></span>
+                                    22 <span class="icon is-small"><i class="fa-solid fa-vial"></i></span>
                                 </p>
                             </div>
                         </div>
@@ -698,7 +705,7 @@
                             <div class="box filter is-clickable" style="border-left: 5px solid hsl(var(--bulma-success-h), var(--bulma-success-s), var(--bulma-success-l)) !important"
                                 data-status="passed">
                                 <p class="title is-size-6 mb-0">
-                                    11 <span class="icon is-small"><i class="fa fa-check-circle"></i></span>
+                                    22 <span class="icon is-small"><i class="fa fa-check-circle"></i></span>
                                 </p>
                             </div>
                         </div>
@@ -730,26 +737,26 @@
                                             </div>
                                             <div class="dropdown-item">
                                                 <label class="checkbox is-capitalized">
-                                                    <input name="Desktop 1536×864" type="checkbox" data-filter-type="project" value="Desktop 1536×864" />
-                                                    Desktop 1536×864
-                                                </label>
-                                            </div>
-                                            <div class="dropdown-item">
-                                                <label class="checkbox is-capitalized">
                                                     <input name="Desktop 1366×768" type="checkbox" data-filter-type="project" value="Desktop 1366×768" />
                                                     Desktop 1366×768
                                                 </label>
                                             </div>
                                             <div class="dropdown-item">
                                                 <label class="checkbox is-capitalized">
-                                                    <input name="Mobile 360×800" type="checkbox" data-filter-type="project" value="Mobile 360×800" />
-                                                    Mobile 360×800
+                                                    <input name="Desktop 1536×864" type="checkbox" data-filter-type="project" value="Desktop 1536×864" />
+                                                    Desktop 1536×864
                                                 </label>
                                             </div>
                                             <div class="dropdown-item">
                                                 <label class="checkbox is-capitalized">
                                                     <input name="Desktop 1280×720" type="checkbox" data-filter-type="project" value="Desktop 1280×720" />
                                                     Desktop 1280×720
+                                                </label>
+                                            </div>
+                                            <div class="dropdown-item">
+                                                <label class="checkbox is-capitalized">
+                                                    <input name="Mobile 360×800" type="checkbox" data-filter-type="project" value="Mobile 360×800" />
+                                                    Mobile 360×800
                                                 </label>
                                             </div>
                                             <div class="dropdown-item">
@@ -774,6 +781,12 @@
                                                 <label class="checkbox is-capitalized">
                                                     <input name="Tablet 768×1024" type="checkbox" data-filter-type="project" value="Tablet 768×1024" />
                                                     Tablet 768×1024
+                                                </label>
+                                            </div>
+                                            <div class="dropdown-item">
+                                                <label class="checkbox is-capitalized">
+                                                    <input name="Tablet 1280×800" type="checkbox" data-filter-type="project" value="Tablet 1280×800" />
+                                                    Tablet 1280×800
                                                 </label>
                                             </div>
                                             <hr class="dropdown-divider" />
@@ -955,7 +968,7 @@
                                             status-passed
                                              ml-4" data-suite-name="Tab Navigation on the Home Page"
                                             data-test-tags="" data-project-name="Desktop 1920×1080" data-test-id="0"
-                                            data-test-history-id="tab-navigation-home-page.spec.ts:Desktop 1920×1080:Tab Navigation on the Home Page" data-test-status="passed " data-test-duration="01s:093ms">
+                                            data-test-history-id="tab-navigation-home-page.spec.ts:Desktop 1920×1080:Tab Navigation on the Home Page" data-test-status="passed " data-test-duration="798ms">
                                             <div class="icon-text">
                                                 <span>Tab Navigation on the Home Page</span>
                                             </div>
@@ -1001,11 +1014,138 @@
                                             status-passed
                                              ml-4" data-suite-name="Tab Navigation on the Representative Page"
                                             data-test-tags="" data-project-name="Desktop 1920×1080" data-test-id="1"
-                                            data-test-history-id="tab-navigation-representative-page.spec.ts:Desktop 1920×1080:Tab Navigation on the Representative Page" data-test-status="passed " data-test-duration="01s:100ms">
+                                            data-test-history-id="tab-navigation-representative-page.spec.ts:Desktop 1920×1080:Tab Navigation on the Representative Page" data-test-status="passed " data-test-duration="815ms">
                                             <div class="icon-text">
                                                 <span>Tab Navigation on the Representative Page</span>
                                             </div>
                                             <span class="tag duration-tag has-text-weight-medium">Desktop 1920×1080</span>
+                                        </div>            </details>
+                                </div>
+                            </details>
+                            <details class="test-group">
+                                <summary class="is-size-5">
+                                    <div class="icon-text">
+                                        <span class="icon">
+                                            <svg class="icon-chevron" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                                <polyline points="9 18 15 12 9 6" />
+                                            </svg>
+                                        </span>
+                                        <span>invalid-username-abc-displays-username-constraints.spec.ts</span>
+                                    </div>
+                                </summary>
+                                <div class="test-content">
+                                    <details class="test-case">
+                                        <summary>
+                                            <span class="icon is-small">
+                                                <svg class="image is-16x16" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                                    <path
+                                                        d="M181.344 42.656v394.671C181.344 478.562 214.781 512 256 512c41.25 0 74.672-33.438 74.672-74.673V42.656H181.344z"
+                                                        fill="#e6e9ed" />
+                                                    <path
+                                                        d="M352 32c0 17.672-14.312 32-32 32H192c-17.656 0-32-14.328-32-32s14.344-32 32-32h128c17.688 0 32 14.328 32 32z"
+                                                        fill="#ccd1d9" />
+                                                    <path
+                                                        d="M181.344 192v245.327C181.344 478.562 214.781 512 256 512c41.25 0 74.672-33.438 74.672-74.673V192H181.344z"
+                                                        fill="#a0d468" />
+                                                    <g fill="#434a54">
+                                                        <path
+                                                            d="M245.344 266.655c0-5.89-4.781-10.655-10.672-10.655h-53.328v21.328h53.328c5.89 0 10.672-4.781 10.672-10.673zM234.672 319.999h-53.328v21.328h53.328c5.891 0 10.672-4.781 10.672-10.671s-4.782-10.657-10.672-10.657zM245.344 202.656c0-5.891-4.781-10.656-10.672-10.656h-53.328v21.328h53.328c5.89 0 10.672-4.781 10.672-10.672z" />
+                                                    </g>
+                                                </svg>
+                                            </span>
+                                            <span class="is-size-6">Username validation: invalid username (too short): abc</span>
+                                        </summary>
+                                        <div class="test-item 
+                                            status-passed
+                                             ml-4" data-suite-name="Username validation: invalid username (too short): abc"
+                                            data-test-tags="" data-project-name="Desktop 1920×1080" data-test-id="2"
+                                            data-test-history-id="invalid-username-abc-displays-username-constraints.spec.ts:Desktop 1920×1080:abc (too short)" data-test-status="passed " data-test-duration="372ms">
+                                            <div class="icon-text">
+                                                <span>abc (too short)</span>
+                                            </div>
+                                            <span class="tag duration-tag has-text-weight-medium">Desktop 1920×1080</span>
+                                        </div>                <div class="test-item 
+                                            status-passed
+                                             ml-4" data-suite-name="Username validation: invalid username (too short): abc"
+                                            data-test-tags="" data-project-name="Desktop 1366×768" data-test-id="4"
+                                            data-test-history-id="invalid-username-abc-displays-username-constraints.spec.ts:Desktop 1366×768:abc (too short)" data-test-status="passed " data-test-duration="488ms">
+                                            <div class="icon-text">
+                                                <span>abc (too short)</span>
+                                            </div>
+                                            <span class="tag duration-tag has-text-weight-medium">Desktop 1366×768</span>
+                                        </div>                <div class="test-item 
+                                            status-passed
+                                             ml-4" data-suite-name="Username validation: invalid username (too short): abc"
+                                            data-test-tags="" data-project-name="Desktop 1536×864" data-test-id="6"
+                                            data-test-history-id="invalid-username-abc-displays-username-constraints.spec.ts:Desktop 1536×864:abc (too short)" data-test-status="passed " data-test-duration="457ms">
+                                            <div class="icon-text">
+                                                <span>abc (too short)</span>
+                                            </div>
+                                            <span class="tag duration-tag has-text-weight-medium">Desktop 1536×864</span>
+                                        </div>                <div class="test-item 
+                                            status-passed
+                                             ml-4" data-suite-name="Username validation: invalid username (too short): abc"
+                                            data-test-tags="" data-project-name="Desktop 1280×720" data-test-id="8"
+                                            data-test-history-id="invalid-username-abc-displays-username-constraints.spec.ts:Desktop 1280×720:abc (too short)" data-test-status="passed " data-test-duration="410ms">
+                                            <div class="icon-text">
+                                                <span>abc (too short)</span>
+                                            </div>
+                                            <span class="tag duration-tag has-text-weight-medium">Desktop 1280×720</span>
+                                        </div>                <div class="test-item 
+                                            status-passed
+                                             ml-4" data-suite-name="Username validation: invalid username (too short): abc"
+                                            data-test-tags="" data-project-name="Mobile 360×800" data-test-id="11"
+                                            data-test-history-id="invalid-username-abc-displays-username-constraints.spec.ts:Mobile 360×800:abc (too short)" data-test-status="passed " data-test-duration="498ms">
+                                            <div class="icon-text">
+                                                <span>abc (too short)</span>
+                                            </div>
+                                            <span class="tag duration-tag has-text-weight-medium">Mobile 360×800</span>
+                                        </div>                <div class="test-item 
+                                            status-passed
+                                             ml-4" data-suite-name="Username validation: invalid username (too short): abc"
+                                            data-test-tags="" data-project-name="Mobile 390×844" data-test-id="12"
+                                            data-test-history-id="invalid-username-abc-displays-username-constraints.spec.ts:Mobile 390×844:abc (too short)" data-test-status="passed " data-test-duration="527ms">
+                                            <div class="icon-text">
+                                                <span>abc (too short)</span>
+                                            </div>
+                                            <span class="tag duration-tag has-text-weight-medium">Mobile 390×844</span>
+                                        </div>                <div class="test-item 
+                                            status-passed
+                                             ml-4" data-suite-name="Username validation: invalid username (too short): abc"
+                                            data-test-tags="" data-project-name="Mobile 393×873" data-test-id="14"
+                                            data-test-history-id="invalid-username-abc-displays-username-constraints.spec.ts:Mobile 393×873:abc (too short)" data-test-status="passed " data-test-duration="435ms">
+                                            <div class="icon-text">
+                                                <span>abc (too short)</span>
+                                            </div>
+                                            <span class="tag duration-tag has-text-weight-medium">Mobile 393×873</span>
+                                        </div>                <div class="test-item 
+                                            status-passed
+                                             ml-4" data-suite-name="Username validation: invalid username (too short): abc"
+                                            data-test-tags="" data-project-name="Mobile 412×915" data-test-id="16"
+                                            data-test-history-id="invalid-username-abc-displays-username-constraints.spec.ts:Mobile 412×915:abc (too short)" data-test-status="passed " data-test-duration="479ms">
+                                            <div class="icon-text">
+                                                <span>abc (too short)</span>
+                                            </div>
+                                            <span class="tag duration-tag has-text-weight-medium">Mobile 412×915</span>
+                                        </div>                <div class="test-item 
+                                            status-passed
+                                             ml-4" data-suite-name="Username validation: invalid username (too short): abc"
+                                            data-test-tags="" data-project-name="Tablet 768×1024" data-test-id="19"
+                                            data-test-history-id="invalid-username-abc-displays-username-constraints.spec.ts:Tablet 768×1024:abc (too short)" data-test-status="passed " data-test-duration="480ms">
+                                            <div class="icon-text">
+                                                <span>abc (too short)</span>
+                                            </div>
+                                            <span class="tag duration-tag has-text-weight-medium">Tablet 768×1024</span>
+                                        </div>                <div class="test-item 
+                                            status-passed
+                                             ml-4" data-suite-name="Username validation: invalid username (too short): abc"
+                                            data-test-tags="" data-project-name="Tablet 1280×800" data-test-id="20"
+                                            data-test-history-id="invalid-username-abc-displays-username-constraints.spec.ts:Tablet 1280×800:abc (too short)" data-test-status="passed " data-test-duration="530ms">
+                                            <div class="icon-text">
+                                                <span>abc (too short)</span>
+                                            </div>
+                                            <span class="tag duration-tag has-text-weight-medium">Tablet 1280×800</span>
                                         </div>            </details>
                                 </div>
                             </details>
@@ -1046,8 +1186,8 @@
                                         <div class="test-item 
                                             status-passed
                                              ml-4" data-suite-name="Username validation: invalid username (too long): 01234567890"
-                                            data-test-tags="" data-project-name="Desktop 1920×1080" data-test-id="2"
-                                            data-test-history-id="invalid-username-01234567890-displays-username-constraints.spec.ts:Desktop 1920×1080:01234567890 (too long)" data-test-status="passed " data-test-duration="522ms">
+                                            data-test-tags="" data-project-name="Desktop 1920×1080" data-test-id="3"
+                                            data-test-history-id="invalid-username-01234567890-displays-username-constraints.spec.ts:Desktop 1920×1080:01234567890 (too long)" data-test-status="passed " data-test-duration="473ms">
                                             <div class="icon-text">
                                                 <span>01234567890 (too long)</span>
                                             </div>
@@ -1055,17 +1195,8 @@
                                         </div>                <div class="test-item 
                                             status-passed
                                              ml-4" data-suite-name="Username validation: invalid username (too long): 01234567890"
-                                            data-test-tags="" data-project-name="Desktop 1536×864" data-test-id="3"
-                                            data-test-history-id="invalid-username-01234567890-displays-username-constraints.spec.ts:Desktop 1536×864:01234567890 (too long)" data-test-status="passed " data-test-duration="01s:117ms">
-                                            <div class="icon-text">
-                                                <span>01234567890 (too long)</span>
-                                            </div>
-                                            <span class="tag duration-tag has-text-weight-medium">Desktop 1536×864</span>
-                                        </div>                <div class="test-item 
-                                            status-passed
-                                             ml-4" data-suite-name="Username validation: invalid username (too long): 01234567890"
-                                            data-test-tags="" data-project-name="Desktop 1366×768" data-test-id="4"
-                                            data-test-history-id="invalid-username-01234567890-displays-username-constraints.spec.ts:Desktop 1366×768:01234567890 (too long)" data-test-status="passed " data-test-duration="822ms">
+                                            data-test-tags="" data-project-name="Desktop 1366×768" data-test-id="5"
+                                            data-test-history-id="invalid-username-01234567890-displays-username-constraints.spec.ts:Desktop 1366×768:01234567890 (too long)" data-test-status="passed " data-test-duration="506ms">
                                             <div class="icon-text">
                                                 <span>01234567890 (too long)</span>
                                             </div>
@@ -1073,17 +1204,17 @@
                                         </div>                <div class="test-item 
                                             status-passed
                                              ml-4" data-suite-name="Username validation: invalid username (too long): 01234567890"
-                                            data-test-tags="" data-project-name="Mobile 360×800" data-test-id="5"
-                                            data-test-history-id="invalid-username-01234567890-displays-username-constraints.spec.ts:Mobile 360×800:01234567890 (too long)" data-test-status="passed " data-test-duration="695ms">
+                                            data-test-tags="" data-project-name="Desktop 1536×864" data-test-id="7"
+                                            data-test-history-id="invalid-username-01234567890-displays-username-constraints.spec.ts:Desktop 1536×864:01234567890 (too long)" data-test-status="passed " data-test-duration="504ms">
                                             <div class="icon-text">
                                                 <span>01234567890 (too long)</span>
                                             </div>
-                                            <span class="tag duration-tag has-text-weight-medium">Mobile 360×800</span>
+                                            <span class="tag duration-tag has-text-weight-medium">Desktop 1536×864</span>
                                         </div>                <div class="test-item 
                                             status-passed
                                              ml-4" data-suite-name="Username validation: invalid username (too long): 01234567890"
-                                            data-test-tags="" data-project-name="Desktop 1280×720" data-test-id="6"
-                                            data-test-history-id="invalid-username-01234567890-displays-username-constraints.spec.ts:Desktop 1280×720:01234567890 (too long)" data-test-status="passed " data-test-duration="733ms">
+                                            data-test-tags="" data-project-name="Desktop 1280×720" data-test-id="9"
+                                            data-test-history-id="invalid-username-01234567890-displays-username-constraints.spec.ts:Desktop 1280×720:01234567890 (too long)" data-test-status="passed " data-test-duration="497ms">
                                             <div class="icon-text">
                                                 <span>01234567890 (too long)</span>
                                             </div>
@@ -1091,8 +1222,17 @@
                                         </div>                <div class="test-item 
                                             status-passed
                                              ml-4" data-suite-name="Username validation: invalid username (too long): 01234567890"
-                                            data-test-tags="" data-project-name="Mobile 390×844" data-test-id="7"
-                                            data-test-history-id="invalid-username-01234567890-displays-username-constraints.spec.ts:Mobile 390×844:01234567890 (too long)" data-test-status="passed " data-test-duration="556ms">
+                                            data-test-tags="" data-project-name="Mobile 360×800" data-test-id="10"
+                                            data-test-history-id="invalid-username-01234567890-displays-username-constraints.spec.ts:Mobile 360×800:01234567890 (too long)" data-test-status="passed " data-test-duration="478ms">
+                                            <div class="icon-text">
+                                                <span>01234567890 (too long)</span>
+                                            </div>
+                                            <span class="tag duration-tag has-text-weight-medium">Mobile 360×800</span>
+                                        </div>                <div class="test-item 
+                                            status-passed
+                                             ml-4" data-suite-name="Username validation: invalid username (too long): 01234567890"
+                                            data-test-tags="" data-project-name="Mobile 390×844" data-test-id="13"
+                                            data-test-history-id="invalid-username-01234567890-displays-username-constraints.spec.ts:Mobile 390×844:01234567890 (too long)" data-test-status="passed " data-test-duration="568ms">
                                             <div class="icon-text">
                                                 <span>01234567890 (too long)</span>
                                             </div>
@@ -1100,8 +1240,8 @@
                                         </div>                <div class="test-item 
                                             status-passed
                                              ml-4" data-suite-name="Username validation: invalid username (too long): 01234567890"
-                                            data-test-tags="" data-project-name="Mobile 393×873" data-test-id="8"
-                                            data-test-history-id="invalid-username-01234567890-displays-username-constraints.spec.ts:Mobile 393×873:01234567890 (too long)" data-test-status="passed " data-test-duration="614ms">
+                                            data-test-tags="" data-project-name="Mobile 393×873" data-test-id="15"
+                                            data-test-history-id="invalid-username-01234567890-displays-username-constraints.spec.ts:Mobile 393×873:01234567890 (too long)" data-test-status="passed " data-test-duration="472ms">
                                             <div class="icon-text">
                                                 <span>01234567890 (too long)</span>
                                             </div>
@@ -1109,8 +1249,8 @@
                                         </div>                <div class="test-item 
                                             status-passed
                                              ml-4" data-suite-name="Username validation: invalid username (too long): 01234567890"
-                                            data-test-tags="" data-project-name="Mobile 412×915" data-test-id="9"
-                                            data-test-history-id="invalid-username-01234567890-displays-username-constraints.spec.ts:Mobile 412×915:01234567890 (too long)" data-test-status="passed " data-test-duration="585ms">
+                                            data-test-tags="" data-project-name="Mobile 412×915" data-test-id="17"
+                                            data-test-history-id="invalid-username-01234567890-displays-username-constraints.spec.ts:Mobile 412×915:01234567890 (too long)" data-test-status="passed " data-test-duration="461ms">
                                             <div class="icon-text">
                                                 <span>01234567890 (too long)</span>
                                             </div>
@@ -1118,12 +1258,21 @@
                                         </div>                <div class="test-item 
                                             status-passed
                                              ml-4" data-suite-name="Username validation: invalid username (too long): 01234567890"
-                                            data-test-tags="" data-project-name="Tablet 768×1024" data-test-id="10"
-                                            data-test-history-id="invalid-username-01234567890-displays-username-constraints.spec.ts:Tablet 768×1024:01234567890 (too long)" data-test-status="passed " data-test-duration="446ms">
+                                            data-test-tags="" data-project-name="Tablet 768×1024" data-test-id="18"
+                                            data-test-history-id="invalid-username-01234567890-displays-username-constraints.spec.ts:Tablet 768×1024:01234567890 (too long)" data-test-status="passed " data-test-duration="610ms">
                                             <div class="icon-text">
                                                 <span>01234567890 (too long)</span>
                                             </div>
                                             <span class="tag duration-tag has-text-weight-medium">Tablet 768×1024</span>
+                                        </div>                <div class="test-item 
+                                            status-passed
+                                             ml-4" data-suite-name="Username validation: invalid username (too long): 01234567890"
+                                            data-test-tags="" data-project-name="Tablet 1280×800" data-test-id="21"
+                                            data-test-history-id="invalid-username-01234567890-displays-username-constraints.spec.ts:Tablet 1280×800:01234567890 (too long)" data-test-status="passed " data-test-duration="583ms">
+                                            <div class="icon-text">
+                                                <span>01234567890 (too long)</span>
+                                            </div>
+                                            <span class="tag duration-tag has-text-weight-medium">Tablet 1280×800</span>
                                         </div>            </details>
                                 </div>
                             </details>
@@ -2294,7 +2443,7 @@
     "title": "Tab Navigation on the Home Page",
     "status": "passed",
     "flaky": "expected",
-    "duration": "01s:093ms",
+    "duration": "798ms",
     "errors": [],
     "steps": [
       {
@@ -2396,7 +2545,7 @@
     "title": "Tab Navigation on the Representative Page",
     "status": "passed",
     "flaky": "expected",
-    "duration": "01s:100ms",
+    "duration": "815ms",
     "errors": [],
     "steps": [
       {
@@ -2479,6 +2628,62 @@
     "port": 2004,
     "annotations": [],
     "testTags": [],
+    "location": "invalid-username-abc-displays-username-constraints.spec.ts:5:9",
+    "retry": "",
+    "isRetry": 0,
+    "projectName": "Desktop 1920×1080",
+    "suite": "Username validation: invalid username (too short): abc",
+    "title": "abc (too short)",
+    "status": "passed",
+    "flaky": "expected",
+    "duration": "372ms",
+    "errors": [],
+    "steps": [
+      {
+        "snippet": "",
+        "title": "Before Hooks",
+        "location": ""
+      },
+      {
+        "snippet": "",
+        "title": "page.goto(http://127.0.0.1:3000/www/_html/new-accountProject-representative.html)",
+        "location": ""
+      },
+      {
+        "snippet": "",
+        "title": "page.waitForLoadState",
+        "location": ""
+      },
+      {
+        "snippet": "",
+        "title": "locator.fill(abc)",
+        "location": ""
+      },
+      {
+        "snippet": "",
+        "title": "locator.dispatchEvent([data-test=\"username\"])",
+        "location": ""
+      },
+      {
+        "snippet": "",
+        "title": "expect.toHaveText",
+        "location": ""
+      },
+      {
+        "snippet": "",
+        "title": "After Hooks",
+        "location": ""
+      }
+    ],
+    "logs": "",
+    "filePath": "invalid-username-abc-displays-username-constraints.spec.ts",
+    "base64Image": false,
+    "screenshots": []
+  },
+  {
+    "port": 2004,
+    "annotations": [],
+    "testTags": [],
     "location": "invalid-username-01234567890-displays-username-constraints.spec.ts:5:9",
     "retry": "",
     "isRetry": 0,
@@ -2487,7 +2692,7 @@
     "title": "01234567890 (too long)",
     "status": "passed",
     "flaky": "expected",
-    "duration": "522ms",
+    "duration": "473ms",
     "errors": [],
     "steps": [
       {
@@ -2535,15 +2740,15 @@
     "port": 2004,
     "annotations": [],
     "testTags": [],
-    "location": "invalid-username-01234567890-displays-username-constraints.spec.ts:5:9",
+    "location": "invalid-username-abc-displays-username-constraints.spec.ts:5:9",
     "retry": "",
     "isRetry": 0,
-    "projectName": "Desktop 1536×864",
-    "suite": "Username validation: invalid username (too long): 01234567890",
-    "title": "01234567890 (too long)",
+    "projectName": "Desktop 1366×768",
+    "suite": "Username validation: invalid username (too short): abc",
+    "title": "abc (too short)",
     "status": "passed",
     "flaky": "expected",
-    "duration": "01s:117ms",
+    "duration": "488ms",
     "errors": [],
     "steps": [
       {
@@ -2563,7 +2768,7 @@
       },
       {
         "snippet": "",
-        "title": "locator.fill(01234567890)",
+        "title": "locator.fill(abc)",
         "location": ""
       },
       {
@@ -2583,7 +2788,7 @@
       }
     ],
     "logs": "",
-    "filePath": "invalid-username-01234567890-displays-username-constraints.spec.ts",
+    "filePath": "invalid-username-abc-displays-username-constraints.spec.ts",
     "base64Image": false,
     "screenshots": []
   },
@@ -2599,7 +2804,231 @@
     "title": "01234567890 (too long)",
     "status": "passed",
     "flaky": "expected",
-    "duration": "822ms",
+    "duration": "506ms",
+    "errors": [],
+    "steps": [
+      {
+        "snippet": "",
+        "title": "Before Hooks",
+        "location": ""
+      },
+      {
+        "snippet": "",
+        "title": "page.goto(http://127.0.0.1:3000/www/_html/new-accountProject-representative.html)",
+        "location": ""
+      },
+      {
+        "snippet": "",
+        "title": "page.waitForLoadState",
+        "location": ""
+      },
+      {
+        "snippet": "",
+        "title": "locator.fill(01234567890)",
+        "location": ""
+      },
+      {
+        "snippet": "",
+        "title": "locator.dispatchEvent([data-test=\"username\"])",
+        "location": ""
+      },
+      {
+        "snippet": "",
+        "title": "expect.toHaveText",
+        "location": ""
+      },
+      {
+        "snippet": "",
+        "title": "After Hooks",
+        "location": ""
+      }
+    ],
+    "logs": "",
+    "filePath": "invalid-username-01234567890-displays-username-constraints.spec.ts",
+    "base64Image": false,
+    "screenshots": []
+  },
+  {
+    "port": 2004,
+    "annotations": [],
+    "testTags": [],
+    "location": "invalid-username-abc-displays-username-constraints.spec.ts:5:9",
+    "retry": "",
+    "isRetry": 0,
+    "projectName": "Desktop 1536×864",
+    "suite": "Username validation: invalid username (too short): abc",
+    "title": "abc (too short)",
+    "status": "passed",
+    "flaky": "expected",
+    "duration": "457ms",
+    "errors": [],
+    "steps": [
+      {
+        "snippet": "",
+        "title": "Before Hooks",
+        "location": ""
+      },
+      {
+        "snippet": "",
+        "title": "page.goto(http://127.0.0.1:3000/www/_html/new-accountProject-representative.html)",
+        "location": ""
+      },
+      {
+        "snippet": "",
+        "title": "page.waitForLoadState",
+        "location": ""
+      },
+      {
+        "snippet": "",
+        "title": "locator.fill(abc)",
+        "location": ""
+      },
+      {
+        "snippet": "",
+        "title": "locator.dispatchEvent([data-test=\"username\"])",
+        "location": ""
+      },
+      {
+        "snippet": "",
+        "title": "expect.toHaveText",
+        "location": ""
+      },
+      {
+        "snippet": "",
+        "title": "After Hooks",
+        "location": ""
+      }
+    ],
+    "logs": "",
+    "filePath": "invalid-username-abc-displays-username-constraints.spec.ts",
+    "base64Image": false,
+    "screenshots": []
+  },
+  {
+    "port": 2004,
+    "annotations": [],
+    "testTags": [],
+    "location": "invalid-username-01234567890-displays-username-constraints.spec.ts:5:9",
+    "retry": "",
+    "isRetry": 0,
+    "projectName": "Desktop 1536×864",
+    "suite": "Username validation: invalid username (too long): 01234567890",
+    "title": "01234567890 (too long)",
+    "status": "passed",
+    "flaky": "expected",
+    "duration": "504ms",
+    "errors": [],
+    "steps": [
+      {
+        "snippet": "",
+        "title": "Before Hooks",
+        "location": ""
+      },
+      {
+        "snippet": "",
+        "title": "page.goto(http://127.0.0.1:3000/www/_html/new-accountProject-representative.html)",
+        "location": ""
+      },
+      {
+        "snippet": "",
+        "title": "page.waitForLoadState",
+        "location": ""
+      },
+      {
+        "snippet": "",
+        "title": "locator.fill(01234567890)",
+        "location": ""
+      },
+      {
+        "snippet": "",
+        "title": "locator.dispatchEvent([data-test=\"username\"])",
+        "location": ""
+      },
+      {
+        "snippet": "",
+        "title": "expect.toHaveText",
+        "location": ""
+      },
+      {
+        "snippet": "",
+        "title": "After Hooks",
+        "location": ""
+      }
+    ],
+    "logs": "",
+    "filePath": "invalid-username-01234567890-displays-username-constraints.spec.ts",
+    "base64Image": false,
+    "screenshots": []
+  },
+  {
+    "port": 2004,
+    "annotations": [],
+    "testTags": [],
+    "location": "invalid-username-abc-displays-username-constraints.spec.ts:5:9",
+    "retry": "",
+    "isRetry": 0,
+    "projectName": "Desktop 1280×720",
+    "suite": "Username validation: invalid username (too short): abc",
+    "title": "abc (too short)",
+    "status": "passed",
+    "flaky": "expected",
+    "duration": "410ms",
+    "errors": [],
+    "steps": [
+      {
+        "snippet": "",
+        "title": "Before Hooks",
+        "location": ""
+      },
+      {
+        "snippet": "",
+        "title": "page.goto(http://127.0.0.1:3000/www/_html/new-accountProject-representative.html)",
+        "location": ""
+      },
+      {
+        "snippet": "",
+        "title": "page.waitForLoadState",
+        "location": ""
+      },
+      {
+        "snippet": "",
+        "title": "locator.fill(abc)",
+        "location": ""
+      },
+      {
+        "snippet": "",
+        "title": "locator.dispatchEvent([data-test=\"username\"])",
+        "location": ""
+      },
+      {
+        "snippet": "",
+        "title": "expect.toHaveText",
+        "location": ""
+      },
+      {
+        "snippet": "",
+        "title": "After Hooks",
+        "location": ""
+      }
+    ],
+    "logs": "",
+    "filePath": "invalid-username-abc-displays-username-constraints.spec.ts",
+    "base64Image": false,
+    "screenshots": []
+  },
+  {
+    "port": 2004,
+    "annotations": [],
+    "testTags": [],
+    "location": "invalid-username-01234567890-displays-username-constraints.spec.ts:5:9",
+    "retry": "",
+    "isRetry": 0,
+    "projectName": "Desktop 1280×720",
+    "suite": "Username validation: invalid username (too long): 01234567890",
+    "title": "01234567890 (too long)",
+    "status": "passed",
+    "flaky": "expected",
+    "duration": "497ms",
     "errors": [],
     "steps": [
       {
@@ -2655,7 +3084,7 @@
     "title": "01234567890 (too long)",
     "status": "passed",
     "flaky": "expected",
-    "duration": "695ms",
+    "duration": "478ms",
     "errors": [],
     "steps": [
       {
@@ -2703,15 +3132,15 @@
     "port": 2004,
     "annotations": [],
     "testTags": [],
-    "location": "invalid-username-01234567890-displays-username-constraints.spec.ts:5:9",
+    "location": "invalid-username-abc-displays-username-constraints.spec.ts:5:9",
     "retry": "",
     "isRetry": 0,
-    "projectName": "Desktop 1280×720",
-    "suite": "Username validation: invalid username (too long): 01234567890",
-    "title": "01234567890 (too long)",
+    "projectName": "Mobile 360×800",
+    "suite": "Username validation: invalid username (too short): abc",
+    "title": "abc (too short)",
     "status": "passed",
     "flaky": "expected",
-    "duration": "733ms",
+    "duration": "498ms",
     "errors": [],
     "steps": [
       {
@@ -2731,7 +3160,7 @@
       },
       {
         "snippet": "",
-        "title": "locator.fill(01234567890)",
+        "title": "locator.fill(abc)",
         "location": ""
       },
       {
@@ -2751,7 +3180,63 @@
       }
     ],
     "logs": "",
-    "filePath": "invalid-username-01234567890-displays-username-constraints.spec.ts",
+    "filePath": "invalid-username-abc-displays-username-constraints.spec.ts",
+    "base64Image": false,
+    "screenshots": []
+  },
+  {
+    "port": 2004,
+    "annotations": [],
+    "testTags": [],
+    "location": "invalid-username-abc-displays-username-constraints.spec.ts:5:9",
+    "retry": "",
+    "isRetry": 0,
+    "projectName": "Mobile 390×844",
+    "suite": "Username validation: invalid username (too short): abc",
+    "title": "abc (too short)",
+    "status": "passed",
+    "flaky": "expected",
+    "duration": "527ms",
+    "errors": [],
+    "steps": [
+      {
+        "snippet": "",
+        "title": "Before Hooks",
+        "location": ""
+      },
+      {
+        "snippet": "",
+        "title": "page.goto(http://127.0.0.1:3000/www/_html/new-accountProject-representative.html)",
+        "location": ""
+      },
+      {
+        "snippet": "",
+        "title": "page.waitForLoadState",
+        "location": ""
+      },
+      {
+        "snippet": "",
+        "title": "locator.fill(abc)",
+        "location": ""
+      },
+      {
+        "snippet": "",
+        "title": "locator.dispatchEvent([data-test=\"username\"])",
+        "location": ""
+      },
+      {
+        "snippet": "",
+        "title": "expect.toHaveText",
+        "location": ""
+      },
+      {
+        "snippet": "",
+        "title": "After Hooks",
+        "location": ""
+      }
+    ],
+    "logs": "",
+    "filePath": "invalid-username-abc-displays-username-constraints.spec.ts",
     "base64Image": false,
     "screenshots": []
   },
@@ -2767,7 +3252,7 @@
     "title": "01234567890 (too long)",
     "status": "passed",
     "flaky": "expected",
-    "duration": "556ms",
+    "duration": "568ms",
     "errors": [],
     "steps": [
       {
@@ -2808,6 +3293,62 @@
     ],
     "logs": "",
     "filePath": "invalid-username-01234567890-displays-username-constraints.spec.ts",
+    "base64Image": false,
+    "screenshots": []
+  },
+  {
+    "port": 2004,
+    "annotations": [],
+    "testTags": [],
+    "location": "invalid-username-abc-displays-username-constraints.spec.ts:5:9",
+    "retry": "",
+    "isRetry": 0,
+    "projectName": "Mobile 393×873",
+    "suite": "Username validation: invalid username (too short): abc",
+    "title": "abc (too short)",
+    "status": "passed",
+    "flaky": "expected",
+    "duration": "435ms",
+    "errors": [],
+    "steps": [
+      {
+        "snippet": "",
+        "title": "Before Hooks",
+        "location": ""
+      },
+      {
+        "snippet": "",
+        "title": "page.goto(http://127.0.0.1:3000/www/_html/new-accountProject-representative.html)",
+        "location": ""
+      },
+      {
+        "snippet": "",
+        "title": "page.waitForLoadState",
+        "location": ""
+      },
+      {
+        "snippet": "",
+        "title": "locator.fill(abc)",
+        "location": ""
+      },
+      {
+        "snippet": "",
+        "title": "locator.dispatchEvent([data-test=\"username\"])",
+        "location": ""
+      },
+      {
+        "snippet": "",
+        "title": "expect.toHaveText",
+        "location": ""
+      },
+      {
+        "snippet": "",
+        "title": "After Hooks",
+        "location": ""
+      }
+    ],
+    "logs": "",
+    "filePath": "invalid-username-abc-displays-username-constraints.spec.ts",
     "base64Image": false,
     "screenshots": []
   },
@@ -2823,7 +3364,7 @@
     "title": "01234567890 (too long)",
     "status": "passed",
     "flaky": "expected",
-    "duration": "614ms",
+    "duration": "472ms",
     "errors": [],
     "steps": [
       {
@@ -2871,6 +3412,62 @@
     "port": 2004,
     "annotations": [],
     "testTags": [],
+    "location": "invalid-username-abc-displays-username-constraints.spec.ts:5:9",
+    "retry": "",
+    "isRetry": 0,
+    "projectName": "Mobile 412×915",
+    "suite": "Username validation: invalid username (too short): abc",
+    "title": "abc (too short)",
+    "status": "passed",
+    "flaky": "expected",
+    "duration": "479ms",
+    "errors": [],
+    "steps": [
+      {
+        "snippet": "",
+        "title": "Before Hooks",
+        "location": ""
+      },
+      {
+        "snippet": "",
+        "title": "page.goto(http://127.0.0.1:3000/www/_html/new-accountProject-representative.html)",
+        "location": ""
+      },
+      {
+        "snippet": "",
+        "title": "page.waitForLoadState",
+        "location": ""
+      },
+      {
+        "snippet": "",
+        "title": "locator.fill(abc)",
+        "location": ""
+      },
+      {
+        "snippet": "",
+        "title": "locator.dispatchEvent([data-test=\"username\"])",
+        "location": ""
+      },
+      {
+        "snippet": "",
+        "title": "expect.toHaveText",
+        "location": ""
+      },
+      {
+        "snippet": "",
+        "title": "After Hooks",
+        "location": ""
+      }
+    ],
+    "logs": "",
+    "filePath": "invalid-username-abc-displays-username-constraints.spec.ts",
+    "base64Image": false,
+    "screenshots": []
+  },
+  {
+    "port": 2004,
+    "annotations": [],
+    "testTags": [],
     "location": "invalid-username-01234567890-displays-username-constraints.spec.ts:5:9",
     "retry": "",
     "isRetry": 0,
@@ -2879,7 +3476,7 @@
     "title": "01234567890 (too long)",
     "status": "passed",
     "flaky": "expected",
-    "duration": "585ms",
+    "duration": "461ms",
     "errors": [],
     "steps": [
       {
@@ -2935,7 +3532,175 @@
     "title": "01234567890 (too long)",
     "status": "passed",
     "flaky": "expected",
-    "duration": "446ms",
+    "duration": "610ms",
+    "errors": [],
+    "steps": [
+      {
+        "snippet": "",
+        "title": "Before Hooks",
+        "location": ""
+      },
+      {
+        "snippet": "",
+        "title": "page.goto(http://127.0.0.1:3000/www/_html/new-accountProject-representative.html)",
+        "location": ""
+      },
+      {
+        "snippet": "",
+        "title": "page.waitForLoadState",
+        "location": ""
+      },
+      {
+        "snippet": "",
+        "title": "locator.fill(01234567890)",
+        "location": ""
+      },
+      {
+        "snippet": "",
+        "title": "locator.dispatchEvent([data-test=\"username\"])",
+        "location": ""
+      },
+      {
+        "snippet": "",
+        "title": "expect.toHaveText",
+        "location": ""
+      },
+      {
+        "snippet": "",
+        "title": "After Hooks",
+        "location": ""
+      }
+    ],
+    "logs": "",
+    "filePath": "invalid-username-01234567890-displays-username-constraints.spec.ts",
+    "base64Image": false,
+    "screenshots": []
+  },
+  {
+    "port": 2004,
+    "annotations": [],
+    "testTags": [],
+    "location": "invalid-username-abc-displays-username-constraints.spec.ts:5:9",
+    "retry": "",
+    "isRetry": 0,
+    "projectName": "Tablet 768×1024",
+    "suite": "Username validation: invalid username (too short): abc",
+    "title": "abc (too short)",
+    "status": "passed",
+    "flaky": "expected",
+    "duration": "480ms",
+    "errors": [],
+    "steps": [
+      {
+        "snippet": "",
+        "title": "Before Hooks",
+        "location": ""
+      },
+      {
+        "snippet": "",
+        "title": "page.goto(http://127.0.0.1:3000/www/_html/new-accountProject-representative.html)",
+        "location": ""
+      },
+      {
+        "snippet": "",
+        "title": "page.waitForLoadState",
+        "location": ""
+      },
+      {
+        "snippet": "",
+        "title": "locator.fill(abc)",
+        "location": ""
+      },
+      {
+        "snippet": "",
+        "title": "locator.dispatchEvent([data-test=\"username\"])",
+        "location": ""
+      },
+      {
+        "snippet": "",
+        "title": "expect.toHaveText",
+        "location": ""
+      },
+      {
+        "snippet": "",
+        "title": "After Hooks",
+        "location": ""
+      }
+    ],
+    "logs": "",
+    "filePath": "invalid-username-abc-displays-username-constraints.spec.ts",
+    "base64Image": false,
+    "screenshots": []
+  },
+  {
+    "port": 2004,
+    "annotations": [],
+    "testTags": [],
+    "location": "invalid-username-abc-displays-username-constraints.spec.ts:5:9",
+    "retry": "",
+    "isRetry": 0,
+    "projectName": "Tablet 1280×800",
+    "suite": "Username validation: invalid username (too short): abc",
+    "title": "abc (too short)",
+    "status": "passed",
+    "flaky": "expected",
+    "duration": "530ms",
+    "errors": [],
+    "steps": [
+      {
+        "snippet": "",
+        "title": "Before Hooks",
+        "location": ""
+      },
+      {
+        "snippet": "",
+        "title": "page.goto(http://127.0.0.1:3000/www/_html/new-accountProject-representative.html)",
+        "location": ""
+      },
+      {
+        "snippet": "",
+        "title": "page.waitForLoadState",
+        "location": ""
+      },
+      {
+        "snippet": "",
+        "title": "locator.fill(abc)",
+        "location": ""
+      },
+      {
+        "snippet": "",
+        "title": "locator.dispatchEvent([data-test=\"username\"])",
+        "location": ""
+      },
+      {
+        "snippet": "",
+        "title": "expect.toHaveText",
+        "location": ""
+      },
+      {
+        "snippet": "",
+        "title": "After Hooks",
+        "location": ""
+      }
+    ],
+    "logs": "",
+    "filePath": "invalid-username-abc-displays-username-constraints.spec.ts",
+    "base64Image": false,
+    "screenshots": []
+  },
+  {
+    "port": 2004,
+    "annotations": [],
+    "testTags": [],
+    "location": "invalid-username-01234567890-displays-username-constraints.spec.ts:5:9",
+    "retry": "",
+    "isRetry": 0,
+    "projectName": "Tablet 1280×800",
+    "suite": "Username validation: invalid username (too long): 01234567890",
+    "title": "01234567890 (too long)",
+    "status": "passed",
+    "flaky": "expected",
+    "duration": "583ms",
     "errors": [],
     "steps": [
       {
@@ -2986,6 +3751,18 @@
     "history": [
       {
         "status": "passed",
+        "duration": "798ms",
+        "error_message": "",
+        "run_date": "May 23, 2025, 08:32 AM GMT+2"
+      },
+      {
+        "status": "passed",
+        "duration": "885ms",
+        "error_message": "",
+        "run_date": "May 22, 2025, 03:18 PM GMT+2"
+      },
+      {
+        "status": "passed",
         "duration": "01s:093ms",
         "error_message": "",
         "run_date": "May 22, 2025, 10:11 AM GMT+2"
@@ -3031,24 +3808,24 @@
         "duration": "334ms",
         "error_message": "Error: page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:3000/www/index.html\nCall log:\n  - navigating to &quot;http://127.0.0.1:3000/www/index.html&quot;, waiting until &quot;load&quot;<span style=\"font-weight:normal;text-decoration:none;font-style:normal\">\n\n    at /Users/dev/Desktop/changemakers-matching_testing/c-playwright-tests/Accessibility/2. Operable/2.1 Keyboard Accessible/Tab-navigation/tab-navigation-home-page.spec.ts:6:16</span>",
         "run_date": "May 21, 2025, 03:25 PM GMT+2"
-      },
-      {
-        "status": "passed",
-        "duration": "936ms",
-        "error_message": "",
-        "run_date": "May 20, 2025, 08:23 PM GMT+2"
-      },
-      {
-        "status": "passed",
-        "duration": "738ms",
-        "error_message": "",
-        "run_date": "May 19, 2025, 05:22 PM GMT+2"
       }
     ]
   },
   {
     "testId": "tab-navigation-representative-page.spec.ts:Desktop 1920×1080:Tab Navigation on the Representative Page",
     "history": [
+      {
+        "status": "passed",
+        "duration": "815ms",
+        "error_message": "",
+        "run_date": "May 23, 2025, 08:32 AM GMT+2"
+      },
+      {
+        "status": "passed",
+        "duration": "915ms",
+        "error_message": "",
+        "run_date": "May 22, 2025, 03:18 PM GMT+2"
+      },
       {
         "status": "passed",
         "duration": "01s:100ms",
@@ -3096,24 +3873,35 @@
         "duration": "344ms",
         "error_message": "Error: page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:3000/www/_html/new-accountProject-representative.html\nCall log:\n  - navigating to &quot;http://127.0.0.1:3000/www/_html/new-accountProject-representative.html&quot;, waiting until &quot;load&quot;<span style=\"font-weight:normal;text-decoration:none;font-style:normal\">\n\n    at /Users/dev/Desktop/changemakers-matching_testing/c-playwright-tests/Accessibility/2. Operable/2.1 Keyboard Accessible/Tab-navigation/tab-navigation-representative-page.spec.ts:6:16</span>",
         "run_date": "May 21, 2025, 03:25 PM GMT+2"
-      },
+      }
+    ]
+  },
+  {
+    "testId": "invalid-username-abc-displays-username-constraints.spec.ts:Desktop 1920×1080:abc (too short)",
+    "history": [
       {
         "status": "passed",
-        "duration": "936ms",
+        "duration": "372ms",
         "error_message": "",
-        "run_date": "May 20, 2025, 08:23 PM GMT+2"
-      },
-      {
-        "status": "passed",
-        "duration": "818ms",
-        "error_message": "",
-        "run_date": "May 19, 2025, 05:22 PM GMT+2"
+        "run_date": "May 23, 2025, 08:32 AM GMT+2"
       }
     ]
   },
   {
     "testId": "invalid-username-01234567890-displays-username-constraints.spec.ts:Desktop 1920×1080:01234567890 (too long)",
     "history": [
+      {
+        "status": "passed",
+        "duration": "473ms",
+        "error_message": "",
+        "run_date": "May 23, 2025, 08:32 AM GMT+2"
+      },
+      {
+        "status": "passed",
+        "duration": "345ms",
+        "error_message": "",
+        "run_date": "May 22, 2025, 03:18 PM GMT+2"
+      },
       {
         "status": "passed",
         "duration": "522ms",
@@ -3161,89 +3949,35 @@
         "duration": "318ms",
         "error_message": "Error: page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:3000/www/_html/new-accountProject-representative.html\nCall log:\n  - navigating to &quot;http://127.0.0.1:3000/www/_html/new-accountProject-representative.html&quot;, waiting until &quot;load&quot;<span style=\"font-weight:normal;text-decoration:none;font-style:normal\">\n\n    at /Users/dev/Desktop/changemakers-matching_testing/c-playwright-tests/Accessibility/3. Understandable/3.3 Input Assistance/3.3.1 Error Identification Level A/invalid-username-01234567890-displays-username-constraints.spec.ts:7:18</span>",
         "run_date": "May 21, 2025, 03:25 PM GMT+2"
-      },
-      {
-        "status": "passed",
-        "duration": "291ms",
-        "error_message": "",
-        "run_date": "May 20, 2025, 08:23 PM GMT+2"
-      },
-      {
-        "status": "passed",
-        "duration": "441ms",
-        "error_message": "",
-        "run_date": "May 19, 2025, 05:22 PM GMT+2"
       }
     ]
   },
   {
-    "testId": "invalid-username-01234567890-displays-username-constraints.spec.ts:Desktop 1536×864:01234567890 (too long)",
+    "testId": "invalid-username-abc-displays-username-constraints.spec.ts:Desktop 1366×768:abc (too short)",
     "history": [
       {
         "status": "passed",
-        "duration": "01s:117ms",
+        "duration": "488ms",
         "error_message": "",
-        "run_date": "May 22, 2025, 10:11 AM GMT+2"
-      },
-      {
-        "status": "passed",
-        "duration": "638ms",
-        "error_message": "",
-        "run_date": "May 21, 2025, 04:23 PM GMT+2"
-      },
-      {
-        "status": "passed",
-        "duration": "541ms",
-        "error_message": "",
-        "run_date": "May 21, 2025, 03:25 PM GMT+2"
-      },
-      {
-        "status": "failed",
-        "duration": "394ms",
-        "error_message": "Error: page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:3000/www/_html/new-accountProject-representative.html\nCall log:\n  - navigating to &quot;http://127.0.0.1:3000/www/_html/new-accountProject-representative.html&quot;, waiting until &quot;load&quot;<span style=\"font-weight:normal;text-decoration:none;font-style:normal\">\n\n    at /Users/dev/Desktop/changemakers-matching_testing/c-playwright-tests/Accessibility/3. Understandable/3.3 Input Assistance/3.3.1 Error Identification Level A/invalid-username-01234567890-displays-username-constraints.spec.ts:7:18</span>",
-        "run_date": "May 21, 2025, 03:25 PM GMT+2"
-      },
-      {
-        "status": "failed",
-        "duration": "407ms",
-        "error_message": "Error: page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:3000/www/_html/new-accountProject-representative.html\nCall log:\n  - navigating to &quot;http://127.0.0.1:3000/www/_html/new-accountProject-representative.html&quot;, waiting until &quot;load&quot;<span style=\"font-weight:normal;text-decoration:none;font-style:normal\">\n\n    at /Users/dev/Desktop/changemakers-matching_testing/c-playwright-tests/Accessibility/3. Understandable/3.3 Input Assistance/3.3.1 Error Identification Level A/invalid-username-01234567890-displays-username-constraints.spec.ts:7:18</span>",
-        "run_date": "May 21, 2025, 03:25 PM GMT+2"
-      },
-      {
-        "status": "failed",
-        "duration": "497ms",
-        "error_message": "Error: page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:3000/www/_html/new-accountProject-representative.html\nCall log:\n  - navigating to &quot;http://127.0.0.1:3000/www/_html/new-accountProject-representative.html&quot;, waiting until &quot;load&quot;<span style=\"font-weight:normal;text-decoration:none;font-style:normal\">\n\n    at /Users/dev/Desktop/changemakers-matching_testing/c-playwright-tests/Accessibility/3. Understandable/3.3 Input Assistance/3.3.1 Error Identification Level A/invalid-username-01234567890-displays-username-constraints.spec.ts:7:18</span>",
-        "run_date": "May 21, 2025, 03:25 PM GMT+2"
-      },
-      {
-        "status": "flaky",
-        "duration": "01s:211ms",
-        "error_message": "",
-        "run_date": "May 21, 2025, 03:25 PM GMT+2"
-      },
-      {
-        "status": "passed",
-        "duration": "500ms",
-        "error_message": "",
-        "run_date": "May 20, 2025, 08:23 PM GMT+2"
-      },
-      {
-        "status": "passed",
-        "duration": "473ms",
-        "error_message": "",
-        "run_date": "May 19, 2025, 05:22 PM GMT+2"
-      },
-      {
-        "status": "passed",
-        "duration": "458ms",
-        "error_message": "",
-        "run_date": "May 18, 2025, 09:40 AM GMT+2"
+        "run_date": "May 23, 2025, 08:32 AM GMT+2"
       }
     ]
   },
   {
     "testId": "invalid-username-01234567890-displays-username-constraints.spec.ts:Desktop 1366×768:01234567890 (too long)",
     "history": [
+      {
+        "status": "passed",
+        "duration": "506ms",
+        "error_message": "",
+        "run_date": "May 23, 2025, 08:32 AM GMT+2"
+      },
+      {
+        "status": "passed",
+        "duration": "700ms",
+        "error_message": "",
+        "run_date": "May 22, 2025, 03:18 PM GMT+2"
+      },
       {
         "status": "passed",
         "duration": "822ms",
@@ -3291,89 +4025,111 @@
         "duration": "396ms",
         "error_message": "Error: page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:3000/www/_html/new-accountProject-representative.html\nCall log:\n  - navigating to &quot;http://127.0.0.1:3000/www/_html/new-accountProject-representative.html&quot;, waiting until &quot;load&quot;<span style=\"font-weight:normal;text-decoration:none;font-style:normal\">\n\n    at /Users/dev/Desktop/changemakers-matching_testing/c-playwright-tests/Accessibility/3. Understandable/3.3 Input Assistance/3.3.1 Error Identification Level A/invalid-username-01234567890-displays-username-constraints.spec.ts:7:18</span>",
         "run_date": "May 21, 2025, 03:25 PM GMT+2"
-      },
-      {
-        "status": "passed",
-        "duration": "624ms",
-        "error_message": "",
-        "run_date": "May 20, 2025, 08:23 PM GMT+2"
-      },
-      {
-        "status": "passed",
-        "duration": "496ms",
-        "error_message": "",
-        "run_date": "May 19, 2025, 05:22 PM GMT+2"
       }
     ]
   },
   {
-    "testId": "invalid-username-01234567890-displays-username-constraints.spec.ts:Mobile 360×800:01234567890 (too long)",
+    "testId": "invalid-username-abc-displays-username-constraints.spec.ts:Desktop 1536×864:abc (too short)",
     "history": [
       {
         "status": "passed",
-        "duration": "695ms",
+        "duration": "457ms",
+        "error_message": "",
+        "run_date": "May 23, 2025, 08:32 AM GMT+2"
+      }
+    ]
+  },
+  {
+    "testId": "invalid-username-01234567890-displays-username-constraints.spec.ts:Desktop 1536×864:01234567890 (too long)",
+    "history": [
+      {
+        "status": "passed",
+        "duration": "504ms",
+        "error_message": "",
+        "run_date": "May 23, 2025, 08:32 AM GMT+2"
+      },
+      {
+        "status": "passed",
+        "duration": "370ms",
+        "error_message": "",
+        "run_date": "May 22, 2025, 03:18 PM GMT+2"
+      },
+      {
+        "status": "passed",
+        "duration": "01s:117ms",
         "error_message": "",
         "run_date": "May 22, 2025, 10:11 AM GMT+2"
       },
       {
         "status": "passed",
-        "duration": "608ms",
+        "duration": "638ms",
         "error_message": "",
         "run_date": "May 21, 2025, 04:23 PM GMT+2"
       },
       {
         "status": "passed",
-        "duration": "379ms",
+        "duration": "541ms",
+        "error_message": "",
+        "run_date": "May 21, 2025, 03:25 PM GMT+2"
+      },
+      {
+        "status": "failed",
+        "duration": "394ms",
+        "error_message": "Error: page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:3000/www/_html/new-accountProject-representative.html\nCall log:\n  - navigating to &quot;http://127.0.0.1:3000/www/_html/new-accountProject-representative.html&quot;, waiting until &quot;load&quot;<span style=\"font-weight:normal;text-decoration:none;font-style:normal\">\n\n    at /Users/dev/Desktop/changemakers-matching_testing/c-playwright-tests/Accessibility/3. Understandable/3.3 Input Assistance/3.3.1 Error Identification Level A/invalid-username-01234567890-displays-username-constraints.spec.ts:7:18</span>",
+        "run_date": "May 21, 2025, 03:25 PM GMT+2"
+      },
+      {
+        "status": "failed",
+        "duration": "407ms",
+        "error_message": "Error: page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:3000/www/_html/new-accountProject-representative.html\nCall log:\n  - navigating to &quot;http://127.0.0.1:3000/www/_html/new-accountProject-representative.html&quot;, waiting until &quot;load&quot;<span style=\"font-weight:normal;text-decoration:none;font-style:normal\">\n\n    at /Users/dev/Desktop/changemakers-matching_testing/c-playwright-tests/Accessibility/3. Understandable/3.3 Input Assistance/3.3.1 Error Identification Level A/invalid-username-01234567890-displays-username-constraints.spec.ts:7:18</span>",
+        "run_date": "May 21, 2025, 03:25 PM GMT+2"
+      },
+      {
+        "status": "failed",
+        "duration": "497ms",
+        "error_message": "Error: page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:3000/www/_html/new-accountProject-representative.html\nCall log:\n  - navigating to &quot;http://127.0.0.1:3000/www/_html/new-accountProject-representative.html&quot;, waiting until &quot;load&quot;<span style=\"font-weight:normal;text-decoration:none;font-style:normal\">\n\n    at /Users/dev/Desktop/changemakers-matching_testing/c-playwright-tests/Accessibility/3. Understandable/3.3 Input Assistance/3.3.1 Error Identification Level A/invalid-username-01234567890-displays-username-constraints.spec.ts:7:18</span>",
+        "run_date": "May 21, 2025, 03:25 PM GMT+2"
+      },
+      {
+        "status": "flaky",
+        "duration": "01s:211ms",
         "error_message": "",
         "run_date": "May 21, 2025, 03:25 PM GMT+2"
       },
       {
         "status": "passed",
-        "duration": "859ms",
-        "error_message": "",
-        "run_date": "May 21, 2025, 03:25 PM GMT+2"
-      },
-      {
-        "status": "passed",
-        "duration": "732ms",
+        "duration": "500ms",
         "error_message": "",
         "run_date": "May 20, 2025, 08:23 PM GMT+2"
-      },
+      }
+    ]
+  },
+  {
+    "testId": "invalid-username-abc-displays-username-constraints.spec.ts:Desktop 1280×720:abc (too short)",
+    "history": [
       {
         "status": "passed",
-        "duration": "597ms",
+        "duration": "410ms",
         "error_message": "",
-        "run_date": "May 19, 2025, 05:22 PM GMT+2"
-      },
-      {
-        "status": "passed",
-        "duration": "899ms",
-        "error_message": "",
-        "run_date": "May 19, 2025, 11:46 AM GMT+2"
-      },
-      {
-        "status": "passed",
-        "duration": "590ms",
-        "error_message": "",
-        "run_date": "May 18, 2025, 09:40 AM GMT+2"
-      },
-      {
-        "status": "passed",
-        "duration": "547ms",
-        "error_message": "",
-        "run_date": "May 18, 2025, 07:06 AM GMT+2"
-      },
-      {
-        "status": "passed",
-        "duration": "679ms",
-        "error_message": "",
-        "run_date": "May 17, 2025, 09:08 AM GMT+2"
+        "run_date": "May 23, 2025, 08:32 AM GMT+2"
       }
     ]
   },
   {
     "testId": "invalid-username-01234567890-displays-username-constraints.spec.ts:Desktop 1280×720:01234567890 (too long)",
     "history": [
+      {
+        "status": "passed",
+        "duration": "497ms",
+        "error_message": "",
+        "run_date": "May 23, 2025, 08:32 AM GMT+2"
+      },
+      {
+        "status": "passed",
+        "duration": "547ms",
+        "error_message": "",
+        "run_date": "May 22, 2025, 03:18 PM GMT+2"
+      },
       {
         "status": "passed",
         "duration": "733ms",
@@ -3421,24 +4177,111 @@
         "duration": "786ms",
         "error_message": "",
         "run_date": "May 20, 2025, 08:23 PM GMT+2"
+      }
+    ]
+  },
+  {
+    "testId": "invalid-username-01234567890-displays-username-constraints.spec.ts:Mobile 360×800:01234567890 (too long)",
+    "history": [
+      {
+        "status": "passed",
+        "duration": "478ms",
+        "error_message": "",
+        "run_date": "May 23, 2025, 08:32 AM GMT+2"
       },
       {
         "status": "passed",
-        "duration": "548ms",
+        "duration": "544ms",
+        "error_message": "",
+        "run_date": "May 22, 2025, 03:18 PM GMT+2"
+      },
+      {
+        "status": "passed",
+        "duration": "695ms",
+        "error_message": "",
+        "run_date": "May 22, 2025, 10:11 AM GMT+2"
+      },
+      {
+        "status": "passed",
+        "duration": "608ms",
+        "error_message": "",
+        "run_date": "May 21, 2025, 04:23 PM GMT+2"
+      },
+      {
+        "status": "passed",
+        "duration": "379ms",
+        "error_message": "",
+        "run_date": "May 21, 2025, 03:25 PM GMT+2"
+      },
+      {
+        "status": "passed",
+        "duration": "859ms",
+        "error_message": "",
+        "run_date": "May 21, 2025, 03:25 PM GMT+2"
+      },
+      {
+        "status": "passed",
+        "duration": "732ms",
+        "error_message": "",
+        "run_date": "May 20, 2025, 08:23 PM GMT+2"
+      },
+      {
+        "status": "passed",
+        "duration": "597ms",
         "error_message": "",
         "run_date": "May 19, 2025, 05:22 PM GMT+2"
       },
       {
         "status": "passed",
-        "duration": "598ms",
+        "duration": "899ms",
+        "error_message": "",
+        "run_date": "May 19, 2025, 11:46 AM GMT+2"
+      },
+      {
+        "status": "passed",
+        "duration": "590ms",
         "error_message": "",
         "run_date": "May 18, 2025, 09:40 AM GMT+2"
       }
     ]
   },
   {
+    "testId": "invalid-username-abc-displays-username-constraints.spec.ts:Mobile 360×800:abc (too short)",
+    "history": [
+      {
+        "status": "passed",
+        "duration": "498ms",
+        "error_message": "",
+        "run_date": "May 23, 2025, 08:32 AM GMT+2"
+      }
+    ]
+  },
+  {
+    "testId": "invalid-username-abc-displays-username-constraints.spec.ts:Mobile 390×844:abc (too short)",
+    "history": [
+      {
+        "status": "passed",
+        "duration": "527ms",
+        "error_message": "",
+        "run_date": "May 23, 2025, 08:32 AM GMT+2"
+      }
+    ]
+  },
+  {
     "testId": "invalid-username-01234567890-displays-username-constraints.spec.ts:Mobile 390×844:01234567890 (too long)",
     "history": [
+      {
+        "status": "passed",
+        "duration": "568ms",
+        "error_message": "",
+        "run_date": "May 23, 2025, 08:32 AM GMT+2"
+      },
+      {
+        "status": "passed",
+        "duration": "572ms",
+        "error_message": "",
+        "run_date": "May 22, 2025, 03:18 PM GMT+2"
+      },
       {
         "status": "passed",
         "duration": "556ms",
@@ -3486,24 +4329,35 @@
         "duration": "336ms",
         "error_message": "",
         "run_date": "May 18, 2025, 09:40 AM GMT+2"
-      },
+      }
+    ]
+  },
+  {
+    "testId": "invalid-username-abc-displays-username-constraints.spec.ts:Mobile 393×873:abc (too short)",
+    "history": [
       {
         "status": "passed",
-        "duration": "715ms",
+        "duration": "435ms",
         "error_message": "",
-        "run_date": "May 17, 2025, 09:08 AM GMT+2"
-      },
-      {
-        "status": "passed",
-        "duration": "540ms",
-        "error_message": "",
-        "run_date": "May 17, 2025, 09:04 AM GMT+2"
+        "run_date": "May 23, 2025, 08:32 AM GMT+2"
       }
     ]
   },
   {
     "testId": "invalid-username-01234567890-displays-username-constraints.spec.ts:Mobile 393×873:01234567890 (too long)",
     "history": [
+      {
+        "status": "passed",
+        "duration": "472ms",
+        "error_message": "",
+        "run_date": "May 23, 2025, 08:32 AM GMT+2"
+      },
+      {
+        "status": "passed",
+        "duration": "386ms",
+        "error_message": "",
+        "run_date": "May 22, 2025, 03:18 PM GMT+2"
+      },
       {
         "status": "passed",
         "duration": "614ms",
@@ -3555,8 +4409,31 @@
     ]
   },
   {
+    "testId": "invalid-username-abc-displays-username-constraints.spec.ts:Mobile 412×915:abc (too short)",
+    "history": [
+      {
+        "status": "passed",
+        "duration": "479ms",
+        "error_message": "",
+        "run_date": "May 23, 2025, 08:32 AM GMT+2"
+      }
+    ]
+  },
+  {
     "testId": "invalid-username-01234567890-displays-username-constraints.spec.ts:Mobile 412×915:01234567890 (too long)",
     "history": [
+      {
+        "status": "passed",
+        "duration": "461ms",
+        "error_message": "",
+        "run_date": "May 23, 2025, 08:32 AM GMT+2"
+      },
+      {
+        "status": "passed",
+        "duration": "611ms",
+        "error_message": "",
+        "run_date": "May 22, 2025, 03:18 PM GMT+2"
+      },
       {
         "status": "passed",
         "duration": "585ms",
@@ -3606,6 +4483,18 @@
     "history": [
       {
         "status": "passed",
+        "duration": "610ms",
+        "error_message": "",
+        "run_date": "May 23, 2025, 08:32 AM GMT+2"
+      },
+      {
+        "status": "passed",
+        "duration": "608ms",
+        "error_message": "",
+        "run_date": "May 22, 2025, 03:18 PM GMT+2"
+      },
+      {
+        "status": "passed",
         "duration": "446ms",
         "error_message": "",
         "run_date": "May 22, 2025, 10:11 AM GMT+2"
@@ -3631,6 +4520,63 @@
       {
         "status": "passed",
         "duration": "611ms",
+        "error_message": "",
+        "run_date": "May 17, 2025, 09:04 AM GMT+2"
+      }
+    ]
+  },
+  {
+    "testId": "invalid-username-abc-displays-username-constraints.spec.ts:Tablet 768×1024:abc (too short)",
+    "history": [
+      {
+        "status": "passed",
+        "duration": "480ms",
+        "error_message": "",
+        "run_date": "May 23, 2025, 08:32 AM GMT+2"
+      }
+    ]
+  },
+  {
+    "testId": "invalid-username-abc-displays-username-constraints.spec.ts:Tablet 1280×800:abc (too short)",
+    "history": [
+      {
+        "status": "passed",
+        "duration": "530ms",
+        "error_message": "",
+        "run_date": "May 23, 2025, 08:32 AM GMT+2"
+      }
+    ]
+  },
+  {
+    "testId": "invalid-username-01234567890-displays-username-constraints.spec.ts:Tablet 1280×800:01234567890 (too long)",
+    "history": [
+      {
+        "status": "passed",
+        "duration": "583ms",
+        "error_message": "",
+        "run_date": "May 23, 2025, 08:32 AM GMT+2"
+      },
+      {
+        "status": "passed",
+        "duration": "313ms",
+        "error_message": "",
+        "run_date": "May 22, 2025, 03:18 PM GMT+2"
+      },
+      {
+        "status": "passed",
+        "duration": "595ms",
+        "error_message": "",
+        "run_date": "May 21, 2025, 04:23 PM GMT+2"
+      },
+      {
+        "status": "passed",
+        "duration": "596ms",
+        "error_message": "",
+        "run_date": "May 17, 2025, 09:08 AM GMT+2"
+      },
+      {
+        "status": "passed",
+        "duration": "654ms",
         "error_message": "",
         "run_date": "May 17, 2025, 09:04 AM GMT+2"
       }
