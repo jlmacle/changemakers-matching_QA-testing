@@ -14,9 +14,10 @@ for ((i=1; i<=TOTAL_SHARDS; i++)); do
 done
 
 # Merging all blob reports into a single HTML report
-echo "Merging reports
+echo "Merging reports"
 npx playwright merge-reports --reporter=html ./blob-reports-tmp
 
 # Opening the merged report in the browser
 echo "Opening merged report"
 npx playwright show-report
+
