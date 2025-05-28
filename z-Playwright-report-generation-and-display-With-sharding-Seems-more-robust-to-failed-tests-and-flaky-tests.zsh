@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 # Augmenting the number of shards when the tests are flaky seems to be effective
-TOTAL_SHARDS=5
+TOTAL_SHARDS=6
 
 # Running each shard, emiting blob, never auto-opening HTML
 for ((i=1; i<=TOTAL_SHARDS; i++)); do
