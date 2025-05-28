@@ -117,7 +117,12 @@ export default defineConfig({
        '**/tab-navigation-home-page.spec.ts',
        '**/tab-navigation-representative-page.spec.ts',
      ],},
- 
+     { name: 'Tablet 820×1180', 
+     use: { viewport: { width: 820, height: 1180 } },
+     testIgnore: [
+       '**/tab-navigation-home-page.spec.ts',
+       '**/tab-navigation-representative-page.spec.ts',
+     ],}, 
     
   ],
 
