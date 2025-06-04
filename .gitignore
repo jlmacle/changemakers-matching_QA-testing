@@ -11,9 +11,11 @@ cypress/videos/
 
 # Allure
 z-allure-results/
+z-allure-report/
 
 # Playwright
 z-playwright-results/
+z-playwright-report/
 blob-reports-tmp/
 
 # From the python utility scripts
