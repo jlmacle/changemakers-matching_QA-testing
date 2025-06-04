@@ -14,9 +14,7 @@ export default defineConfig({
     },    
     baseUrl: 'http://127.0.0.1:3000',
     experimentalStudio: true,
-    video: true, // Enable or disable video recording
-    videoCompression: true, // "Setting videoCompression to true will coerce the video compression value to 32 Constant Rate Factor (CRF)" 
-                            // https://docs.cypress.io/app/guides/screenshots-and-videos
+    video: false, // Enable or disable video recording //False to avoid using too much resources during tests    
     specPattern: "**/*.feature",
     async setupNodeEvents(on, config) {      
       on("file:preprocessor", createBundler({ plugins: [createEsbuildPlugin(config)] }));
