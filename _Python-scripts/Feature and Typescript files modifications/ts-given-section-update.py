@@ -66,7 +66,7 @@ def generate_given_section_file(viewport_sizes, output_file):
                         width, height = viewport.split('×')
                         f.write(f"Given('the viewport size is {viewport}', () => {{\n")
                         f.write(f"\tcy.viewport({width},{height});\n")
-                        f.write(f"}});\n\n")
+                        f.write("}});\n\n")
                     except ValueError:
                         print(f"Warning: Skipping malformed size '{viewport}' in {device_type}")
         print(f"Given section file '{output_file}' generated successfully!")
