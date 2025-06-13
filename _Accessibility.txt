@@ -30,3 +30,6 @@ https://help.gnome.org/users/orca/stable/commands_structural_navigation.html.en
 
 About the accessibility tree
 https://developer.chrome.com/blog/full-accessibility-tree
+
+About the axe API, and the tags
+https://www.deque.com/axe/core-documentation/api-documentation/
