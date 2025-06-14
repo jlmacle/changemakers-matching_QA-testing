@@ -3,10 +3,7 @@ import { Given, Then } from '@badeball/cypress-cucumber-preprocessor';
 // Scenario: Tab Navigation on the Home Page
 // *****************************************
 
-Given('I am on the home page', () => {
-  cy.visit('/www/index.html');
-  cy.get('body').should('be.visible');
-});
+//0. Given I am on the home page (step externalized)
 
 //1. Tabbing toward the "Skip To New Content" feature (Tabbing step externalized)
 Then('I should arrive at the "Skip To New Content" feature', () => {
