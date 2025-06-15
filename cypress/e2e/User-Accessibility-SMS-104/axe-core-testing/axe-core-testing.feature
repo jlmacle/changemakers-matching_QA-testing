@@ -1,7 +1,7 @@
 Feature: Axe core testing for new account project representative page
 
   Background:
-	Given I am on the new account project representative page
+	Given I am on the home page
 
   Scenario: The axe-core testing is done with a viewport size of <viewport>
 	Given the viewport size is <viewport>
