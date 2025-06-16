@@ -7,7 +7,7 @@ import { When, Then } from '@badeball/cypress-cucumber-preprocessor';
   });
 
   Then('the axe-core testing should pass without any violations', () => {
-    cy.checkA11y(null,{ runOnly: { type: 'tag', values: ['wcag2a','wcag2aa', /*'best-practice'*/]}},(violations) => {
+    cy.checkA11y(null,{ runOnly: { type: 'tag', values: ['wcag2a','wcag2aa']}},(violations) => {
       if (violations.length !== 0) {
         console.error(`${violations.length} accessibility violations found`);
         cy.task('log', `${violations.length} accessibility violations found`);

@@ -5,11 +5,8 @@ test.describe('Homepage Accessibility @XRAY-123', () => { // @XRAY-123 maps to a
   test('should have no critical accessibility violations on the homepage', async ({ page }) => {
     await page.goto('/www/index.html', { waitUntil: 'load' });
     const accessibilityScanResults = await new AxeBuilder({ page })
-      //Temporarily, to avoid a passing test discrepancy when comparing Cypress and Playwright running times
-      //.withTags(['wcag2a', 'wcag2aa', 'best-practice']) 
       .withTags(['wcag2a', 'wcag2aa']) 
       .analyze();
-
     
     // Log violations for easier debugging, even if the test passes based on filtered criteria
     if (accessibilityScanResults.violations.length > 0) {
