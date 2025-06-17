@@ -9,6 +9,8 @@ rm blob-reports-tmp/*.* 2>/dev/null || true
 TOTAL_SHARDS=6
 
 cd ..
+echo "Current directory: $(pwd)"
+
 # Running each shard, emiting blob, never auto-opening HTML
 for ((i=1; i<=TOTAL_SHARDS; i++)); do
   echo "Running shard ${i}/${TOTAL_SHARDS}"
@@ -17,6 +19,7 @@ for ((i=1; i<=TOTAL_SHARDS; i++)); do
       --shard=${i}/${TOTAL_SHARDS} \
       --reporter=blob
     
-    mv ./blob-report/report-*-${i}.zip ./blob-reports-tmp/|| true
+    mv ./blob-report/report-*-${i}.zip ./blob-reports-tmp/ 2>/dev/null|| true
+    mv ./blob-report/report-${i}.zip ./blob-reports-tmp/ 2>/dev/null|| true
     sleep 5
 done
