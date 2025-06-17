@@ -9,8 +9,8 @@ def time_script(name, cmd):
         f.write(f"{name} duration: {duration:.4f} seconds\n")
     return duration
 
-
-d1 = time_script("Cypress: npx cypress run", "npx cypress run 'cypress/e2e/Accessibility/2. Operable/2.1 Keyboard Accessible/Tab-navigation' 'cypress/e2e/Accessibility/3. Understandable/3.3 Input Assistance/3.3.1 Error Identification Level A'")
+# Testing on the specs related to the username validity
+d1 = time_script("Cypress: npx cypress run", "npx cypress run --spec 'cypress/e2e/User-Accessibility-SMS-104/3. Understandable/3.3 Input Assistance/3.3.1 Error Identification Level A'")
 time.sleep(5)
 d2 = time_script("Playwright with sharding", "./_Zsh_utility-scripts/playwright-sharding.zsh")
 
