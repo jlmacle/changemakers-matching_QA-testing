@@ -1,7 +1,6 @@
 #!/usr/bin/env python3
 
 import sys
-import os
 
 def load_viewport_sizes(config_file):
     """
@@ -28,7 +27,7 @@ def load_viewport_sizes(config_file):
                 line = line.strip()
                 if not line:
                     continue
-                if line.endswith(':') or (not current_device and not any(char in line for char in '×:0123456789')):
+                if line.endswith(':'):
                     current_device = line.rstrip(':').strip()
                     viewport_sizes[current_device] = []
                 elif current_device:
@@ -66,7 +65,7 @@ def generate_given_section_file(viewport_sizes, output_file):
                         width, height = viewport.split('×')
                         f.write(f"Given('the viewport size is {viewport}', () => {{\n")
                         f.write(f"\tcy.viewport({width},{height});\n")
-                        f.write("}});\n\n")
+                        f.write("});\n\n")
                     except ValueError:
                         print(f"Warning: Skipping malformed size '{viewport}' in {device_type}")
         print(f"Given section file '{output_file}' generated successfully!")
@@ -84,8 +83,7 @@ if __name__ == "__main__":
     parser.add_argument('-c', '--config', default='_viewport_sizes.txt', 
                         help='Path to the viewport sizes text file (default: _viewport_sizes.txt)')
     parser.add_argument('-o', '--output', default='viewports-steps.ts',
-                        help='Output file to write the Given section (default: Given-section-for-viewports.txt)')
-    
+                        help='Output file to write the Given section (default: Given-section-for-viewports.txt)')    
     args = parser.parse_args()
 
     sizes = load_viewport_sizes(args.config)
