@@ -16,7 +16,13 @@ export default defineConfig({
     experimentalStudio: true,
     video: false, // Enable or disable video recording //False to avoid using too much resources during tests    
     specPattern: "**/*.feature",
-    async setupNodeEvents(on, config) {      
+    async setupNodeEvents(on, config) {    
+      on('task', {
+        log(message) {
+          console.log(message);
+          return null;
+        },
+      });
       on("file:preprocessor", createBundler({ plugins: [createEsbuildPlugin(config)] }));
       await addCucumberPreprocessorPlugin(on, config);
       allureCypress(on, config, {

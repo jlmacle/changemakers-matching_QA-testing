@@ -55,7 +55,7 @@ def load_viewport_sizes(config_file):
                     continue
                 
                 # Check if this is a device category line
-                if line.endswith(':') or (not current_device and not any(char in line for char in '×:0123456789')):
+                if line.endswith(':'):
                     # New device category
                     current_device = line.rstrip(':').strip()
                     viewport_sizes[current_device] = []
@@ -135,7 +135,7 @@ def modify_feature_file(input_file, output_file, viewport_sizes, force=False):
         
         # Generate new examples section from viewport_sizes
         new_examples = "Examples:\n"  # Add the Examples line back
-        new_examples += "\t\t| viewport   |"
+        new_examples += "\t\t| viewport   |\n"
         
         # Add each device category and its viewport sizes
         for device_type, sizes in viewport_sizes.items():
@@ -210,7 +210,7 @@ if __name__ == "__main__":
     )
     parser.add_argument('input', help='Input directory or single feature file')
     parser.add_argument('-o', '--output', help='Output directory (if input is a directory) or output file (if input is a file)')
-    parser.add_argument('-c', '--config', default='viewport_sizes.txt', 
+    parser.add_argument('-c', '--config', default='_viewport_sizes.txt', 
                         help='Path to the viewport sizes text file (default: viewport_sizes.txt)')
     parser.add_argument('-f', '--force', action='store_true', 
                         help='Force overwrite if output files already exist')
