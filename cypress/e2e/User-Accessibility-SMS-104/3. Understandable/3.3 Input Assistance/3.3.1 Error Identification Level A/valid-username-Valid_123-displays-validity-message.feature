@@ -6,8 +6,8 @@ Feature: Username validation: valid username: Valid_123
 		Then the username validation message should display "✅ The username is valid."
 
 
-	Examples:
-		|	viewport	|
+Examples:
+		| viewport   |
 		# Desktop
 		|	1920×1080	|
 		|	1366×768	|

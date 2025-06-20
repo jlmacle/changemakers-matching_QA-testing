@@ -8,8 +8,8 @@ Feature: Username validation: invalid username: invalid character: é
 		⚠️ Invalid character present. <br>The username can only contain lowercase letters (without accents), numbers and underscores.
 		  """
 
-	Examples:
-		|	viewport	|
+Examples:
+		| viewport   |
 		# Desktop
 		|	1920×1080	|
 		|	1366×768	|
