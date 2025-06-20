@@ -7,7 +7,7 @@ Feature: Username validation: invalid username: too short: abc
 
 
 Examples:
-		|	viewport	|
+		| viewport   |
 		# Desktop
 		|	1920×1080	|
 		|	1366×768	|
