@@ -3,23 +3,18 @@
 Feature File Viewport Modifier
 
 This script recursively finds all .feature files containing "Examples"
-and replaces the Examples section with viewport data from predefined viewport sizes.
-The viewport sizes are loaded from a simple text file.
+and replaces the Examples section viewport data with viewport data from predefined viewport sizes.
+The viewport sizes are loaded from a text file.
 """
 
 import os
 import sys
 import argparse
+import subprocess
 
-# Add the utility scripts directory to the Python path to import modules
+# Adding the utility scripts directory to the Python path to import modules
 sys.path.append('../Utility scripts')
-
-# Import the string_in_file function from string-finder.py
-from string_finder import string_in_file
-
-# Import the filter_examples function from script-removing-lines-after-finding-string.py
-# Using the module name convention (hyphens replaced with underscores)
-from script_removing_lines_after_finding_string import filter_examples
+from file_processing import string_in_file, keep_lines_up_to_examples
 
 def load_viewport_sizes(config_file):
     """
@@ -88,6 +83,10 @@ def find_feature_files_with_examples(directory):
     """
     matching_files = []
     
+    # "For each directory in the tree rooted at directory top (including top itself), 
+    # it yields a 3-tuple (dirpath, dirnames, filenames)"   
+    # https://docs.python.org/3/library/os.html
+    # the _ is a placeholder for the unused dirnames
     for root, _, files in os.walk(directory):
         for file in files:
             if file.endswith('.feature'):
@@ -103,10 +102,10 @@ def modify_feature_file(input_file, output_file, viewport_sizes, force=False):
     viewport sizes from the viewport_sizes dictionary.
     
     Args:
-        input_file (str): Path to the input feature file
+        input_file (str, optional): Path to the input feature file
         output_file (str, optional): Path to the output feature file. If None, overwrites input file.
-        viewport_sizes (dict): Dictionary of viewport sizes by device type
-        force (bool): Whether to overwrite the output file without asking
+        viewport_sizes (dict, optional): Dictionary of viewport sizes by device type
+        force (bool, optional): Whether to overwrite the output file without asking
     
     Returns:
         bool: True if successful, False otherwise
@@ -116,39 +115,39 @@ def modify_feature_file(input_file, output_file, viewport_sizes, force=False):
         output_file = input_file
     
     try:
-        # Check if output file exists and is different from input file
+        # Checking if output file exists and is different from input file
         if os.path.exists(output_file) and output_file != input_file and not force:
             response = input(f"Output file '{output_file}' already exists. Overwrite? (y/n): ")
             if response.lower() != 'y':
                 print("Operation cancelled.")
                 return False
         
-        # Create a temporary file for filtered content
+        # Creating a temporary file for filtered content
         temp_file = f"{output_file}.temp"
         
-        # Use the imported filter_examples function to keep content up to "Examples"
-        filter_examples(input_file, temp_file)
+        # Using the imported keep_lines_up_to_examples function to keep content up to "Examples"
+        keep_lines_up_to_examples(input_file, temp_file)
         
-        # Read the filtered content
+        # Reading the kept lines
         with open(temp_file, 'r', encoding='utf-8') as f:
-            filtered_content = f.read()
+            kept_lines = f.read()
         
-        # Generate new examples section from viewport_sizes
-        new_examples = "Examples:\n"  # Add the Examples line back
+        # Generating new examples section from viewport_sizes
+        new_examples = "Examples:\n"  
         new_examples += "\t\t| viewport   |\n"
         
-        # Add each device category and its viewport sizes
+        # Adding each device category and its viewport sizes
         for device_type, sizes in viewport_sizes.items():
             new_examples += f"\t\t# {device_type}\n"
             for size in sizes:
                 new_examples += f"\t\t|\t{size}\t|\n"
         
-        # Write filtered content plus new examples to output file
+        # Writing kept lines plus new examples to output file
         with open(output_file, 'w', encoding='utf-8') as f:
-            f.write(filtered_content)
+            f.write(kept_lines)
             f.write(new_examples)
         
-        # Remove the temporary file
+        # Removing the temporary file
         os.remove(temp_file)
             
         print(f"Successfully modified feature file and wrote to {output_file}")
@@ -159,7 +158,10 @@ def modify_feature_file(input_file, output_file, viewport_sizes, force=False):
         return False
     except Exception as e:
         print(f"An error occurred with {input_file}: {e}")
-        # Clean up temporary file if it exists
+        # Cleaning up temporary file if it exists
+        # "Return a mapping object representing the current local symbol table, with variable names as the keys, "
+        # "and their currently bound references as the values."
+        # https://docs.python.org/3/library/functions.html#locals
         if 'temp_file' in locals() and os.path.exists(temp_file):
             os.remove(temp_file)
         return False
@@ -205,10 +207,19 @@ def process_directory(directory, output_dir, viewport_sizes, force=False):
 
 
 if __name__ == "__main__":
+    try:
+        git_project_dir = subprocess.check_output(
+            ['git', 'rev-parse', '--show-toplevel'],
+            stderr=subprocess.STDOUT
+        ).decode().strip()
+        print("Git top-level directory:", git_project_dir)
+    except subprocess.CalledProcessError as e:
+        print("Error:", e.output.decode().strip())
+
     parser = argparse.ArgumentParser(
-        description='Find and modify feature files by replacing the Examples section with viewport sizes.'
+        description='Finds and modifies feature files by replacing the Examples section viewport data with new viewport data.'
     )
-    parser.add_argument('input', help='Input directory or single feature file')
+    parser.add_argument('-i', '--input', default=git_project_dir, help='Input directory or single feature file')
     parser.add_argument('-o', '--output', help='Output directory (if input is a directory) or output file (if input is a file)')
     parser.add_argument('-c', '--config', default='_viewport_sizes.txt', 
                         help='Path to the viewport sizes text file (default: viewport_sizes.txt)')
