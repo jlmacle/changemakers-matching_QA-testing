@@ -47,7 +47,7 @@ def load_viewport_sizes(config_file):
         sys.exit(1)
 
 
-def generate_given_section_file(viewport_sizes, output_file):
+def generate_given_common_steps(viewport_sizes, output_file):
     """
     Generate the Given section based on viewport sizes and write to a file.
     
@@ -82,9 +82,11 @@ if __name__ == "__main__":
     )
     parser.add_argument('-c', '--config', default='_viewport_sizes.txt', 
                         help='Path to the viewport sizes text file (default: _viewport_sizes.txt)')
-    parser.add_argument('-o', '--output', default='viewports-steps.ts',
-                        help='Output file to write the Given section (default: Given-section-for-viewports.txt)')    
+
+    parser.add_argument('-o', '--output', default='viewports-sizes-common-steps.ts',
+                        help='Output file to write the Given section (default: viewports-sizes-common-steps.ts)')    
+
     args = parser.parse_args()
 
     sizes = load_viewport_sizes(args.config)
-    generate_given_section_file(sizes, args.output)
+    generate_given_common_steps(sizes, args.output)
