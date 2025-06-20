@@ -1,8 +1,8 @@
 import { test, expect } from '@playwright/test';
 import AxeBuilder from '@axe-core/playwright';
 
-test.describe('Homepage Accessibility @XRAY-123', () => { // @XRAY-123 maps to an Xray Test Case ID
-  test('should have no critical accessibility violations on the homepage', async ({ page }) => {
+test.describe('Pages Accessibility', () => {
+  test('The homepage should have no critical accessibility violations', async ({ page }) => {
     await page.goto('/www/index.html', { waitUntil: 'load' });
     const accessibilityScanResults = await new AxeBuilder({ page })
       .withTags(['wcag2a', 'wcag2aa']) 
@@ -17,5 +17,6 @@ test.describe('Homepage Accessibility @XRAY-123', () => { // @XRAY-123 maps to a
     else console.log('Axe-core: No accessibility violations found.');
     
   });
+
   
 });
