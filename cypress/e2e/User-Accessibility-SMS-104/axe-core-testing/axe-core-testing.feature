@@ -8,7 +8,7 @@ Feature: Axe core testing for new account project representative page
 	When the axe-core testing is performed
 	Then the axe-core testing should pass without any violations
 
-  Examples:
+Examples:
 		|	viewport	|
 		# Desktop
 		|	1920×1080	|
@@ -16,12 +16,12 @@ Feature: Axe core testing for new account project representative page
 		|	1536×864	|
 		|	1280×720	|
 		# Mobile
-		|	360×800	|
-		|	390×844	|
-		|	393×873	|
-		|	412×915	|
+		|	360×800		|
+		|	390×844		|
+		|	393×873		|
+		|	412×915		|
 		# Tablet
 		|	768×1024	|
 		|	1280×800	|
 		|	800×1280	|
-		|	820×1180|
+		|	820×1180	|
