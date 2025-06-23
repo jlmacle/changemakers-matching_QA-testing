@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+
 """
 Feature File Viewport Modifier
 
@@ -134,7 +135,7 @@ def modify_feature_file(input_file, output_file, viewport_sizes, force=False):
         
         # Generating new examples section from viewport_sizes
         new_examples = "Examples:\n"  
-        new_examples += "\t\t| viewport   |\n"
+        new_examples += "\t\t|\tviewport\t|\n"
         
         # Adding each device category and its viewport sizes
         for device_type, sizes in viewport_sizes.items():
