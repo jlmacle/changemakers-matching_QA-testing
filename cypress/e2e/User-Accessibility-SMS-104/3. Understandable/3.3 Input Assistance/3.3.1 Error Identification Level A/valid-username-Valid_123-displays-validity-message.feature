@@ -7,7 +7,7 @@ Feature: Username validation: valid username: Valid_123
 
 
 Examples:
-		| viewport   |
+		|	viewport	|
 		# Desktop
 		|	1920×1080	|
 		|	1366×768	|
