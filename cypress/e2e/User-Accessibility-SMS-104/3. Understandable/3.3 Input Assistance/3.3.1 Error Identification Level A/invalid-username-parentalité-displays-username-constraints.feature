@@ -9,7 +9,7 @@ Feature: Username validation: invalid username: invalid character: é
 		  """
 
 Examples:
-		| viewport   |
+		|	viewport	|
 		# Desktop
 		|	1920×1080	|
 		|	1366×768	|
