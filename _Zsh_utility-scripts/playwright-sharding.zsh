@@ -10,7 +10,7 @@ rm blob-report/*.* 2>/dev/null || true
 rm blob-reports-tmp/*.* 2>/dev/null || true
 
 # Augmenting the number of shards when the tests are flaky seems to be effective
-TOTAL_SHARDS=6
+TOTAL_SHARDS=9
 
 # Running each shard, creating the data blob
 for ((i=1; i<=TOTAL_SHARDS; i++)); do
