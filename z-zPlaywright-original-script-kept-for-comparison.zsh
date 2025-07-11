@@ -1,4 +1,4 @@
-DIR="z-playwright-report"
+REPORT_DIR="z-playwright-report"
 
 npx playwright test \
-&& npx playwright show-report "$DIR"
+&& npx playwright show-report "$REPORT_DIR"
