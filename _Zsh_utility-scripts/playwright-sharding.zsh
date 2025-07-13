@@ -1,4 +1,7 @@
 PARAMETER=$1
+BLOB_DIR="./blob-report"
+AGGREGATED_BLOBS_DIR="./blob-reports-tmp"
+
 echo "Playwright tests to be run with parameter: ${PARAMETER}"
 
 PROJECT_PATH=$(git rev-parse --show-toplevel) # Importance of having no spaces around the equal sign
@@ -6,8 +9,8 @@ echo "Project root directory: $PROJECT_PATH"
 cd $PROJECT_PATH # to have the right folder to start the Playwright tests from, independently from where the script is run
 
 # Removing previous reports if any
-rm blob-report/*.* 2>/dev/null || true
-rm blob-reports-tmp/*.* 2>/dev/null || true
+rm "$BLOB_DIR/*.*" 2>/dev/null || true
+rm "$AGGREGATED_BLOBS_DIR/*.*" 2>/dev/null || true
 
 # Augmenting the number of shards when the tests are flaky seems to be effective
 TOTAL_SHARDS=9
@@ -19,7 +22,7 @@ for ((i=1; i<=TOTAL_SHARDS; i++)); do
     --shard=${i}/${TOTAL_SHARDS} \
     --reporter=blob
   
-  mv ./blob-report/report-*-${i}.zip ./blob-reports-tmp/ 2>/dev/null|| true
-  mv ./blob-report/report-${i}.zip ./blob-reports-tmp/ 2>/dev/null|| true
+  mv "$BLOB_DIR/report-*-${i}.zip" "$AGGREGATED_BLOBS_DIR" 2>/dev/null|| true
+  mv "$BLOB_DIR/report-${i}.zip" "$AGGREGATED_BLOBS_DIR" 2>/dev/null|| true
   sleep 5 # Giving time for the computer to recover from the procesing load
 done
