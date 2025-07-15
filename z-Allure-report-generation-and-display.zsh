@@ -1,8 +1,11 @@
-# true added to pursue the script in case no folder would exist,
-# or in case some tests would fail
+RESULTS_DIR=./z-allure-results
+REPORT_DIR="./z-allure-report"
+
 # Folders removed to mitigate issues with the report generation
-rm -r z-allure-results || true \
-rm -r z-allure-report || true \
-&& npx cypress run || true\
-&& npx allure generate ./z-allure-results --clean -o ./z-allure-report \
-&& npx allure open ./z-allure-report
+rm -r "$RESULTS_DIR" 2>/dev/null 
+rm -r "$REPORT_DIR" 2>/dev/null 
+
+# Running Cypress tests
+npx cypress run \
+&& npx allure generate "$RESULTS_DIR" --clean -o "$REPORT_DIR" \
+&& npx allure open "$REPORT_DIR"
