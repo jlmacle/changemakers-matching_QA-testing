@@ -31,7 +31,7 @@ export default defineConfig({
       return config;
     },
     env: {
-      omitFiltered: true,
+      omitFiltered: true, /* optimisation flag for tag/grep filtering */
       filterSpecs: true,
       allure: true      
     },
