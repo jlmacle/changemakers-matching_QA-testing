@@ -1,3 +1,4 @@
+@tab
 Feature: Tab Navigation: Home page
 
 Scenario: Tab Navigation on the Home Page

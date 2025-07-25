@@ -1,3 +1,4 @@
+@tab
 Feature: Tab Navigation: Representative page 
 
 Scenario: Tab Navigation on the Representative Page
