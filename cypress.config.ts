@@ -30,9 +30,9 @@ export default defineConfig({
       });           
       return config;
     },
-    env: {
-      omitFiltered: true, /* optimisation flag for tag/grep filtering */
-      filterSpecs: true,
+    env: {      
+      filterSpecs: true, // to avoid having the skipped tests with a pending status when filtering
+                         // npx cypress run --env tags="@tab"
       allure: true      
     },
     fixturesFolder: false,
