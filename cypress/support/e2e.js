@@ -21,4 +21,7 @@ import './commands'
 import 'cypress-axe'
 require('cypress-plugin-tab');
 require('allure-cypress');
-
+// load and register the grep feature using "require" function
+// https://github.com/cypress-io/cypress/tree/develop/npm/grep
+const registerCypressGrep = require('@cypress/grep')
+registerCypressGrep()
