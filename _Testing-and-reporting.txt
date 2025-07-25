@@ -1,5 +1,7 @@
 npx cypress open
 
+npx cypress run --env tags="@tab"
+
 -------------
 
 VS Code extension
