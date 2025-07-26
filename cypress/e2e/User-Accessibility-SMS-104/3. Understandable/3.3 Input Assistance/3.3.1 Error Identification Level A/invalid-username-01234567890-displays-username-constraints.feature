@@ -5,20 +5,25 @@ Feature: Username validation: invalid username: too long: 01234567890
 		When the user enters "01234567890" in the username field
 		Then the username validation message should display "⚠️ The username must between 4 and 10 characters long."
 
-
+@desktop
 Examples:
-		|	viewport	|
-		# Desktop
+		|	viewport	|		
 		|	1920×1080	|
 		|	1366×768	|
 		|	1536×864	|
 		|	1280×720	|
-		# Mobile
+
+@mobile
+Examples:
+		|	viewport	|
 		|	360×800	|
 		|	390×844	|
 		|	393×873	|
 		|	412×915	|
-		# Tablet
+		
+@tablet
+Examples:
+		|	viewport	|		
 		|	768×1024	|
 		|	1280×800	|
 		|	800×1280	|
