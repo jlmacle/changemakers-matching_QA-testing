@@ -5,20 +5,25 @@ Feature: Username validation: invalid username: too short: abc
 		When the user enters "abc" in the username field
 		Then the username validation message should display "⚠️ The username must between 4 and 10 characters long."
 
-
+@desktop
 Examples:
 		|	viewport	|
-		# Desktop
 		|	1920×1080	|
 		|	1366×768	|
 		|	1536×864	|
 		|	1280×720	|
-		# Mobile
+
+@mobile
+Examples:
+		|	viewport	|
 		|	360×800	|
 		|	390×844	|
 		|	393×873	|
 		|	412×915	|
-		# Tablet
+
+@mobile
+Examples:
+		|	viewport	|
 		|	768×1024	|
 		|	1280×800	|
 		|	800×1280	|
