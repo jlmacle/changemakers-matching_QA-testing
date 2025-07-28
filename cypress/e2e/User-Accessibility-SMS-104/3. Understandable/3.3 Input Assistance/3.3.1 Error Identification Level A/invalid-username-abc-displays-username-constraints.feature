@@ -21,7 +21,7 @@ Examples:
 		|	393×873	|
 		|	412×915	|
 
-@mobile
+@tablet
 Examples:
 		|	viewport	|
 		|	768×1024	|
