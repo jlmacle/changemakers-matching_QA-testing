@@ -44,7 +44,7 @@ def string_in_file(file_path, search_string, case_sensitive=True):
         except Exception as e:
             raise UnicodeDecodeError(f"Could not decode file content: {str(e)}")
 
-def keep_lines_up_to_examples(input_file, output_file):
+def keep_lines_up_to_viewport_section(input_file, output_file):
     """
     Read the input file, find the only occurrence of "Examples", and write to the output file
     only the lines that appear before the line containing "Examples".
@@ -65,7 +65,7 @@ def keep_lines_up_to_examples(input_file, output_file):
         
         filtered_lines = []
         for line in lines:
-            if "Examples" in line:
+            if "#viewport section" in line:
                 break
             filtered_lines.append(line)
         

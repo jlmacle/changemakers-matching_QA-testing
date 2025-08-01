@@ -3,7 +3,7 @@
 """
 Feature File Viewport Modifier
 
-This script recursively finds all .feature files containing "Examples"
+This script recursively finds all .feature files containing "#viewport section"
 and replaces the Examples section viewport data with viewport data from predefined viewport sizes.
 The viewport sizes are loaded from a text file.
 """
@@ -15,7 +15,7 @@ import subprocess
 
 # Adding the utility scripts directory to the Python path to import modules
 sys.path.append('../Utility scripts')
-from file_processing import string_in_file, keep_lines_up_to_examples
+from file_processing import string_in_file, keep_lines_up_to_viewport_section
 
 def load_viewport_sizes(config_file):
     """
@@ -74,13 +74,13 @@ def load_viewport_sizes(config_file):
 
 def find_feature_files_with_examples(directory):
     """
-    Recursively find all .feature files in a directory that contain "Examples".
+    Recursively find all .feature files in a directory that contain the "#viewport section" found at the beginning of the viewport section.
     
     Args:
         directory (str): The directory to search in
         
     Returns:
-        list: List of paths to .feature files containing "Examples"
+        list: List of paths to .feature files containing "#viewport section"
     """
     matching_files = []
     
@@ -92,7 +92,7 @@ def find_feature_files_with_examples(directory):
         for file in files:
             if file.endswith('.feature'):
                 file_path = os.path.join(root, file)
-                if string_in_file(file_path, "Examples"):
+                if string_in_file(file_path, "#viewport section"):                
                     matching_files.append(file_path)
     
     return matching_files
@@ -126,27 +126,35 @@ def modify_feature_file(input_file, output_file, viewport_sizes, force=False):
         # Creating a temporary file for filtered content
         temp_file = f"{output_file}.temp"
         
-        # Using the imported keep_lines_up_to_examples function to keep content up to "Examples"
-        keep_lines_up_to_examples(input_file, temp_file)
+        # Using the imported keep_lines_up_to_examples function to keep content up to "#viewport section"
+        keep_lines_up_to_viewport_section(input_file, temp_file)
         
         # Reading the kept lines
         with open(temp_file, 'r', encoding='utf-8') as f:
             kept_lines = f.read()
         
         # Generating new examples section from viewport_sizes
-        new_examples = "Examples:\n"  
-        new_examples += "\t\t|\tviewport\t|\n"
+        examples_and_viewport_section = "Examples:\n"  
+        examples_and_viewport_section += "\t\t|\tviewport\t|\n"
+        device_data = ""
         
         # Adding each device category and its viewport sizes
         for device_type, sizes in viewport_sizes.items():
-            new_examples += f"\t\t# {device_type}\n"
+            print("for device_type, sizes")            
+            print("examples_and_viewport_section: "+examples_and_viewport_section)
+            device_data += f"{device_type}\n" + examples_and_viewport_section 
+            print("device_data: "+device_data)
+
             for size in sizes:
-                new_examples += f"\t\t|\t{size}\t|\n"
+                print("for size in sizes")
+                device_data += f"\t\t|\t{size}\t|\n"
+                print("device_data: "+device_data)
+            device_data += "\n"
         
         # Writing kept lines plus new examples to output file
         with open(output_file, 'w', encoding='utf-8') as f:
             f.write(kept_lines)
-            f.write(new_examples)
+            f.write(device_data)
         
         # Removing the temporary file
         os.remove(temp_file)
