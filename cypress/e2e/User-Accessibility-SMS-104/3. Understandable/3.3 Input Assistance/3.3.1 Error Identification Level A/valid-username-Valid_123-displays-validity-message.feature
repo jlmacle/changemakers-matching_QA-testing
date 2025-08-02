@@ -5,7 +5,6 @@ Feature: Username validation: valid username: Valid_123
 		When the user enters "Valid_123" in the username field
 		Then the username validation message should display "✅ The username is valid."
 
-
 @desktop
 Examples:
 		|	viewport	|
@@ -13,7 +12,6 @@ Examples:
 		|	1366×768	|
 		|	1536×864	|
 		|	1280×720	|
-
 
 @mobile
 Examples:
@@ -23,7 +21,6 @@ Examples:
 		|	393×873	|
 		|	412×915	|
 
-
 @tablet
 Examples:
 		|	viewport	|
@@ -31,3 +28,4 @@ Examples:
 		|	1280×800	|
 		|	800×1280	|
 		|	820×1180	|
+
