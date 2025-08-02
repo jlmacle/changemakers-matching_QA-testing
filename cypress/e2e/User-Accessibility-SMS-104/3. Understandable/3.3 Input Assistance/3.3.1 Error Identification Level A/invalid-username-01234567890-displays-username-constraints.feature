@@ -7,7 +7,7 @@ Feature: Username validation: invalid username: too long: 01234567890
 
 @desktop
 Examples:
-		|	viewport	|		
+		|	viewport	|
 		|	1920×1080	|
 		|	1366×768	|
 		|	1536×864	|
@@ -20,11 +20,12 @@ Examples:
 		|	390×844	|
 		|	393×873	|
 		|	412×915	|
-		
+
 @tablet
 Examples:
-		|	viewport	|		
+		|	viewport	|
 		|	768×1024	|
 		|	1280×800	|
 		|	800×1280	|
 		|	820×1180	|
+

@@ -16,7 +16,6 @@ Examples:
 		|	1536×864	|
 		|	1280×720	|
 
-
 @mobile
 Examples:
 		|	viewport	|
@@ -25,7 +24,6 @@ Examples:
 		|	393×873	|
 		|	412×915	|
 
-
 @tablet
 Examples:
 		|	viewport	|
@@ -33,3 +31,4 @@ Examples:
 		|	1280×800	|
 		|	800×1280	|
 		|	820×1180	|
+
