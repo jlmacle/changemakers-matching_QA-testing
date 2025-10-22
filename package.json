@@ -22,10 +22,10 @@
     "cypress-esbuild-preprocessor": "^1.0.2",
     "lighthouse": "^12.5.1",
     "ortoni-report": "^3.0.1",
-    "playwright": "^1.51.1"
+    "playwright": "^1.56.1"
   },
   "devDependencies": {
-    "@playwright/test": "^1.52.0",
+    "@playwright/test": "^1.56.1",
     "@types/node": "^22.13.5"
   }
 }
